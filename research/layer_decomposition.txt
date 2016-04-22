@@ -1,0 +1,49 @@
+Many object surfaces are composed of layers of different physical
+substances, known as layered surfaces. These surfaces, such as patinas,
+water colors, and wall paintings, have more complex 
+optical properties than diffuse surfaces. 
+Although the characteristics of layered surfaces,
+like layer opacity, mixture of colors, and color gradations, are
+significant, they are usually 
+ignored in the analysis of many methods in computer vision, causing
+inaccurate or even erroneous results. 
+Therefore, the main goals of this paper are twofold: to solve problems of
+layered surfaces by focusing mainly on 
+surfaces with two layers (i.e., top and bottom layers), and to
+introduce a decomposition method based on a novel
+representation of a nonlinear correlation in the color space that we call the
+"spider" model. 
+% 
+When we plot a mixture of colors of one bottom layer
+and $n$ different top layers into the RGB color space,
+then we will have $n$ different curves intersecting at one point, resembling
+the shape of a spider. 
+Hence, given a single input image containing one bottom layer and at
+least one top layer,  
+we can fit their color distributions by using the spider model and
+then decompose those 
+layered surfaces. 
+%
+%
+The last step is equivalent to extracting the
+approximated optical properties of the two layers:
+the top layer's opacity, and the top and bottom layers' reflections.
+Experiments with real images, which include the photographs of ancient wall paintings, show
+the effectiveness of our method. 
+
+The surface of most natural objects contains a number of layers with
+different physical substances. For instance, human skin is composed of
+at least two layers: epidermis and dermis.
+% 
+Each of these layers has
+distinct optical properties, such as opacity and reflectance, 
+and this kind of surface is known as layered surfaces. 
+The total reflection from such a surface, and therefore its appearance,
+is determined by those optical properties.
+As an illustration, let us consider a two-layered surface with different colors.
+The appearance of the surface is the mixture of the colors governed by the opacity of the top layer.
+If the opacity changes gradually across the surface,
+then the mixture of the colors will change accordingly, as depicted in
+ Fig. \ref{fig:catch_result}.a.
+Other examples of layered surfaces are leaves,
+biological tissues, patinas, and some paintings including wall paintings.  
