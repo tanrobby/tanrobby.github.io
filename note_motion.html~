@@ -9,21 +9,33 @@
     <meta name="author" content="">
     <!-- <link rel="icon" href="../../favicon.ico"> -->
 
-    <title>Robby T. Tan | Teaching</title>
+    <title>Robby T. Tan</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="jumbotron.css" rel="stylesheet">
-
   </head>
 
   <body>
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
-    </nav>
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
 
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
@@ -38,6 +50,9 @@
         href="index.html"
         role="button">Home &raquo;</a> 
 	
+	<a class="btn btn-primary btn"
+        href="pub.html"
+        role="button">Publication &raquo;</a> 
 	
  	<a class="btn btn-primary btn"
         href="#"
@@ -48,61 +63,15 @@
         href="teaching.html"
            role="button">Teaching &raquo;</a>
 	</p>
+
       </div>
     </div>
 
 
-    <div class="container">
+<div class="container">
+  <h3>Notes on Motion Analysis</h3>
 
-      <div class="row">
-        <div class="col-md-4">
-          <h3>YNC: Machine Learning</h3>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-          <h3>YNC: Computer Vision</h3>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-       </div>
-         <div class="col-md-4">
-          <h3>YNC: Advanced Algorithms and Data Structures</h3>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-         </div>
-	   <div class="col-md-4">
-          <h3>ECE: Visual Computing</h3>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-	   <div class="col-md-4">
-          <h3>ECE: Pattern Recognition</h3>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-      </div>
-      
-      <hr>
-      </div>
-    <div class="container">
-
-      <h3><b>Notes:</b></h3>
-      <p class="bg-success">
-	<br>
-	 &nbsp
-      <a href="#" class="btn btn-default" role="button">Visibility in
-	Bad Weather</a>
-      <a href="note_motion.html" class="btn btn-default" role="button">Motion Analysis</a>
-      <a href="#" class="btn btn-default"
-      role="button">Deep Learning</a>
-      <a href="#" class="btn btn-default" role="button">Optimization</a>
-	<br>
-	<br>
-      </p>
-      
-      <hr>
-      
-      <footer>
-        <p>&copy; 2015 Company, Inc.</p>
-      </footer>
-    </div> <!-- /container -->
-
-
+</div>      
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
