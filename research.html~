@@ -201,12 +201,11 @@
 	  <p class="text-left">
 	    <b>Adherent Raindrop Detection and Removal</b>
 
-	    <br>
-	    <br>
-	    Shaodi You, Robby T. Tan, Rei
+	  </p>
+	  <p>Shaodi You, Robby T. Tan, Rei
 	    Kawakami, and Katsushi Ikeuchi<br>
 	    CVPR 2013, Portland, USA.
-	  </p>
+	    </p>
 	  <br>
 	  <br>
 
@@ -257,11 +256,8 @@
 
 
 	  <img alt="color constancy"
-            src="research/magazine1.jpg"
-            width="175" height="130" style="border:none;">
-	  <img alt="color constancy"
-            src="research/magazine2.jpg"
-            width="175" height="130" style="border:none;">
+            src="research/magazine.jpg"
+            width="350" height="130" style="border:none;">
 
 	</td>
         <td>
@@ -270,7 +266,7 @@
 	      Space</b>
 
 	  </p>
-	  <p>
+	  <p
 	     Robby T. Tan,  K. Nishino, K. Ikeuchi <br>
 	     CVPR, 2003, Wisconsin, USA.
 	     </p>
@@ -432,7 +428,7 @@
 
 	  <img alt="pose-recognition"
                src="research/pose01.jpg"
-               width="175" height="130">
+               width="175" height="130"">
           <img alt="pose-recognition"
             src="research/pose00.jpg"
             width="175" height="130">
