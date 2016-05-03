@@ -16,7 +16,7 @@
     <link href="jumbotron.css" rel="stylesheet">
 
     <script
-       src="..\resources\plugin\bootstrap-3.3.5-dist\js\load.js"></script>
+       src="bootstrap-3.3.5-dist\js\load.js"></script>
 
 
   </head>
@@ -34,6 +34,11 @@
 	    <img src="robby.jpg" class="img-rounded" height="170">
 	  </div>
 	  <div class="col-md-10">
+
+
+	    <div id="header"
+	    onload="document.getElementById('header').innerHTML =
+	    loadPage(header.html)"></div> 
 
 
             <h2>Robby T. Tan</h2>
@@ -65,7 +70,8 @@
 	  
       </div>
     </div>
-    
+
+    <jsp:include="header.jsp"/>
     <div class="container" style="font-size:16px">
 
       
