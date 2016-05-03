@@ -15,6 +15,10 @@
     <!-- Custom styles for this template -->
     <link href="jumbotron.css" rel="stylesheet">
 
+    <script
+       src="..\resources\plugin\bootstrap-3.3.5-dist\js\load.js"></script>
+
+
   </head>
 
   <body>
@@ -30,14 +34,14 @@
 	    <img src="robby.jpg" class="img-rounded" height="170">
 	  </div>
 	  <div class="col-md-10">
-	    
+	    <div id="header" onload="document.getElementById('header').innerHTML = loadPage(header.html)"></div>
+
             <h2>Robby T. Tan</h2>
             <p>Computer Vision Scientist and Assistant Professor at
 	      Yale-NUS College, Singapore</p>
 	  </div>
 	</div>
 	
-	<br>
 	  <br>
 	  
 	  <a class="btn btn-primary btn"
