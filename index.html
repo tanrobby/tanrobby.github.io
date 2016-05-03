@@ -35,7 +35,9 @@
 	  </div>
 	  <div class="col-md-10">
 
-	    document.getElementById('header').innerHTML = loadPage(header.html)
+	    <div id="header"
+		 onload="document.getElementById('header').innerHTML =
+		    loadPage(header.html)"></div> 
 
             <h2>Robby T. Tan</h2>
             <p>Computer Vision Scientist and Assistant Professor at
