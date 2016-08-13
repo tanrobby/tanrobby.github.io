@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="../../favicon.ico"> -->
+
+    <title>YNC Algorithms</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../bootstrap-3.3.6-dist/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../../jumbotron.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container" style="font-size:16px">
+
+      <h3> Homework 1: Convolution</h3>
+
+      <br>
+      <h4><b>Instructions:</b></h4>
+      <p>
+	Write  a program in Python for image 2D convolution. It should be able to operate using the following kernels:
+	<ol>
+	  <li> Sobel kernel
+	    [<a href="http://homepages.inf.ed.ac.uk/rbf/HIPR2/gsmooth.htm">info</a>]
+	  <li> Gaussian kernel [<a href="http://homepages.inf.ed.ac.uk/rbf/HIPR2/gsmooth.htm">info</a>]
+	  <li> The three types of Haar-like masks
+	    <!----
+	  <li> Difference of Gaussian
+	    [<a href="https://en.wikipedia.org/wiki/Difference_of_Gaussians">info</a>]
+	    ---->
+	</ol>
+      </p>
+      <p>
+	For the Haar-like masks, you're free to decide
+	the size of the masks. Yet, they should be not too small for a
+	relatively large image. For instance, for type 1 you can use a
+	10x20 mask. Note that, the values in the black mask should be set -1, and
+	the white mask should be set +1.
+      </p>
+      <p>
+	As for the input image, you can use any image that has size of at
+	least 640x480. The convolution operation is one of the most
+	important operations in computer vision to extract features,
+	please ensure you understand the intuitive idea behind it by
+	analyzing its input and output images.
+      </p>
+      <br>
+      <h4><b>Submission:</b></h4>
+      <p>
+	Submit your python code in an ipython notebook format via Canvas
+	by the deadline on Friday (19/8) at 1pm.
+      </p>
+      
+</div>      
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+  </body>
+  <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+<script type="text/javascript">
+  try {
+  var pageTracker = _gat._getTracker("UA-13131132-3");
+  pageTracker._trackPageview();
+  } catch(err) {}</script>
+</html>
