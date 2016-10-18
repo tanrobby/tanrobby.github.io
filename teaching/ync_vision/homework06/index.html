@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="../../favicon.ico"> -->
+
+    <title>YNC Computer Vision: Homework 6</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../../bootstrap-3.3.6-dist/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../../../jumbotron.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container" style="font-size:16px">
+
+      <h3> Homework 6: Depth Estimation Using MRF</h3>
+
+      <br>
+      <h4><b>Instructions:</b></h4>
+            <ol>
+	<li>Install Graphcuts for Python by executing: <strong>pip install
+	  PyMaxflow</strong>. Read  
+	  the online documents [<a href="http://pmneila.github.io/PyMaxflow/" target="_blank">website</a>] to know how to set the edges
+	  of  the graph. 
+	  
+	<li>Write a program in python to clean up noise of the image
+	  below based on MRFs  and  the binary graphcuts. See the
+	  pseudocode in C <a href="pseudocode.html">here</a>.
+	  <br>
+	  <br>
+	  <img src="bayes_in.jpg" alt="input" width="504" height="328" /> 
+	  <img src="bayes_out.jpg" alt="output" width="504" height="328" /> 
+	  <br>
+	  <center>
+	  <b>Figure 1. Left: Input noisy image. Right: Expected
+	    output.</b>
+	  </center>
+	  <br>
+	  <br>
+	<li> Write a python program to estimate a depth from a pair of
+	rectified images below using MRF and graphcuts:
+	  <br>
+	  <br>
+	  <img src="im2.png" alt="input" width="504" height="328" /> 
+	  <img src="im6.png" alt="output" width="504" height="328" /> 
+	  <br>
+	  <br>
+	<li> Write a python program to estimate a depth from a pair of
+	  calibrated images below using MRF and graphcuts. The camera
+	  matrices are available <a href="cameras.txt"
+	  target="_blank">here</a>. Note that for find the epipolar
+	  line, using the provided camera matrices, you might want to use
+	  the following equation: 
+	  <img src="eq.png" alt="input" width="504" />
+	  <br>
+	  If you want to understand the equation, read this short
+	  report here: <a href="https://www.dropbox.com/s/glyv9ycxtpxnpzo/depth_report.pdf?dl=0"
+	  target="_blank">pdf</a>. 
+	  <br>
+	  <br>
+	  <img src="test00.jpg" alt="input" width="504" height="328" /> 
+	  <img src="test09.jpg" alt="output" width="504" height="328" /> 
+	  <br>
+	  <br>
+	    </ol>
+
+      <br>
+      <h4><b>Submission:</b></h4>
+      <p>
+	Submit your python codes in an ipython notebook format (and
+	your input and output images) via Canvas
+	by the deadline on <b>October 28, at 1pm</b>.
+      </p>
+
+      	  <br>	  <br>	  <br>
+      
+</div>      
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+  </body>
+  <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+<script type="text/javascript">
+  try {
+  var pageTracker = _gat._getTracker("UA-13131132-3");
+  pageTracker._trackPageview();
+  } catch(err) {}</script>
+</html>
