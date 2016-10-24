@@ -45,8 +45,7 @@
       </p>
       
       <br>
-      <h3>2. Maximum Flow using Linear Programming</h3>
-      <p>
+      <h3>2. Maximum Flow using Linear Programming</h3>      <p>
 	Write a program in python to solve the maximum flow problem using
 	linear programming. Your input is an array where each cell
 	contains the names of two nodes (the first node is the source
@@ -58,29 +57,73 @@
       </p>
 
       <br>
-      <h3>3. Shortest  Palindrome using Dynamic Programming</h3>
+
+
+
+      <h3>3. Typo Correction using Dynamic Programming</h3>
       <p>
-	Palindrome is is a word, phrase, number, or other sequence of
-	characters which reads the same backward or forward, such as
-	madam or kayak (a definition borrowed from wikipedia). Given a
-	sequence of letters we can always create palindrome from
-	it by adding letters in the front of the sequence. For
-	instance: 'sasi', we can create a 
-	palindrome: "isassasi". However, the question is whether it is the
-	shortest palidrome we can create from "sasi". Apparently,
-	no. Since, the shortest is "isasi".
+	Automatic typo correction can be normally done by referring to
+	a dictionary. However, without a dictionary can we actually
+	solve it? The answer is yes, and one of the methods is the HMM
+	(Hidden Markov Model).
+
+	<ol>
+	  <li> <h4>Hidden Markov Model</h4>
+	Mathematically, it is expressed as:
+	<center>
+	<img src="eq1.jpg" alt="input" height="25" />,
+	</center>
+	<br>
+	where the first term is called the backward inference, and the
+	second term is called the forward inference. <i>d_k</i> is the
+	observed data at time <i>k</i>, and <i>x_k</i> is a hidden
+	variable at time <i>k</i>.
       </p>
       <p>
-	Your task is to write a program to append english small
-	alphabet letters that can create a shortest palindrome from a
-	given sequence of letters using dynamic
-	programming. 
+	The forward inference can be further written as:
+	<center>
+	<img src="eq2.jpg" alt="input" height="55" />.
+	</center>
+	<br>
+	There are 3 terms on the right side of the equation: the data
+	term, the prior and the previous computation of the forward
+	inference. 
       </p>
       <p>
-	Watch this clip for more
-	information: <a href="https://www.youtube.com/watch?v=c4akpqTwE5g"
-	target="_blank">youtube</a>. 
+	While the backward inference can be written as:
+	<center>
+	<img src="eq3.jpg" alt="input" height="55" />.
+	</center>
       </p>
+      <li><h4>Typo Correction Problem</h4>
+	<p>
+	Given a sequence of observed data or typed letters, how to
+	estimate the hidden state sequence, which refers to the
+	intended correct sequence of letters. In other words given a
+	sequence of letters the beginning to the end: <i>d_1</i>
+	to <i>d_N</i>, what are the correct letters of <i>x_1</i>
+	to <i>x_N</i>. For instance, the observed letters are "thr",
+	where the intended letters or the hidden variables are "the".
+	</p>
+	<p>
+	  To solve this problem using the HMM, we need to learn the
+	  parameters of the data term and the prior term. We can learn
+	  the data term from wrong sequences and their corresponding
+	  correct sequences; and, learn the prior term from the
+	  correct sequences.
+	</p>
+      <li> <h4>Typo Data</h4>
+	<p>
+	  You can download the typo data
+	  <a href="https://www.dropbox.com/s/muzdq7hd9inpm6d/typos10.data?dl=0">here</a>.
+	  From  this data, you must use the first 75% for the training purpose,
+	  and the remaining 25% for the testing purpose.
+	<p>
+      </ol>
+      Your task is to write a python program to automatically correct
+      typos by using an HMM and training it using the provided typo
+      data. For the inference in the correction process, you must use
+      the Viterbi algorithm, which is dynamic programming in nature.
       <br>
       <br>
       <h3>Submission</h3>
