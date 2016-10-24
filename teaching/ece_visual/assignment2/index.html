@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="../../favicon.ico"> -->
+
+    <title>EE5731R: Assignment 1</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../../bootstrap-3.3.6-dist/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../../../jumbotron.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container" style="font-size:16px">
+
+      <h3> Assignment 2: Depth Estimation From Video</h3>
+
+      <br>
+      <h4><b>Instructions:</b></h4>
+      <ol>
+     <li> Write a program in matlab to estimate depth map from video
+     using this method: <a href="http://www.cad.zju.edu.cn/home/bao/pub/Consistent_Depth_Maps_Recovery_from_a_Video_Sequence.pdf"
+	       target="_blank">Depth Map from Video Sequence</a>.
+      <li> For the input, use a video you can download
+      from: <a href="http://www.cad.zju.edu.cn/home/gfzhang/projects/videodepth/data/"
+	       target="_blank">here</a>. You need to process only one
+      set of data.
+      <li> The camera parameters of the video are provided in the
+	zipped file in the download. 
+	<li> Use the multilabel graphcuts to optimize your MRFs
+	(<a href="http://www.mathworks.com/matlabcentral/fileexchange/21310-maxflow" 
+	target="_blank">Rubenstein's matlab wrapper</a>).
+      <li> The minimum number of frames to process is 20
+      frames. However, the grading will include the quality of your
+	depth map, and the more frames you process, the higher the
+      quality of your depth map.
+	<li>  Unlike the original steps in the paper, you only need to
+	implement the initialization and bundle optimization steps.
+      </ol>
+
+      <br>
+      <h4><b>Submission:</b></h4>
+      <ol>
+	<li> Code (and instructions on how to run it)
+	<li> Input and output images
+	<li> The submission must be self-contained. In other words, I
+	should be able run your code using the data and parameters you
+	provided in the submission. If the video data (both input and
+	output) are too large, put them in dropbox, and provide the
+	link in the submission. However, only the input and the output
+	can be put in dropbox, <u>the code must be sent through IVLE by
+	the deadline</u>.
+	<li> Deadline <b>November 11, 2006 at 6pm</b>.
+      </ol>
+      <br>
+      <br>
+	  <b>Example of input and output:</b>
+	  <br><br>
+	  <img src="test0100.jpg" alt="input"
+	       width="504" height="328" />
+	  <img src="depth0100.png" alt="input" width="504" height="328" /> 
+	  <br>
+	  <br>
+      <br>
+      
+</div>      
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+  </body>
+  <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+<script type="text/javascript">
+  try {
+  var pageTracker = _gat._getTracker("UA-13131132-3");
+  pageTracker._trackPageview();
+  } catch(err) {}</script>
+</html>
