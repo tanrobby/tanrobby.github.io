@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="../../favicon.ico"> -->
+
+    <title>YNC Machine Learning</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../bootstrap-3.3.6-dist/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../../jumbotron.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container" style="font-size:16px">
+      <br>
+      <center>
+	<h1> Assignment 1: Regression Using Least Squares</h1>
+	<h3>Deadline: January 17, 2017 at 1pm</h3> 
+	<br>
+	<hr>
+      </center>
+
+      <br>
+      <p>
+	Write a program in python to implement the least squares solution for the
+	polynomial curve fitting problem. Follow the instructions below:
+	<ol>
+	  <li> Generate 50 2D-data points using the following
+	    function:	    
+	    <img src="fig\ass1_01.png" style="height:20px;">
+	  <li> Add Gaussian random noise to the data
+	  <li> Fit the generated noisy data using the least squares
+	  method based on a polynomial function.
+	    You must write
+	      two versions of the least squares solution: <br>
+	      (1) <img src="fig\ass1_07.png" style="height:25px;"><br>
+	      (2) <img src="fig\ass1_08.png" style="height:16px;"> or
+	  using numpy's pinv function
+	  <li> Show the original curve line, the noisy data,
+	    and the curve line estimated from the noisy data, like a
+	    figure below:
+	    <br>
+	    <img src="fig\ass1_02.png" style="height:200px;">.
+	    <br>
+	    <em>The red line is the original curve based on the
+	      equation. The green dots are the noisy data. The blue
+	      line is 
+	      the estimated fitting line, by setting M = 4.</em>
+	  <li> Compute and display the error value, E(w)
+	  <li> Display the estimated values of w 
+	  <li> Experiment with your code by changing M to various
+	    values. Plot the values of M against those of E(w),
+	    meaning: project them onto a 2D space, where the x-axis is M
+	    and the y-axis is E(w).
+	    Try to understand the cases of underfitting and
+	    overfitting, and how they relate to the error value, E(w)
+	    <br>
+	    <img src="fig\ass1_03.png" style="height:200px;">
+	    <br>
+	    <em>An example of the overfitting problem.</em>
+	  <li> Change the noise levels, and apply the the same
+	  operations above
+	  <li> Change the function for generating the data to: 
+	    <img src="fig\ass1_04.png" style="height:25px;">, and
+	    apply the same operations as above
+	    <br>
+	    <img src="fig\ass1_05.png" style="height:200px;">
+	    <img src="fig\ass1_06.png" style="height:200px;">
+	</ol>
+	In your submission, aside from the code, you need to
+	    include or show the results (as instructed above) in the ipython-notebook format.
+      </p>
+      
+      <br>
+      <h3>Submission</h3>
+	Submit your work in an ipython-notebook format via Canvas by
+      the deadline.
+      
+      <br>
+      <br>
+
+      
+    </div>      
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+  </body>
+  <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+<script type="text/javascript">
+  try {
+  var pageTracker = _gat._getTracker("UA-13131132-3");
+  pageTracker._trackPageview();
+  } catch(err) {}</script>
+</html>
