@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <!-- <link rel="icon" href="../../favicon.ico"> -->
 
-    <title>YSC3227: Assignment 3</title>
+    <title>YSC3227: Assignment 4</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../../bootstrap-3.3.6-dist/css/bootstrap.css" rel="stylesheet">
@@ -22,13 +22,11 @@
     <div class="container" style="font-size:16px">
       <br>
       <center>
-	<h1> Assignment 3: Full Bayesian Inference and Sequential
-	Bayesian Learning </h1>
-	<h3>Deadline: February 10, 2017 at 1pm</h3> 
+	<h1> Assignment 4: Predictive Distribution</h1>
+	<h3>Deadline: February 28, 2017 at 1pm</h3> 
 	<br>
 	<hr>
       </center>
-      <h3>Part 1: Full Bayesian Inference</h3>
       <p>
 	Write a program in python to implement the full Bayesian
 	inference on Gaussian variables for 
@@ -47,47 +45,34 @@
 
 
 	    
-	  <li> Compute w based on the full Bayesian inference (by
-	  using basis functions like discussed in class).
-	  <li> Display the estimated values of w 
-	  <li> Experiment with your code by changing alpha and beta.
-	    Try to understand the meaning of them with respect to the curve fitting
-	    results.
-	  <li> Show your best fitting:
+	  <li> Compute the predictive distribution of every input
+	    data sequentially, where each input data is taken randomly
+	    from the noise data. 
+	  <li> Experiment with your code by changing beta, and explain
+	  what beta is for and how it affects the results.
+	  <li> Show your best prediction results for all 50 data one by one:
 	    <br>
-	    <img src="fig\ass3_fullbayes.png" style="height:200px;">
+	    <img src="fig\ass4_01.png" style="height:230px;">
+	    <br>
+	    <img src="fig\ass4_02.png" style="height:230px;">
+	    <br>
+	    <img src="fig\ass4_03.png" style="height:230px;">
+	    <br>
+	    <img src="fig\ass4_04.png" style="height:230px;">
+	    <br>
+	    <img src="fig\ass4_05.png" style="height:230px;">
+	    <br>
+	    ...
+	    <br>	    
+	    ...
+	    <br>	    
+	    ...
+	    <br>	    
+	    <img src="fig\ass4_49.png" style="height:230px;">
+	    <br>
+	    <img src="fig\ass4_50.png" style="height:230px;">
 	    <br>
 	</ol>    
-      </p>
-      <h3>Part 2: Bayesian Sequential Learning</h3>
-      <p>
-	Write a program in python to implement the Bayesian sequential learning
-	to solve the curve fitting problem.
-	Follow the instructions below:
-	<ol>
-	  <li> Generate 50 2D-data points using the following
-	    function:
-	    <img src="fig\ass1_04.png" style="height:20px;">
-	  <li> Add Gaussian random noise to the data
-	  <li> Fit the generated noisy data sequentially (5 data for
-	    each sequence).
-	  <li> Show your best result for each sequence. The below
-	  examples are only some of them, but in your submission, you
-	  have to show all.
-	    <br>
-	    <img src="fig\ass3_seq1.png" style="height:200px;">
-	    <img src="fig\ass3_seq2.png" style="height:200px;">
-	    <img src="fig\ass3_seq3.png" style="height:200px;">
-	    <img src="fig\ass3_seq4.png" style="height:200px;">
-	    <img src="fig\ass3_seq5.png" style="height:200px;">
-	    <br> 
-	  <li> Show the result of using the non-sequential full
-	    Bayesian inference, and check if it is the same as the
-	    final result of the Bayesian sequential learning.
-	    <br>
-	    <img src="fig\ass3_fullbayes.png" style="height:200px;">
-	    <br>
-	</ol>
       </p>
       
       <br>
