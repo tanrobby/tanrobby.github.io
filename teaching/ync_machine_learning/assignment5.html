@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <!-- <link rel="icon" href="../../favicon.ico"> -->
 
-    <title>YSC3227: Assignment 4</title>
+    <title>YSC3227: Assignment 5</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../../bootstrap-3.3.6-dist/css/bootstrap.css" rel="stylesheet">
@@ -22,8 +22,8 @@
     <div class="container" style="font-size:16px">
       <br>
       <center>
-	<h1> Assignment 4: Predictive Distribution</h1>
-	<h3>Deadline: February 28, 2017 at 1pm</h3> 
+	<h1> Assignment 5: Gaussian Processes for Regression</h1>
+	<h3>Deadline: March 7, 2017 at 1pm</h3> 
 	<br>
 	<hr>
       </center>
@@ -45,22 +45,18 @@
 
 
 	    
-	  <li> Compute the predictive distribution of every input
+	  <li> Compute the Gaussian process prediction of every input
 	    data sequentially, where each input data is taken randomly
-	    from the noise data. 
+	    from the noise data.
+	  <li> Use the kernel we discuss in class (textbook's
+	  Eq. (6.63), page 307), by setting thetas: (1.0, 4.0, 0.0, 0.0)
 	  <li> Experiment with your code by changing beta, and explain
 	  what beta is for and how it affects the results.
 	  <li> Show your best prediction results for all 50 data one by one:
 	    <br>
-	    <img src="fig\ass4_01.png" style="height:230px;">
+	    <img src="fig\ass5_01.png" style="height:230px;">
 	    <br>
-	    <img src="fig\ass4_02.png" style="height:230px;">
-	    <br>
-	    <img src="fig\ass4_03.png" style="height:230px;">
-	    <br>
-	    <img src="fig\ass4_04.png" style="height:230px;">
-	    <br>
-	    <img src="fig\ass4_05.png" style="height:230px;">
+	    <img src="fig\ass5_02.png" style="height:230px;">
 	    <br>
 	    ...
 	    <br>	    
@@ -68,10 +64,14 @@
 	    <br>	    
 	    ...
 	    <br>	    
-	    <img src="fig\ass4_49.png" style="height:230px;">
+	    <img src="fig\ass5_50.png" style="height:230px;">
 	    <br>
-	    <img src="fig\ass4_50.png" style="height:230px;">
-	    <br>
+	  <li> Change the kernel's parameters, thetas: (1.0, 64.0,
+	    10.0, 5.0), and show the results.
+	  <li> Explain what the effects of changing to this kernel on the prediction.
+	  <li> Change the kernel's parameters, thetas: (1.0, 0.25,
+	    0.0, 0.0), and show the results.
+	  <li> Explain what the effects of changing to this kernel on the prediction.
 	</ol>    
       </p>
       
