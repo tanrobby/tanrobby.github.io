@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="../../favicon.ico"> -->
+
+    <title>YSC3227: Assignment 7</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../bootstrap-3.3.6-dist/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../../jumbotron.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container" style="font-size:16px">
+      <br>
+      <center>
+	<h1> Assignment 7: MAP for Classification</h1>
+	<h3>Deadline: March 31, 2017 at 1pm</h3> 
+	<br>
+	<hr>
+      </center>
+      <h3>Part 1: MAP</h3>
+      <p>
+	Write a program in python to implement the least-squares
+	method for classification. Follow the below instructions.
+	<ol>
+	  <li> Generate classification data of two classes with the
+	  same number of data (N1=N2=100), with sigma = 1.1
+	  <li> Write code to estimate matrix W using the MAP method,
+	  where the Gaussian prior has mean, m0 = 0, and alpha = 1.0 
+	  <li> Show the estimated w, and Sn
+	  <li> Draw the decision line, similar to:
+	    <br>
+	    <img src="fig/ass7_01.png" style="width:370px;">
+	  <li> Change the number of the data of one of the clusters:
+	    N1 = 100, N2 = 5, recompute w, and draw the decision line:
+	    <br>
+	    <img src="fig/ass7_02.png" style="width:370px;">
+	  <li> Generate outliers of cluster 2 where (N_outlier=100),
+	    and sigma for all clusters is 2.2, 
+	    recompute w, and draw the decision line:
+	    <br>
+	    <img src="fig/ass7_03.png" style="width:370px;">
+	  <li> Change the mean of the prior and covariance (alpha)
+	    to various values, and discuss how they influence the
+	    decision line. The below figure is one of the possible
+	    outcomes (which show a wrong setting of mu and
+	    alpha). Explain how to set mu and alpha properly.
+	    <br>
+	    <img src="fig/ass7_04.png" style="width:370px;">
+	</ol>    
+      </p>
+      <br>
+      <h3>Part 2: Predictive Distribution</h3>
+      <p>
+	<ol>
+	  <li> Implement the predictive distribution, where the output
+	    is a decision whether a given point belongs to C1 or C2
+	  <li> Ask the user to enter any new value of x  and provide
+	    the decision whether it belongs to C1 or C2, and its
+	    uncertainty information.
+	</ol>
+      </p>
+      <br>
+      <h3>Submission</h3>
+	Submit both your code and results in an ipython-notebook format via Canvas by
+      the deadline.
+      
+      <br>
+      <br>
+
+      
+    </div>      
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+  </body>
+  <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+<script type="text/javascript">
+  try {
+  var pageTracker = _gat._getTracker("UA-13131132-3");
+  pageTracker._trackPageview();
+  } catch(err) {}</script>
+</html>
