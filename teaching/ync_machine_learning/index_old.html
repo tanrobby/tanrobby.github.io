@@ -27,7 +27,7 @@
     <div class="jumbotron">
       <div class="container"  style="font-size:16px">
         <h2>YSC3227 Machine Learning</h2>
-        <p>Semester 2, 2017/2018
+        <p>Semester 2, 2016/2017
 	  <br>
           Yale-NUS College
 	</p>
@@ -55,15 +55,30 @@
       an inference 
       or prediction automatically. These capabilities are the core of
       artificial intelligence (namely, to make machines learn
-      without being explicitly programmed using fixed predetermined rules). 
+      without being explicitly programmed using specific fixed rules). 
       The applications of machine learning are immense, since
       nowadays we are bombarded with a huge number of
       various data from various sources. We hope machine learning can make
       sense of this huge seemingly random  data.
       </p>
       <p>
-      This course focuses on the fundamentals of machine learning,
-      including and deep learning. It should interest students
+      Technically, there are at least three types of learning:
+      supervised, unsupervised, and reinforcement learning. Supervised
+      learning means we use both data and their
+      annotations or ground truths to train an algorithm. Usually, the annotations are provided by us
+      (humans). Unsupervised learning means we train an algorithm using
+      only raw data, without any manual annotations. In this case, the
+      algorithm tries to find and extract the most significant
+      patterns from 
+      the data by itself. Reinforcement learning means an algorithm is
+      trained using data and feedback/rewards from its actions. Thus,
+      there are some interactions between the algorithm and its
+      environments. 
+      </p>
+      <p>
+      This course focuses on the fundamentals of supervised learning,
+      including 
+      shallow learning and deep learning. It should interest students
       who want to study/work in big data, AI (artificial
       intelligence), and data science.
       </p>
@@ -104,7 +119,7 @@ The following schedule will not be strictly followed.
     
     
     <tr>
-      <td rowspan="1"> August 15
+      <td rowspan="1"> January 10
       <td>
 	
 	<b>1. LEAST SQUARES</b>
@@ -119,20 +134,21 @@ The following schedule will not be strictly followed.
 	<ul>
 	  <li> Introduction to Machine Learning:
 	  <a href="http://www.cs.princeton.edu/courses/archive/spr08/cos511/scribe_notes/0204.pdf"
-	  target="_blank">pdf</a> | <a href="https://www.youtube.com/watch?v=cKxRvEZd3Mw" target="_blank">youtube</a>
+	  target="_blank">pdf</a> 
 	</ul>
 	<br>
       <td align="left">
-	<a href="https://www.dropbox.com/s/o0qv80db95exq91/YSC3227_lecture01.pdf?dl=0" target="_blank">Lecture note 1</a>
+	<a href="https://www.dropbox.com/s/4wb6w8cudbq2pli/YSC3227_lecture01.pdf?dl=0" target="_blank">Lecture Note 1</a>
 	<br>
 	<a href="assignment1.html" target="_blank">Assignment 1</a>
+
     </tr>
     
-     <!------------------------------------------------------------------------------>
+    <!------------------------------------------------------------------------------>
     
     
     <tr>
-      <td rowspan="1"> August 8
+      <td rowspan="1"> January 13
       <td>
 	<b> 2. INTRO TO BAYESIAN INFERENCE</b>
 	<br>
@@ -145,111 +161,203 @@ The following schedule will not be strictly followed.
 			target="_blank">video</a>
 	</ul>
 	<br>
+      <td>
+	<a href="https://www.dropbox.com/s/56bknozpl43hocw/YSC3227_lecture02.pdf?dl=0" target="_blank">Lecture Note 2</a>
     </tr>
 	    
     <!------------------------------------------------------------------------------>
     
     <tr>
-      <td rowspan="1"> August 22
+      <td rowspan="1"> January 17
       <td>
 	<b>3. MLE AND MAP FOR REGRESSION</b>
 	<br>
 	<br>
+	Reading:
+	<ul>
+	  <li> Bayesian Inference: An Introduction to Principles and
+	  Practice in Machine
+	  Learning (Sect. 2.1, 2.1.1, and 2.1.2 only): <a href="http://www.miketipping.com/papers/met-mlbayes.pdf"
+		       target="_blank">pdf</a>
+	</ul>
+	<br>
 	
       <td align="left">
+	<a href="https://www.dropbox.com/s/unyv6twhyh5pric/YSC3227_lecture03.pdf?dl=0" target="_blank"> Lecture Note 3</a>
+	<br>
+	<a href="assignment2.html" target="_blank">Assignment 2</a>
     </tr>
     
     <!------------------------------------------------------------------------------>
     
     <tr>
-      <td rowspan="1"> August 25
+      <td rowspan="1"> January 20
       <td>
 	<b>4. BASIS FUNCTIONS</b>
 	<br>
 	<br>
+	Reading:
+	<ul>
+	  <li> Chapter 3: Linear Models for Regression (Sect. 3.1 only)
+	  <li> Spline functions: <a href="http://geometrie.foretnik.net/files/NURBS-en.swf" target="_blank">Demo</a>
+	</ul>
+	<br>		
       <td align="left">
+	<a href="https://www.dropbox.com/s/2uy8nv7c1vmy7la/YSC3227_lecture04.pdf?dl=0" target="_blank">Lecture Note 4</a>
     </tr>
 
     <!------------------------------------------------------------------------------>
     
 	
     <tr>
-      <td rowspan="1"> August 29
+      <td rowspan="1"> January 24
       <td>
 	<b>5. GAUSSIAN DISTRIBUTIONS: COVARIANCE MATRIX</b>
 	<br>
 	<br>
+	Reading:
+	<ul>
+	  <li> Covariance
+	    matrix: <a href="https://en.wikipedia.org/wiki/Covariance_matrix"
+	    target="_blank">wikipedia</a>
+	  <li> Geometric interpretation of covariance
+	  matrix: <a href="http://www.visiondummy.com/2014/04/geometric-interpretation-covariance-matrix/"
+	  target="_blank">website</a>
+	    
+	</ul>
+	<br>
       <td align="left">
+	<a href="https://www.dropbox.com/s/uhdbitndlfw4e7e/YSC3227_lecture05.pdf?dl=0" target="_blank">Lecture Note 5</a>
     </tr>
 
     
     <!------------------------------------------------------------------------------>
     
     <tr>
-      <td rowspan="1"> September 5
+      <td rowspan="1"> January 27
       <td>
 	<b>6. CONDITIONAL AND MARGINAL GAUSSIAN DISTRIBUTIONS</b>
 	<br>
 	<br>
+	Reading:
+	<ul>
+	  <li> Chapter 2: Sect. 2.3 (The Gaussian Distributions):
+	    from Sect. 2.3.1 to Sect. 2.3.2. <em>(Note: read lecture
+	    note 5 before reading this section)</em>
+	</ul>
+	<br>
       <td align="left">
+	<a href="https://www.dropbox.com/s/mv184sssnxx0xef/YSC3227_lecture06.pdf?dl=0"
+	   target="_blank">Lecture Note 6</a>
     </tr>
     
     <!------------------------------------------------------------------------------>
     
     
     <tr>
-      <td rowspan="1"> September 8
+      <td rowspan="1"> January 31
       <td>
 	<b>7. BAYES' THEOREM FOR GAUSSIAN VARIABLES</b>
 	<br>
 	<br>
+	Reading:
+	<ul>
+	  <li> Chapter 2: Sect. 2.3.3 (Bayes' theorem for Gaussian variables)
+	</ul>
+	<br>
       <td align="left">
+	<a href="https://www.dropbox.com/s/icufnamk37pmats/YSC3227_lecture07.pdf?dl=0" target="_blank">Lecture Note 7</a>
     </tr>
     
     <!------------------------------------------------------------------------------>
     
     
     <tr>
-      <td rowspan="1"> September 12
+      <td rowspan="1"> February 3
       <td>
 	<b>8. SEQUENTIAL BAYESIAN LEARNING</b>
 	<br>
 	<br>
+	Reading:
+	<ul>
+	  <li> Chapter 3: Sect. 3.3.1 (Parameter Distribution)
+	</ul>
+	<br>
 	
       <td align="left">
+	<a href="https://www.dropbox.com/s/8fitwnduol5gnii/YSC3227_lecture08.pdf?dl=0"
+	   target="_blank">Lecture Note 8</a>
+	<br>
+	<a href="assignment3.html" target="_blank">Assignment 3</a>
     </tr>
 
     <!------------------------------------------------------------------------------>
 	
    <tr>
-     <td rowspan="1"> September 15
+     <td rowspan="1"> February 7
      <td> 
        <b>9. REVIEW: METHODS FOR ESTIMATING W</b>
        <br>
        <br>
      <td align="left">
+       <a href="https://www.dropbox.com/s/amj4orkk45xihoz/YSC3227_lecture09.pdf?dl=0" target="_blank">Lecture Note 9</a>
     </tr>
     <!------------------------------------------------------------------------------>
     
     
     <tr>
-      <td rowspan="1"> September 19
+      <td rowspan="1"> February 10
       <td>
 	<b>10. PREDICTIVE DISTRIBUTION</b>
 	<br>
 	<br>
+	Reading:
+	<ul>
+	  <li> Chapter 3: Sect. 3.3.2 (Predictive Distribution)
+	</ul>
+	<br>
       <td align="left">
+	<a href="https://www.dropbox.com/s/7wh1ufktwygkcrd/YSC3227_lecture10.pdf?dl=0"
+	   target="_blank">Lecture Note 10</a>
+	<br>
+	<a href="assignment4.html" target="_blank">Assignment 4</a>
     </tr>
     <!------------------------------------------------------------------------------>
 
     
     <tr>
-      <td rowspan="1">  September 22
+      <td rowspan="1"> February 14
       <td>
 	<b>11. GAUSSIAN PROCESSES 1</b>
 	<br>
 	<br>
+	Reading:
+	<ul>
+	  <li> Chapter 6: Sect. 6.4.1 (Linear Regression Revisited)
+	  and Sect. 6.4.2 (Gaussian Processes for Regression)
+	</ul>
+	<br>
+	Additional resources:
+	<ul>
+	  <li> Gaussian
+	  Processes: <a href="https://www.youtube.com/watch?v=vU6AiEYED9E"
+	  target="_blank">youtube</a> 
+	</ul>
       <td align="left">
+	<a href="https://www.dropbox.com/s/dkg1wouuy92gzmh/YSC3227_lecture11.pdf?dl=0" target="_blank">Lecture Note 11</a>
+    </tr>
+
+    <!------------------------------------------------------------------------------>
+
+    <tr>
+      
+      <td rowspan="1"> February 17
+      <td>
+	<b>12. GAUSSIAN PROCESSES 2</b>
+	<br>
+	<br>
+      <td align="left">
+	see Lecture Note 11
     </tr>
 
     
@@ -264,69 +372,96 @@ The following schedule will not be strictly followed.
 	<br>		
       <td>
     </tr>
-    
-    <!------------------------------------------------------------------------------>
-
-    <tr>
-      
-      <td rowspan="1"> October 3
-      <td>
-	<b>12. GAUSSIAN PROCESSES 2</b>
-	<br>
-	<br>
-      <td align="left">
-    </tr>
-
 
     <!------------------------------------------------------------------------------>
 
 
 	
     <tr>
-      <td rowspan="1"> October 6
+      <td rowspan="1"> February 28
       <td>
  	<b>13. CLASSIFICATION: LEAST SQUARES</b>
 	<br>
+	Reading:
+	<ul>
+	  <li> Chapter 4: Sect. 4.1.1 (two classes), 4.1.2 (multiple classes),
+	  4.1.3 (least squares for classification)
+	</ul>
 	<br>
       <td align="left">
+	<a href="assignment5.html" target="_blank">Assignment 5</a>
+	<br>
+	<a href="https://www.dropbox.com/s/h3o3xp7658jdzkt/YSC3227_lecture13.pdf?dl=0" target="_blank">Lecture Note 13</a>
     </tr>
 
     <!------------------------------------------------------------------------------>
 
 	
     <tr>
-      <td rowspan="1"> October 10
+      <td rowspan="1"> March 3
       <td>
 	<b>14. FISHER'S LINEAR DISCRIMINANT ANALYSIS</b>
 	<br>
-	<br>
+	Reading:
+	<ul>
+	  <li> Chapter 4: Sect. 4.1.4 (Fisher's linear discriminant).
+
+	</ul>
       <td align="left">
+	<a href="https://www.dropbox.com/s/yuf62cv09otonow/YSC3227_lecture14.pdf?dl=0" target="_blank">Lecture Note 14</a>
     </tr>
 
     <!------------------------------------------------------------------------------>
 
     
     <tr>
-      <td rowspan="1"> October 13
+      <td rowspan="1"> March 7
+      <td>
+	Quiz 1 
+	<br>
+	<br>
+      <td align="left">
+	<a href="assignment6.html" target="_blank">Assignment 6</a>
+	<br>
+    </tr>
+    <!------------------------------------------------------------------------------>
+    
+    
+    <tr>
+      <td rowspan="1"> March 14
       <td>
 	<b>15. DETAILS OF FISHER'S LDA</b>
 	<br>
+	Quiz 2
+
 	<br>
 	
       <td align="left">
+	<a href="https://www.dropbox.com/s/tvqodwxznyrma8p/YSC3227_lecture15.pdf?dl=0" target="_blank">Lecture Note 15</a>
+	<br>
     </tr>
     
     <!------------------------------------------------------------------------------>
 
     
+
+
 	
     <tr>
-      <td rowspan="1"> October 17
+      <td rowspan="1"> March 17
       <td>
 	<b>16. PROBABILISTIC GENERATIVE + DISCRIMINATIVE MODELS</b>
 	<br>
 	<br>
+	Reading:
+	<ul>
+	  <li> Chapter 4: Sect. 4.2 (Probabilistic Generative Models),
+	  particularly Sect. 4.2.2 (maximum likelihood solution), Sect. 4.3 (Probabilistic Discriminative
+	    Models), particularly Sect. 4.3.2 (logistic regression)
+	    and 4.3.3 (iterative reweighted least squares)
+	</ul>
       <td align="left">
+	<a href="https://www.dropbox.com/s/ge9nqj1lxyim3g7/YSC3227_lecture16.pdf?dl=0" target="_blank">Lecture Note 16</a>
     </tr>
 
     <!------------------------------------------------------------------------------>
@@ -334,12 +469,17 @@ The following schedule will not be strictly followed.
     
     
     <tr>
-      <td rowspan="1"> October 20
+      <td rowspan="1"> March 21
       <td>
 	<b>17. BAYESIAN LOGISTIC REGRESSION</b>
 	<br>
 	<br>
+	Reading:
+	<ul>
+	  <li> Chapter 4: Sect. 4.5 (Bayesian logistic regression)
+	</ul>
       <td align="left">
+	<a href="https://www.dropbox.com/s/olhjx7lgerag3kv/YSC3227_lecture17.pdf?dl=0" target="_blank">Lecture Note 17</a>
     </tr>
 
     <!------------------------------------------------------------------------------>
@@ -347,12 +487,20 @@ The following schedule will not be strictly followed.
     
     
     <tr>
-      <td rowspan="1"> October 24
+      <td rowspan="1"> March 24
       <td>
 	<b>18. GAUSSIAN PROCESSES FOR CLASSIFICATION</b>
 	<br>
 	<br>
+	Reading:
+	<ul>
+	  <li> Chapter 6: Sect. 6.4.5 (Gaussian processes for
+	  classification), Sect. 6.4.6 (Laplace approximation)
+	</ul>
       <td align="left">
+	<a href="assignment7.html" target="_blank">Assignment 7</a>
+	<br>
+	<a href="https://www.dropbox.com/s/760d7kbnpli1frd/YSC3227_lecture18.pdf?dl=0" target="_blank">Lecture Note 18</a>
     </tr>
     
     <!------------------------------------------------------------------------------>
@@ -360,94 +508,106 @@ The following schedule will not be strictly followed.
     
     
     <tr>
-      <td rowspan="1"> October 27
+      <td rowspan="1"> March 28
       <td>
 	<b>19. GAUSSIAN PROCESSES FOR CLASSIFICATION: 2</b>
 	<br>
 	<br>
       <td align="left">
+	see Lecture Note 18
     </tr>
 
     <!------------------------------------------------------------------------------>
 
 	
     <tr>
-	<td rowspan="1"> October 31
+	<td rowspan="1"> March 31
 	<td>
 	  <b>20. NEURAL NETWORKS</b>
 	  <br>
 	  <br>
+	  Reading:
+	  <ul>
+	    <li> Neural network and deep learning: <a href="http://neuralnetworksanddeeplearning.com/chap1.html" target="_blank">Chapter 1</a>
+	    <li> Chapter 5: Sect. 5.1 (Feedforward network functions),
+	    Sect. 5.2 (Network tranining).
+	  </ul>
 	<td align="left">
+	  <a href="assignment8.html" target="_blank">Assignment 8</a>
+	  <br>
+	  <a href="https://www.dropbox.com/s/dt6putgnex6mw92/YSC3227_lecture20.pdf?dl=0" target="_blank">Lecture Note 20</a>
     </tr>
 
     <!------------------------------------------------------------------------------>
 	  
     
     <tr>
-      <td rowspan="1"> November 3
+      <td rowspan="1"> April 4
       <td>
 	  <b>21. NEURAL NETWORKS: BACKPROPAGATION</b>
 	  <br>
 	  <br>
+	  Reading:
+	  <ul>
+	    <li> Neural network and deep learning: <a href="http://neuralnetworksanddeeplearning.com/chap2.html" target="_blank">Chapter 2</a>
+	  </ul>
       <td align="left">
+	<a href="assignment9.html" target="_blank">Assignment 9</a>
+	<br>
+	<a href="https://www.dropbox.com/s/ea3g774tigsntif/YSC3227_lecture21.pdf?dl=0" target="_blank">Lecture Note 21</a>
     </tr>
     
     <!------------------------------------------------------------------------------>
     
     
     <tr>
-      <td rowspan="1"> November 7
+      <td rowspan="1"> April 7
       <td>
 	  <b>22. DEEP LEARNING: FURTHER ISSUES</b>
 	  <br>
 	  <br>
-      <td align="left">
+	  Reading:
+	  <ul>
+	    <li> Neural network and deep learning: <a href="http://neuralnetworksanddeeplearning.com/chap3.html" target="_blank">Chapter 3</a>
+	  </ul>
+	  <ul>
+	    <td align="left">
+	      <a href="https://www.dropbox.com/s/nekf52zqbq4y3km/YSC3227_lecture22.pdf?dl=0" target="_blank">Lecture Note 22</a>
     </tr>
     
     <!------------------------------------------------------------------------------>
 
 	
     <tr>
-      <td rowspan="1"> November 10
+      <td rowspan="1"> April 11
       <td>
 	<b>23. DEEP LEARNING: ARCHITECTURES</b>
 	<br>
 	<br>
+	Reading:
+	<ul>
+	  <li> Texbook: Chapter 5, Sect. 5.7 (Bayesian Neural Network)
+	  <li> CNN: <a href="https://www.youtube.com/watch?v=LxfUGhug-iQ" target="_blank">youtube</a>
+	  <li> Deep Visualization
+	  Tools: <a href="https://www.youtube.com/watch?v=AgkfIQ4IGaM"
+		    target="_blank">youtube</a>
+	  <li> RNN/LSTM: <a href="http://colah.github.io/posts/2015-08-Understanding-LSTMs/" target="_blank">website</a>
+	</ul>
       <td align="left">
+	<a href="https://www.dropbox.com/s/jlshod6fzoo7kqn/YSC3227_lecture23.pdf?dl=0" target="_blank">Lecture Note 23</a>
     </tr>
     
     <!------------------------------------------------------------------------------>
-
-    <tr>
-      <td rowspan="1"> November 14
-      <td>
-	<b>24. MIXTURE MODELS + EM ALGORITHM</b>
-	<br>
-	<br>
-      <td align="left">
-    </tr>
-    
-    <!------------------------------------------------------------------------------>
-
-    <tr>
-      <td rowspan="1"> November 17
-      <td>
-	<b>25. DISCUSSION</b>
-	<br>
-	<br>
-      <td align="left">
-    </tr>
-    
-    <!------------------------------------------------------------------------------>
-    
+	
 
     <tr class="danger">
-      <td rowspan="1"> December 1
+      <td rowspan="1"> May 2
       <td>
 	<b>FINAL EXAM: 1pm to 4pm (Classroom 20) <b>
 	<br>
 	<br>
-
+	Exam Topics: Classification and Deep Learning
+	
 	<td align="left"> 
     </tr>
 
