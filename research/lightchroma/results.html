@@ -1,0 +1,478 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40"
+xmlns:ns0="urn:schemas-microsoft-com:office:smarttags">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=us-ascii">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="results_files/filelist.xml">
+<link rel=Edit-Time-Data href="results_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Color Constancy</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="PlaceName"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="PlaceType"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="place"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="country-region"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="State"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="City"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>robby</o:Author>
+  <o:LastAuthor>robby</o:LastAuthor>
+  <o:Revision>5</o:Revision>
+  <o:TotalTime>1</o:TotalTime>
+  <o:Created>2004-11-16T03:03:00Z</o:Created>
+  <o:LastSaved>2005-04-30T11:15:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>983</o:Words>
+  <o:Characters>5609</o:Characters>
+  <o:Company>ut</o:Company>
+  <o:Lines>46</o:Lines>
+  <o:Paragraphs>13</o:Paragraphs>
+  <o:CharactersWithSpaces>6579</o:CharactersWithSpaces>
+  <o:Version>11.5606</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Helvetica;
+	panose-1:2 11 6 4 2 2 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:536902279 -2147483648 8 0 511 0;}
+@font-face
+	{font-family:"MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;
+	mso-font-alt:"\FF2D\FF33 \660E\671D";
+	mso-font-charset:128;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-1610612033 1757936891 16 0 131231 0;}
+@font-face
+	{font-family:"\@MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;
+	mso-font-charset:128;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-1610612033 1757936891 16 0 131231 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"MS Mincho";
+	color:black;}
+a:link, span.MsoHyperlink
+	{color:#0000EE;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#551A8B;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"MS Mincho";
+	color:black;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:99.25pt 3.0cm 3.0cm 3.0cm;
+	mso-header-margin:42.55pt;
+	mso-footer-margin:49.6pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+table.a
+	{mso-style-name:\6A19\6E96\306E\8868;
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="5122">
+  <v:textbox inset="5.85pt,.7pt,5.85pt,.7pt"/>
+ </o:shapedefaults></xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor="#CCCCCC" lang=EN-AU link="#0000EE" vlink="#551A8B"
+style='tab-interval:36.0pt' alink="#0000ee">
+
+<div class=Section1>
+
+<table class=a border=0 cellspacing=1 cellpadding=0 style='mso-cellspacing:
+ .7pt;background:gray;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td width="100%" style='width:100.0%;background:white;padding:1.5pt 1.5pt 1.5pt 1.5pt'>
+  <table class=a border=0 cellpadding=0 width="100%" style='width:100.0%;
+   mso-cellspacing:1.5pt;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+   <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+    <td valign=bottom style='background:#660000;padding:.75pt .75pt .75pt .75pt'>
+    <p class=MsoNormal align=center style='margin-bottom:12.0pt;text-align:
+    center'><b><span lang=EN-US style='font-size:18.0pt;color:#FFFFCC;
+    mso-ansi-language:EN-US'><br>
+    Illumination Chromaticity Estimation using <br>
+    Inverse-intensity Chromaticity Space</span></b><b><span lang=EN-US
+    style='font-size:18.0pt;color:yellow;mso-ansi-language:EN-US'><br>
+    </span></b><span lang=EN-US style='font-size:10.0pt;font-family:Helvetica;
+    color:white;mso-ansi-language:EN-US'><br>
+    </span><span lang=EN-US style='font-size:10.0pt;font-family:Helvetica;
+    color:#FFCC99;mso-ansi-language:EN-US'>IEEE Computer Society Conference on
+    Computer Vision and Pattern Recognition 2003 (CVPR'03), <br>
+<st1:place w:st="on"><st1:City w:st="on">Madison</st1:City>,<st1:State w:st="on">Wisconsin</st1:State>,
+     <st1:country-region w:st="on">USA</st1:country-region></st1:place>. June
+    16-22, 2003<br>
+   <o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:1'>
+    <td style='padding:.75pt .75pt .75pt .75pt'>
+    <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:2;mso-yfti-lastrow:yes'>
+    <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+    <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+    style='mso-ansi-language:EN-US'><br>
+    </span><span lang=EN-US style='font-size:10.0pt;font-family:Helvetica;
+    mso-ansi-language:EN-US'>&nbsp;<a
+    href="../index.html"> Robby T. Tan</a> &nbsp;
+    &nbsp;&nbsp; <a href="http://www.cs.columbia.edu/%7Ekon">Ko Nishino</a> *
+    &nbsp; &nbsp; &nbsp;<a href="http://www.cvl.iis.u-tokyo.ac.jp/%7Eki">
+    Katsushi Ikeuchi</a> <a href="www.cvl.iis.u-tokyo.ac.jp/~ki"><br>
+    <br>
+    </a></span></p>
+    <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+    </td>
+   </tr>
+  </table>
+  <p style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US
+  style='display:none;mso-hide:all;mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+  <table class=a border=0 cellpadding=0 width="100%" style='width:100.0%;
+   mso-cellspacing:1.5pt;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+   <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+    <td colspan=2 style='padding:.75pt .75pt .75pt .75pt'>
+    <div class=MsoNormal align=center style='text-align:center'><span
+    lang=EN-US style='mso-ansi-language:EN-US'>
+    <hr size=1 width="100%" noshade color="#aca899" align=center>
+    </span></div>
+    <p class=MsoNormal align=center style='text-align:center'>
+      <span lang=EN-US
+	    style='font-size:10.0pt;font-family:Helvetica;mso-ansi-language:EN-US'>
+    <br>
+     Journal of the Optical Society of America A (JOSA A):<br>
+    &quot;Color Constancy through Inverse-Intensity Chromaticity Space&quot;<br>
+    <a href="https://www.dropbox.com/s/ai9a399wc0j5yca/2004_josa.pdf?dl=0"
+    target="_blank">[PDF]<br>
+    </a></span></p>
+    <div class=MsoNormal align=center style='text-align:center'><span
+    lang=EN-US style='mso-ansi-language:EN-US'>
+    <hr size=1 width="100%" noshade color="#aca899" align=center>
+    </span></div>
+    <p class=MsoNormal><a name=abstract></a><b><span lang=EN-US
+    style='font-size:10.0pt;font-family:Helvetica;mso-ansi-language:EN-US'>Abstract:</span></b></p>
+    <div>
+    <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt;font-family:
+    Helvetica;mso-ansi-language:EN-US'>Existing color constancy methods cannot
+    handle both uniform colored surfaces and highly textured surfaces in a
+    single integrated framework. Statistics-based methods require many surface
+    colors, and become error prone when there are only few surface colors. In
+    contrast, dichromatic-based methods can successfully handle uniformly
+    colored surfaces, but cannot be applied to highly textured surfaces since
+    they require precise color segmentation.&nbsp; In this paper, we present a
+    single integrated method to estimate illumination chromaticity from
+    single/multi-colored surfaces. Unlike the existing dichromatic-based
+    methods, the proposed method requires only rough highlight regions, without
+    segmenting the colors inside them. We show that, by analyzing highlights, a
+    direct correlation between illumination chromaticity and image chromaticity
+    can be obtained. This correlation is clearly described in
+    ``inverse-intensity chromaticity space'', a new two-dimensional space we
+    introduce. In addition, by utilizing the Hough transform and histogram
+    analysis in this space, illumination chromaticity can be estimated
+    robustly, even for a highly textured surface. Experimental results on real
+    images show the effectiveness of the method. </span></p>
+    </div>
+    <div class=MsoNormal align=center style='text-align:center'><span
+    lang=EN-US style='mso-ansi-language:EN-US'>
+    <hr size=1 width="100%" noshade color="#aca899" align=center>
+    </span></div>
+    <p class=MsoNormal><a name=result></a><b><span lang=EN-US style='font-size:
+    10.0pt;font-family:Helvetica;mso-ansi-language:EN-US'>
+
+    <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+    <p class=MsoNormal align=center style='text-align:center'><b><span
+    lang=EN-US style='font-size:10.0pt;font-family:Helvetica;color:#663300;
+    mso-ansi-language:EN-US'>&quot;Do not use the images in this website for testing
+    your code.<o:p></o:p></span></b></p>
+    <p class=MsoNormal align=center style='margin-bottom:12.0pt;text-align:
+    center'><b><span lang=EN-US style='font-size:10.0pt;font-family:Helvetica;
+    color:#663300;mso-ansi-language:EN-US'>The images are compressed images
+    whose brightness might not be linear to the flux of incoming light.&#8221;<o:p></o:p></span></b></p>
+    <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><br>
+    </span><a name=single></a><span lang=EN-US style='font-size:10.0pt;
+    font-family:Helvetica;mso-ansi-language:EN-US'>1. Uniformly Colored
+    Surfaces: <br>
+    &nbsp; &nbsp; (a). Head model illuminated by a halogen lamp:<br>
+    <br>
+    <img border=0 width=576 height=477 id="_x0000_i1028"
+    src="results.files/re1.jpg" style='border-bottom-style:solid;border-bottom-width:
+    0px;border-left-style:solid;border-left-width:0px;border-right-style:solid;
+    border-right-width:0px;border-top-style:solid;border-top-width:0px;
+    height:483px;width:576px' alt=headmodelsolux align=middle></span></p>
+    <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt;font-family:
+    Helvetica;mso-ansi-language:EN-US'>&nbsp;&nbsp;&nbsp; Estimation results:
+    Er = 0.3779, Eg = 0.3242, Eb = 0.2866</span><span lang=EN-US
+    style='mso-ansi-language:EN-US'><br>
+    </span><span lang=EN-US style='font-size:10.0pt;font-family:Helvetica;
+    mso-ansi-language:EN-US'>&nbsp;&nbsp;&nbsp; White Reference: Er = 0.3710,
+    Eg = 0.31855, Eb = 0.31031</span><span lang=EN-US style='mso-ansi-language:
+    EN-US'><br>
+    <br>
+    </span><span lang=EN-US style='font-size:10.0pt;font-family:Helvetica;
+    mso-ansi-language:EN-US'>&nbsp; &nbsp;(b) Head model illuminated by
+    incandescent lamps:</span><span lang=EN-US style='mso-ansi-language:EN-US'><br>
+    <br>
+    <img border=0 width=597 height=497 id="_x0000_i1029"
+    src="results.files/re2.jpg" style='border-bottom-style:solid;border-bottom-width:
+    0px;border-left-style:solid;border-left-width:0px;border-right-style:solid;
+    border-right-width:0px;border-top-style:solid;border-top-width:0px;
+    height:510px;width:597px' alt=headmodeltungsten align=middle></span></p>
+    <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt;font-family:
+    Helvetica;mso-ansi-language:EN-US'>&nbsp;&nbsp;&nbsp; Estimation results:
+    Er = 0.4613, Eg = 0.3158, Eb = 0.2084<br>
+    &nbsp;&nbsp;&nbsp; White Reference: Er = 0.502146, Eg = 0.29838, Eb =
+    0.19946<br>
+    <br>
+    &nbsp;&nbsp;&nbsp; (c). Green sandal illuminated by a solux halogen covered
+    by green filter:<br>
+    <br>
+    <img border=0 width=564 height=150 id="_x0000_i1030"
+    src="results.files/re3.jpg" style='border-bottom-style:solid;border-bottom-width:
+    0px;border-left-style:solid;border-left-width:0px;border-right-style:solid;
+    border-right-width:0px;border-top-style:solid;border-top-width:0px;
+    height:149px;width:566px' alt=sandalgreen><br>
+    &nbsp;&nbsp;&nbsp; Estimation results: Er = 0.3067, Eg = 0.4546, Eb =
+    0.2404<br>
+    &nbsp;&nbsp;&nbsp; White Reference: Er = 0.29804, Eg = 0.45807, Eb =
+    0.24387<br>
+    <br>
+    &nbsp; &nbsp;(d). Green sandal illuminated by a solux halogen covered by
+    purple filter<br>
+    <br>
+    <img border=0 width=564 height=143 id="_x0000_i1031"
+    src="results.files/re4.jpg" style='border-bottom-style:solid;border-bottom-width:
+    0px;border-left-style:solid;border-left-width:0px;border-right-style:solid;
+    border-right-width:0px;border-top-style:solid;border-top-width:0px;
+    height:138px;width:566px' alt=sandalpurple><br>
+    &nbsp;&nbsp;&nbsp; Estimation results: Er = 0.3336, Eg = 0.0584, Eb =
+    0.5797<br>
+    &nbsp;&nbsp;&nbsp; White Reference: Er = 0.3336, Eg = 0.06483, Eb =
+    0.601529<br>
+    <br>
+    <a name=multi></a>2. Multicolored Surface:<br>
+    &nbsp;&nbsp;&nbsp; (a). Toy illuminated by incandescent lamps:<br>
+    <br>
+    <img border=0 width=406 height=320 id="_x0000_i1032"
+    src="results.files/re5.jpg" style='border-bottom-style:solid;border-bottom-width:
+    0px;border-left-style:solid;border-left-width:0px;border-right-style:solid;
+    border-right-width:0px;border-top-style:solid;border-top-width:0px;
+    height:321px;width:408px' alt=toytungsten><br>
+    &nbsp;&nbsp;&nbsp; Estimation results: Er = 0.5304, Eg = 0.2817, Eb =
+    0.2262<br>
+    &nbsp;&nbsp;&nbsp; White Reference: Er = 0.502146, Eg = 0.29838, Eb =
+    0.19946<br>
+    <br>
+    &nbsp;&nbsp;&nbsp; (b). Toy illuminated by a halogen lamp covered by blue
+    filter:<br>
+    <br>
+    <img border=0 width=420 height=334 id="_x0000_i1033"
+    src="results.files/re6.jpg" style='border-bottom-style:solid;border-bottom-width:
+    0px;border-left-style:solid;border-left-width:0px;border-right-style:solid;
+    border-right-width:0px;border-top-style:solid;border-top-width:0px;
+    height:338px;width:420px' alt=toyblue><br>
+    &nbsp;&nbsp;&nbsp; Estimation results: Er = 0.2841, Eg = 0.3160, Eb =
+    0.3817<br>
+    &nbsp;&nbsp;&nbsp; White Reference: Er = 0.26335, Eg = 0.2986, Eb = 0.43801<br>
+    </span><span lang=EN-US style='mso-ansi-language:EN-US'>&nbsp;&nbsp;&nbsp; <br>
+    &nbsp;&nbsp;&nbsp; (c).</span><span lang=EN-US style='font-size:10.0pt;
+    mso-ansi-language:EN-US'> </span><span lang=EN-US style='font-size:10.0pt;
+    font-family:Helvetica;mso-ansi-language:EN-US'>Toy illuminated by a halogen
+    lamp covered by green filter:</span><span lang=EN-US style='mso-ansi-language:
+    EN-US'><br>
+    <br>
+
+    &nbsp;&nbsp;&nbsp; (c). Magazine illuminated by fluorescent lamp covered by
+    green filter:<br>
+    <br>
+    <img border=0 width=479 height=201 id="_x0000_i1037"
+    src="results.files/re10.jpg" style='border-bottom-style:solid;border-bottom-width:
+    0px;border-left-style:solid;border-left-width:0px;border-right-style:solid;
+    border-right-width:0px;border-top-style:solid;border-top-width:0px;
+    height:202px;width:479px' alt=magazinegreen><br>
+    &nbsp;&nbsp;&nbsp; Estimation result: Er=0.2969, Eg=0.4877, Eb=0.2299<br>
+    &nbsp;&nbsp;&nbsp; White reference: Er=0.2828, Eg=0.48119, Eb=0.2359<br>
+    <br>
+    &nbsp;&nbsp;&nbsp; (d). Magazine illuminated by a halogen covererd by blue
+    filter:<br>
+    <br>
+    <img border=0 width=454 height=247 id="_x0000_i1038"
+    src="results.files/re11.jpg" style='border-bottom-style:solid;border-bottom-width:
+    0px;border-left-style:solid;border-left-width:0px;border-right-style:solid;
+    border-right-width:0px;border-top-style:solid;border-top-width:0px;
+    height:252px;width:455px' alt=magazineblue><br>
+    &nbsp;&nbsp;&nbsp; Estimation results: Er = 0.2440, Eg = 0.3448, Eb =
+    0.4313<br>
+    &nbsp;&nbsp;&nbsp; White Reference: Er = 0.26335, Eg = 0.2986, Eb = 0.43801<br>
+    </span><span lang=EN-US style='mso-ansi-language:EN-US'><br>
+    </span><span lang=EN-US style='font-size:10.0pt;font-family:Helvetica;
+    mso-ansi-language:EN-US'>&nbsp;&nbsp;&nbsp; (d). Magazine illuminated by a
+    halogen:</span><span lang=EN-US style='mso-ansi-language:EN-US'><br>
+    <br>
+    <img border=0 width=456 height=258 id="_x0000_i1039"
+    src="results.files/re12.jpg" style='border-bottom-style:solid;border-bottom-width:
+    0px;border-left-style:solid;border-left-width:0px;border-right-style:solid;
+    border-right-width:0px;border-top-style:solid;border-top-width:0px;
+    height:264px;width:455px' alt=magazinesolux><br>
+    </span><span lang=EN-US style='font-size:10.0pt;font-family:Helvetica;
+    mso-ansi-language:EN-US'>&nbsp;&nbsp;&nbsp; Estimation results: Er =
+    0.3368, Eg = 0.3285, Eb = 0.3410<br>
+    &nbsp;&nbsp;&nbsp; White Reference: Er = 0.3710, Eg = 0.31855, Eb = 0.31031<br>
+    </span><span lang=EN-US style='mso-ansi-language:EN-US'><br>
+    </span><a name=scene></a><span lang=EN-US style='font-size:10.0pt;
+    font-family:Helvetica;mso-ansi-language:EN-US'>&nbsp;&nbsp;&nbsp; (e)
+    Complex scene illuminated by fluorescent light in uncontrolled environment</span><span
+    lang=EN-US style='mso-ansi-language:EN-US'><br>
+    <br>
+    <img border=0 width=600 height=313 id="_x0000_i1040"
+    src="results.files/scene.jpg" alt=scene><br>
+    </span><span lang=EN-US style='font-size:10.0pt;font-family:Helvetica;
+    mso-ansi-language:EN-US'>&nbsp;&nbsp;&nbsp; Estimation results: Er =
+    0.3210, Eg = 0.3465, Eb = 0.3093<br>
+    &nbsp;&nbsp;&nbsp; White Reference: Er = 0.33692, Eg = 0.34071, Eb =
+    0.31236</span></p>
+    <p class=MsoNormal style='margin-bottom:12.0pt'><span lang=EN-US
+    style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+    </td>
+   </tr>
+   <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+    <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+    <p class=MsoNormal align=right style='text-align:right'><span lang=EN-US
+    style='font-size:7.5pt;font-family:Helvetica;mso-ansi-language:EN-US'>&nbsp;by.&nbsp;
+    <a href="../index.html">Robby T. Tan </a></span><span
+    lang=EN-US style='font-size:10.0pt;font-family:Helvetica;mso-ansi-language:
+    EN-US'><br>
+    </span><span lang=EN-US style='font-size:7.5pt;font-family:Helvetica;
+    mso-ansi-language:EN-US'>The Univesity of <st1:place w:st="on"><st1:City
+     w:st="on">Tokyo</st1:City></st1:place></span></p>
+    </td>
+    <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+    <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US style='color:windowtext;mso-ansi-language:
+EN-US'><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+</body>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-13131132-3");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+<br>
+<br>
+</html>
