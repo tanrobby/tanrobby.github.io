@@ -44,13 +44,14 @@
       <ol>
 	<li> Download the code of the graphcuts matlab wrapper from
 	this link: <a href="http://vision.ucla.edu/~brian/gcmex.html" target="_blank">here</a>. Read the readme file to know how to set the edges of the graph.
-	<li>Write a matlab program to clean up noise of the image
-	  below using  an MRF  and  the binary graphcuts. See the
+	<li>Write a matlab program to clean up the noise of the image
+	  below using  MRF  and  the binary graphcuts. See the
 	  pseudocode in C <a href="pseudocode.html">here</a>.
 	<li> Show your result in the report.
 	<li> Change the value of the weighting factor (lambda) of the prior
-	term, and show some different results in your report. You must
-	state the values of your lambda.
+	term, and show some different results (due to different values
+	of lambda) in your report. You must
+	state the values of your lambda along with the corresponding results.
 	  <br>
 	  <br>
 	  <img src="bayes_in.jpg" alt="input" width="504" height="328" /> 
@@ -67,18 +68,23 @@
       <h4><b>Part 2: Depth from Rectified Stereo Images</b></h4>
       <br>
       <ol>
-	<li> Write a matlab program to estimate a depth map from a pair of
+	<li> Write a matlab program to estimate a depth map from the pair of
 	  rectified images below using MRF and multiple label graphcuts.
+	<li> Show your result in the report.
 	  <br>
 	  <br>
 	  <img src="im2.png" alt="input" width="504" height="328" /> 
-	  <img src="im6.png" alt="output" width="504" height="328" /> 
+	  <img src="im6.png" alt="output" width="504" height="328" />
 	  <br>
 	  <br>
-	<li> The depth map groundtruth:
+	  <center><b>Figure 2: A pair of rectified images</b></center>
 	  <br>
-	  <img src="depth.png" alt="groundtruth" width="504" height="328" /> 
-	  <li> Show your result in the report.
+	  <br>
+	  <img src="depth.png" alt="groundtruth" width="504"
+	       height="328" />
+	  <br>
+	  <br>
+	  <b>Figure 3: Groundtruth of the depth map.</b>
       </ol>
       <hr>
       <br>
@@ -101,7 +107,9 @@
 	  <img src="test09.jpg" alt="output" width="504" height="328" /> 
 	  <br>
 	  <br>
-	  
+	  <center>
+	    <b>Figure 4: A pair of non-rectified images</b>
+	  </center>
 	<li>Note that:
 	  <ul>
 	    <li> The images, camera matrices, and last equation are
