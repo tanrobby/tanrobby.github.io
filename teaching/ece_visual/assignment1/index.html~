@@ -26,17 +26,16 @@
       </center>
       <br>
       <br>
-      <b>Read carefully</b>: Academic integrity must be stricly followed. Copying-and-pasting from other's
-      code or froms any sources is not allowed. Software will be used
+      <b>Read carefully</b>: Academic integrity must be complied. Copying-and-pasting from other's
+      code or from any sources is not allowed. Software will be used
       to detect any form of source code plagiarism. You must write a
-      report in a pdf format as instructed below (and indicate the parts and numbers
+      report in a pdf format as instructed below (and indicate the parts and number
       clearly). Your submitted code must be grouped/separated 
       into the same parts in the instructions. In your submission, you
       must provide us with all necessary libraries. You are not
       allowed to use any Matlab toolboxes. The maximum score for
       completing part      1 until part 6 is 70. More scores are given
-      for submission on part 7. The deadline is a strict deadline (no
-      possible extension), so please prepare and plan early and carefully.
+      for submission on part 7. 
       <br>
       <br>
       <h4><b>Part 1: SIFT Features and Descriptors</b></h4>
