@@ -636,11 +636,11 @@ The following schedule will not be strictly followed.
 	<li> Predictive Distribution
 	<li> Gaussian Processes for Regression
 	<li> Least Squares for Classification
+	<li> Probabilistic Generative and Discriminative Models
 	<li> Bayesian Logistic Regression
 	<li> Gaussian Processes for Classification
 	<li> Neural Networks
-	<li> Support Vector Machine
-	<li> EM Algorithm
+	<li> Deep Learning
       </ul>
 
 <br>
