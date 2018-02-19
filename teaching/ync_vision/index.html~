@@ -333,10 +333,10 @@ The following schedule will not be strictly followed.
 	  <li> Textbook chapter 14 (Pinhole Camera): sect. 14.1 (the
 	  pinhole camera), 14.3
 	  (homogeneous coordinates),
+	  14.4 (learning extrinsic parameters), and 14.5 (learning
+	    intrinsic parameters)
 	</ul>
       <td align="left">
-	<a href="https://www.dropbox.com/s/yzxtjqtylc5piov/YSC3221_lecture09.pdf?dl=0"
-	target="_blank">Lecture 9</a>
     </tr>
     <!------------------------------------------------------------------------------>
 
@@ -344,15 +344,9 @@ The following schedule will not be strictly followed.
         <tr>
       <td rowspan="1"> February 22
       <td>
-	<b>10. CAMERA CALIBRATION + TWO-VIEW GEOMETRY</b>
+	<b>10. TWO-VIEW GEOMETRY</b>
 	<br>
 	<br>
-	Reading: 
-	<ul>
-	  <li> Textbook chapter 14 (Pinhole Camera): sect. 14.2 (three 
-	  geometric problems), sect. 14.4 (learning extrinsic
-	  parameters), sect. 14.5 (learning intrinsic parameters)
-	</ul>
       <td align="left">
     </tr>
     
