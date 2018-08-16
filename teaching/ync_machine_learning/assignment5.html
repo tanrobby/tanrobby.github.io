@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="../../favicon.ico"> -->
+
+    <title>YSC3227: Assignment 5</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../bootstrap-3.3.6-dist/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../../jumbotron.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container" style="font-size:16px">
+      <br>
+      <center>
+	<h1> Assignment 5: Classification using Least-Squares</h1>
+	<h3>Deadline: October 26, 2017 (Thursday) at 5pm</h3> 
+	<br>
+	<hr>
+      </center>
+      <p>
+	Write a program in python to implement least-squares
+	for classification. Follow the below instructions.
+	<ol>
+	  <li> Generate classification data of two classes. Example:
+	    <br>
+	    <img src="fig/ass6_code.png" style="width:500px;">
+	  <li> Write code to estimate matrix W using least-squares.
+	  <li> Draw the decision line, similar to:
+	    <br>
+	    <img src="fig/ass6_01.png" style="width:370px;">
+	  <li> Change sigma to 7.0, and draw the decision line.
+	  <li> Discuss how the classification performance is affected
+	    by it.
+	  <li> Keep sigma=7.0, but now change N2=10. Draw the decision
+	    line.
+	  <li> Discuss how the classification performance is affected
+	    by it.
+	  <li> Set sigma=4.0 and N1=N2=100. Change tn to {-1, +1}, and
+	    draw the decision. You should have something similar to:
+	    <br>
+	    <img src="fig/ass6_02.png" style="width:370px;">
+	  <li> Set tn back to {0, 1}, sigma=1.0. Modify the code for
+	  generating the data so that it includes outliers as shown
+	    below (the number of outlier points = 100, the same N2):
+	    <br>
+	    <img src="fig/ass6_05.png" style="width:370px;">
+	  <li> Draw the decision lines (the left figure is when tn is
+	  {0,1}, and the right figure when tn is {-1, +1}):
+	    <br>
+	    <img src="fig/ass6_06.png" style="width:370px;">	    
+	    <img src="fig/ass6_07.png" style="width:370px;">	    
+	  <li> Explain what's wrong with the lines.
+	   	  <li> Generate data, similar to the figure below (where the
+	  red population is 10 and blue's population is 200; the first
+	  principal axis of red is vertical and the first principal
+	  axis of blue are horizontal):
+	    <br>
+	    <img src="fig/ass6b_03.png" style="width:370px;">
+	  <li> Compute matrix W, and
+	    draw the decision lines:
+	    <br>
+	    <img src="fig/ass6b_04.png" style="width:370px;">
+	    <img src="fig/ass6b_05.png" style="width:370px;">
+	  <li> Discuss why the lines are in wrong positions.
+	  <li> Write code to generate 3 classes, where the means of
+	    the 3 clusters are located at (1,5), (5,10) and
+	    (10,5). Set sigma = 1. Display the
+	    result. You should have something similar to:
+	    <br>
+	    <img src="fig/ass6_03.png" style="width:370px;">
+	  <li> Compute W, and draw the decision lines:
+	    <br>
+	    <img src="fig/ass6_04.png" style="width:370px;">
+	  <li> Change the means to (1,5), (5,10), (10,15), and draw
+	    the decision lines.
+	  <li> Concerning the decision lines, discuss what you observe.
+
+	</ol>    
+      </p>
+      <br>
+      <br>
+      <h3>Submission</h3>
+	Submit both your code and results in an ipython-notebook format via Canvas by
+      the deadline.
+      
+      <br>
+      <br>
+
+      
+    </div>      
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+  </body>
+  <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+<script type="text/javascript">
+  try {
+  var pageTracker = _gat._getTracker("UA-13131132-3");
+  pageTracker._trackPageview();
+  } catch(err) {}</script>
+</html>
