@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="../../favicon.ico"> -->
+
+    <title>YSC3227: Assignment 6</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../bootstrap-3.3.6-dist/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../../jumbotron.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container" style="font-size:16px">
+      <br>
+      <center>
+	<h1> Assignment 6: Gaussian Processes for Classification</h1>
+	<h3>Deadline: November 15, 2018 (Thursday) at 11.59pm</h3> 
+	<br>
+	<hr>
+      </center>
+      <p>
+	Write a program in python to implement Gaussian Processes
+	for classification. Follow the below instructions.
+	<ol>
+	  <li> Generate two classes of data with the same population 
+	    size (N1=N2=50), sigma = 0.1, mean1 = [2,2], mean2= [3,3]:
+	    <img src="fig/ass8_01.png" style="width:370px;">
+	  <li> Write code of Gaussian Processes to classify the two
+	    clusters.
+	  <li> Use the kernel written on the textbook (page 307,
+	  Eq.(6.63)). As for its parameters, initially you set them
+	  (1.0, 4.0, 1.0, 2.0).
+	  <li> Draw the probability map, similar to:
+	    <br>
+	    <img src="fig/ass8_02.png" style="width:370px;">
+	  <li> Change the kernel parameters to (1.0, 0.25, 0, 0) to
+	    obtain:
+	    <br>
+	    <img src="fig/ass8_03.png" style="width:370px;">
+	  <li> Discuss why the new parameters generate a less precise
+	    probability map.
+	  <li> Change the kernel parameters back to  (1.0, 4.0, 1.0, 2.0).
+ 	  <li> Change the means of the clusters to mean1 = [3,3],
+ 	  mean2= [3.2,3.2], and cov1 = [[0.003, 0],[0.003]], cov2=
+ 	    [[0.3,0],[0,0.3]]:	    
+	    <br>
+	    <img src="fig/ass8_04.png" style="width:370px;">
+	  <li> Classify and show the probability map:
+	    <br>
+	    <img src="fig/ass8_05.png" style="width:370px;">
+	  <li>Change the means and clusters back to #1 above, and add
+	  another cluster belonging to C2, with mean=[1,1] and
+	  sigma=0.1, like:
+	    <br>
+	    <img src="fig/ass8_08.png" style="width:370px;">
+	  <li> Classify and show the probability map:
+	    <br>
+	    <img src="fig/ass8_09.png" style="width:370px;">	  
+	</ol>    
+      </p>
+      <br>
+      <br>
+      <h3>Submission</h3>
+	Submit both your code and results in an ipython-notebook format via Canvas by
+      the deadline.
+      
+      <br>
+      <br>
+
+      
+    </div>      
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+  </body>
+  <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+<script type="text/javascript">
+  try {
+  var pageTracker = _gat._getTracker("UA-13131132-3");
+  pageTracker._trackPageview();
+  } catch(err) {}</script>
+</html>
