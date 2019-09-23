@@ -42,29 +42,21 @@
 	<b>Q: Am I allowed to use matlab's imwarp function for image transformation?</b>
 	<br>
 	A: Yes, you are allowed.
-	<br>
-	<br>
       <li>
 	<b>Q: Am I allowed to use matlab's imfuse?</b>
 	<br>
 	A: No, you are not allowed. Since imfuse is a high level
 	function that does a few different things.
-	<br>
-	<br>
       <li>
 	<b>Q: Am I allowed to use matlab's basic functions such as:
 	  imshow, imread, imwrite, imtranslate?</b>
 	<br>
 	A: Yes, you are allowed.
-	<br>
-	<br>
       <li><b>Do we need to manually write code for matching the
       descriptors or we can use available function like  vl_ubcmatch?</b>
 	<br>
-	A: No, you are not allowed to use vl_ubcmatch. You must write your
+	A: You are not allowed to use vl_ubcmatch. You must write your
 	own matching function.
-	<br>
-	<br>
     </ol>
   </body>
 </html>
