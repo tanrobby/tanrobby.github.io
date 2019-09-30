@@ -382,11 +382,6 @@ The following schedule will not be strictly followed.
 	<b>13. LEAST-SQUARES CLASSIFICATION (Part 1/2)</b>
 	<br>
 	<br>
-	Reading:
-	<ul>
-	  <li> Chapter 4: Sect. 4.1.1 (two classes), 4.1.2 (multiple classes),
-	  4.1.3 (least squares for classification)
-	</ul>
       <td align="left">
     </tr>
 
@@ -400,6 +395,12 @@ The following schedule will not be strictly followed.
       <td>
 	<b>14. LEAST-SQUARES FOR CLASSIFICATION (Part 2/2)</b>
 	<br>
+	<br>	
+	Reading:
+	<ul>
+	  <li> Chapter 4: Sect. 4.1.1 (two classes), 4.1.2 (multiple classes),
+	  4.1.3 (least squares for classification)
+	</ul>
 	<br>	
     </tr>
     
