@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <!-- <link rel="icon" href="../../favicon.ico"> -->
 
-    <title>YSC2229: Exercise 3</title>
+    <title>YSC2229: Exercise 8</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../../bootstrap-3.3.6-dist/css/bootstrap.css" rel="stylesheet">
@@ -21,26 +21,37 @@
   <body>
     <div class="container" style="font-size:16px">
       <center>
-	<h2> Exercise 3: Recurrence</h2>
+	<h2> Exercise 8: Binary Search Trees and Red-Black Trees</h2>
 	</center>
       <hr>
-      <h3>Exercise 3.1: Recursive Functions</h3>
-      <ul>
-	<li> Write a python program of each of the following
-	functions, and form their recursive runtime formula,
-	<i>T(n)</i>. Note, <i> n</i> in the following equations is a natural number. 
-
-	  <figure style="border: 1px solid #000">
-	    <img src="03_q1.png" style="width:50%" border: 1px>
-	  </figure>      
-      </ul>
-      <h3>Exercise 3.2: Mathematical Induction</h3>
-      <ul>
-	<li> Prove or disprove the following equations using mathematical induction.
-      </ul>
-	  <figure style="border: 1px solid #000">
-	    <img src="03_q2.png" style="width:50%" border: 1px>
-	  </figure>      
+      <br>
+      <ol>
+	<li> For the set of <1, 4, 5, 10, 16, 17, 21> of keys, draw
+	    binary search trees of heights 2, 3, 4, 5, and 6.
+	<li> Argue that since sorting n elements takes Omega(n log n)
+	time in the worst case in the comparison model, any
+	comparison-based algorithm for constructing a binary search
+	tree from an arbitrary list of n elements takes Omega(n log n)
+	  time in the worst case.
+	<li> Let T be a binary search tree whose keys are distinct,
+	let x be a leaf node, and let y be its parent. Using your BST
+	algorithm, show that y.key
+	is either the smallest key in T larger than x.key or the
+	  largest key in T smaller than x.key.
+	<li> Is the operation of deletion "commutative" in the sense
+	that deleting xx and then yy from a binary search tree leaves
+	the same tree as deleting yy and then xx? Argue why it is or
+	  give a counterexample.
+	  <li> Show the red-black trees that result after successively
+	  inserting the keys 41, 38, 31, 12, 19, 841,38,31,12,19,8
+	  into an initially empty red-black tree. 
+	<li> For the following tree, show the steps of inserting node
+	  36 into the red-black tree:
+	  <br>
+	  <img src="08_fig1.png" width="500" height="200">
+	<li> Based on the insert algorithm of red-black trees. Argue
+	that if n > 1, the tree has at least one red node. 
+      </ol>
 
       <br>
       <br>
