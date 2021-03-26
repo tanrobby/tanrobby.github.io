@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <!-- <link rel="icon" href="../../favicon.ico"> -->
 
-    <title>YSC2229: Exercise 3</title>
+    <title>YSC2229: Exercise 9</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../../bootstrap-3.3.6-dist/css/bootstrap.css" rel="stylesheet">
@@ -21,27 +21,48 @@
   <body>
     <div class="container" style="font-size:16px">
       <center>
-	<h2> Exercise 3: Recurrence</h2>
+	<h2> Exercise 9: Dynamic Programming</h2>
 	</center>
       <hr>
-      <h3>Exercise 3.1: Recursive Functions</h3>
-      <ul>
-	<li> Write a python program of each of the following
-	functions, and form their recursive runtime formula,
-	<i>T(n)</i>. Note, <i> n</i> in the following equations is a natural number. 
-
-	  <figure style="border: 1px solid #000">
-	    <img src="03_q1.png" style="width:50%" border: 1px>
-	  </figure>      
-      </ul>
-      <h3>Exercise 3.2: Mathematical Induction</h3>
-      <ul>
-	<li> Prove or disprove the following equations using mathematical induction.
-      </ul>
-	  <figure style="border: 1px solid #000">
-	    <img src="03_q2.png" style="width:50%" border: 1px>
-	  </figure>      
-
+      <br>
+      <ol>
+	<li> Discuss the hallmarks (overlapping subproblems and
+	optimal subproblems) and the key
+	idea of dynamic programming. Provide examples in your
+	  discussion.
+	<li> Consider a modification of the rod-cutting problem in
+	which, in addition to a price p_i for each rod, each cut
+	incurs a fixed cost of c. The revenue associated with a
+	solution is now the sum of the prices of the pieces minus the
+	costs of making the cuts. Give a dynamic-programming algorithm
+	  to solve this modified problem.
+	<li> Modify MEMOIZED-CUT-ROD to return not only the value but
+	  the actual solution, too.
+	<li> The Fibonacci numbers are defined by recurrence. Give an
+	O(n)-time dynamic-programming algorithm to compute the nth
+	Fibonacci number. Draw the subproblem graph. How many vertices
+	  and edges are in the graph?
+	<li> Find an optimal parenthesization of a matrix-chain
+	product whose sequence of dimensions is < 5, 10, 3, 12, 5, 50,
+						  6 >
+	<li> Give a recursive algorithm MATRIX-CHAIN-MULTIPLY(A, s, i,
+	  j) that actually performs the optimal matrix-chain
+	  multiplication, given the sequence of matrices < A_1, A_2,
+	  ... ,A_n>, the ss table computed by MATRIX-CHAIN-ORDER, and
+	  the indices i and j. (The initial call would be
+	    MATRIX-CHAIN-MULTIPLY(A, s, 1, n).)
+	    <li>
+	      Draw the recursion tree for the MERGE-SORT procedure on
+	      an array of 16 elements. Explain why memoization fails
+	      to speed up a good divide-and-conquer algorithm such as
+	      MERGE-SORT.
+	    <li>
+	      Consider a variant of the matrix-chain multiplication
+	      problem in which the goal is to parenthesize the
+	      sequence of matrices so as to maximize, rather than
+	      minimize, the number of scalar multiplications. Does
+	      this problem exhibit optimal substructure? 
+      </ol>
       <br>
       <br>
       <br>
