@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <!-- <link rel="icon" href="../../favicon.ico"> -->
 
-    <title>YSC2229: Exercise 3</title>
+    <title>YSC2229: Exercise 10</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../../bootstrap-3.3.6-dist/css/bootstrap.css" rel="stylesheet">
@@ -21,27 +21,68 @@
   <body>
     <div class="container" style="font-size:16px">
       <center>
-	<h2> Exercise 3: Recurrence</h2>
+	<h2> Exercise 10: Greedy Algorithms</h2>
 	</center>
       <hr>
-      <h3>Exercise 3.1: Recursive Functions</h3>
-      <ul>
-	<li> Write a python program of each of the following
-	functions, and form their recursive runtime formula,
-	<i>T(n)</i>. Note, <i> n</i> in the following equations is a natural number. 
+      <ol>
+	<li> Write code in python for the activity selection problem as discussed in
+	class and explained in the textbook.
+	<li> Considering the activity selection problem, suppose that
+	  instead of always selecting the first activity to finish, we
+	  instead select the last activity to start that is compatible
+	  with all previously selected activities. Describe how this
+	  approach is a greedy algorithm, and prove that it yields an
+	  optimal solution.
+	<li>
+	  Suppose that we have a set of activities to schedule among a
+	  large number of lecture halls, where any activity can take
+	  place in any lecture hall. We wish to schedule all the
+	  activities using as few lecture halls as possible. Give an
+	  efficient greedy algorithm to determine which activity
+	  should use which lecture hall.
+	<li> Consider this problem: Given weights and values of n
+	items, put these items in a knapsack of capacity W to get the
+	maximum total value in the knapsack. In other words, given two
+	integer arrays val[0..n-1] and wt[0..n-1] which represent
+	values and weights associated with n items respectively. Also
+	given an integer W which represents knapsack capacity, find
+	out the maximum value subset of val[] such that sum of the
+	weights of this subset is smaller than or equal to W. You
+	cannot break an item, either pick the complete item or don’t
+	  pick it (0-1 property).
+	  <br>	  
+	  For this problem, give a dynamic-programming solution that
+	  runs in O(nW)O(nW) time, where n is the number of items and
+	  W is the maximum weight of  items that the thief can put in
+	  his knapsack.
+	<li> Write code in python to implement  the Huffman codes as discussed in
+	class and explained in the textbook.
+	<li>
+What is an optimal Huffman code for the following set of frequencies, based on
+the first 8 Fibonacci numbers?
+< a:1  b:1   c:2  d:3  e:5  f:8  g:13  h:21 >
+Can you generalize your answer to find the optimal code when the
+frequencies are the first nn Fibonacci numbers? 
+        <li>
+Every positive fraction can be represented as sum of unique unit fractions. A fraction is unit fraction if numerator is 1 and denominator is a positive integer, for example 1/3 is a unit fraction. Such a representation is called Egyptian Fraction as it was used by ancient Egyptians.
 
-	  <figure style="border: 1px solid #000">
-	    <img src="03_q1.png" style="width:50%" border: 1px>
-	  </figure>      
-      </ul>
-      <h3>Exercise 3.2: Mathematical Induction</h3>
-      <ul>
-	<li> Prove or disprove the following equations using mathematical induction.
-      </ul>
-	  <figure style="border: 1px solid #000">
-	    <img src="03_q2.png" style="width:50%" border: 1px>
-	  </figure>      
-
+Following are few examples:
+<br>
+Egyptian Fraction Representation of 2/3 is 1/2 + 1/6
+<br>
+Egyptian Fraction Representation of 6/14 is 1/3 + 1/11 + 1/231
+<br>
+Egyptian Fraction Representation of 12/13 is 1/2 + 1/3 + 1/12 + 1/156
+<br>
+We can generate Egyptian Fractions using Greedy Algorithm. For a given
+number of the form ‘nr/dr’ where dr > nr, first find the greatest
+possible unit fraction, then recur for the remaining part. For
+example, consider 6/14, we first find ceiling of 14/6, i.e., 3. So the
+first unit fraction becomes 1/3, then recur for (6/14 – 1/3) i.e.,
+4/42.
+<br>
+Write code in python to implement the Egyption fraction representation.
+      </ol>
       <br>
       <br>
       <br>
