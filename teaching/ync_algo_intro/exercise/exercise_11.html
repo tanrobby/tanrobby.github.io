@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="../../favicon.ico"> -->
+
+    <title>YSC2229: Exercise 11</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../bootstrap-3.3.6-dist/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../../jumbotron.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container" style="font-size:16px">
+      <center>
+	<h2> Exercise 11: Graph Algorithms</h2>
+	</center>
+      <hr>
+      <ol>
+	<li> Suppose that instead of a linked list, each array entry
+	Adj[u]Adj[u] is a hash table containing the vertices v for
+	which (u, v) in E. If all edge lookups are equally
+	likely, what is the expected time to determine whether an edge
+	is in the graph? What disadvantages does this scheme have?
+	Suggest an alternate data structure for each edge list that
+	solves these problems. Does your alternative have
+	  disadvantages compared to the hash table?
+	  
+	<li> Write code in python to implement the breadth-first
+	  search algorithm.
+
+	<li> Show the d and \pi values that result from running
+	breadth-first search on the directed graph of Figure 22.2(a)
+	on the textbook, using vertex 3 as the source.
+	<li> What is the running time of BFS if we represent
+	its input graph by an adjacency matrix and modify the
+	algorithm to handle this form of input? 
+	<li> Write code in python to implement the depth-first
+	  search algorithm.
+	<li> Show how depth-first search works on the graph of Figure
+	22.6 on the textbook. Assume that the for loop of lines 5–7 of the
+	DFS procedure considers the vertices in alphabetical
+	order, and assume that each adjacency list is ordered
+	alphabetically. Show the discovery and finishing times for
+	each vertex, and show the classification of each edge. 
+	 
+	<li> Write code in python to implement the Bellman-Ford
+	  algorithm.
+	<li> Run the Bellman-Ford algorithm on the directed graph of
+	Figure 24.4 on the textbook, using vertex z as the source. In each pass,
+	relax edges in the same order as in the figure, and show the
+	d and \pi values after each pass. Now, change the weight of
+	edge (z, x) to 4 and run the algorithm again, using s
+	as the source. 
+	<li> Write code in python to implement Dijstra's algorithm.
+	<li> Run Dijkstra's algorithm on the directed graph of Figure
+	24.2 on the textbook, first using vertex ss as the source and then using
+	vertex z as the source. In the style of Figure 24.6, show the
+	d and \pi values and the vertices in set S after each
+	  iteration of the while loop.
+	  <li> Give a simple example of a directed graph with
+	  negative-weight edges for which Dijkstra's algorithm
+	  produces incorrect answers.
+      </ol>
+      <br>
+      <br>
+      <br>
+      <br>
+
+      
+    </div>      
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+  </body>
+  <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+<script type="text/javascript">
+  try {
+  var pageTracker = _gat._getTracker("UA-13131132-3");
+  pageTracker._trackPageview();
+  } catch(err) {}</script>
+</html>
