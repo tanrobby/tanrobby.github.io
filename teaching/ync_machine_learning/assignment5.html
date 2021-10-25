@@ -22,75 +22,13 @@
     <div class="container" style="font-size:16px">
       <br>
       <center>
-	<h1> Assignment 5: Least Squares and Predictive Distribution
-	for Classification</h1>
-	<h3>Deadline: November 4, 2020 (Wednesday) at 23.59pm</h3> 
+	<h1> Assignment 5: Predictive Distribution and
+	GP for Classification</h1>
+	<h3>Deadline: November 12, 2021 at 5pm</h3> 
 	<br>
 	<hr>
       </center>
-      <p>
-	Write a program in python to implement least-squares
-	for classification. Follow the below instructions.
-      <h3>Part 1: Least Squares</h3>
-	<ol>
-	  <li> Generate classification data of two classes. Example:
-	    <br>
-	    <img src="fig/ass6_code.png" style="width:500px;">
-	  <li> Write code to estimate matrix W using least-squares.
-	  <li> Draw the decision line, similar to:
-	    <br>
-	    <img src="fig/ass6_01.png" style="width:370px;">
-	  <li> Change sigma to 7.0, and draw the decision line.
-	  <li> Discuss how the classification performance is affected
-	    by it.
-	  <li> Keep sigma=7.0, but now change N2=10. Draw the decision
-	    line.
-	  <li> Discuss how the classification performance is affected
-	    by it.
-	  <li> Set sigma=4.0 and N1=N2=100. Change tn to {-1, +1}, and
-	    draw the decision. You should have something similar to:
-	    <br>
-	    <img src="fig/ass6_02.png" style="width:370px;">
-	  <li> Set tn back to {0, 1}, sigma=1.0. Modify the code for
-	  generating the data so that it includes outliers as shown
-	    below (the number of outlier points = 100, the same N2):
-	    <br>
-	    <img src="fig/ass6_05.png" style="width:370px;">
-	  <li> Draw the decision lines (the left figure is when tn is
-	  {0,1}, and the right figure when tn is {-1, +1}):
-	    <br>
-	    <img src="fig/ass6_06.png" style="width:370px;">	    
-	    <img src="fig/ass6_07.png" style="width:370px;">	    
-	  <li> Explain what's wrong with the lines.
-	   	  <li> Generate data, similar to the figure below (where the
-	  red population is 10 and blue's population is 200; the first
-	  principal axis of red is vertical and the first principal
-	  axis of blue are horizontal):
-	    <br>
-	    <img src="fig/ass6b_03.png" style="width:370px;">
-	  <li> Compute matrix W, and
-	    draw the decision lines:
-	    <br>
-	    <img src="fig/ass6b_04.png" style="width:370px;">
-	    <img src="fig/ass6b_05.png" style="width:370px;">
-	  <li> Discuss why the lines are in wrong positions.
-	  <li> Write code to generate 3 classes, where the means of
-	    the 3 clusters are located at (1,5), (5,10) and
-	    (10,5). Set sigma = 1. Display the
-	    result. You should have something similar to:
-	    <br>
-	    <img src="fig/ass6_03.png" style="width:370px;">
-	  <li> Compute W, and draw the decision lines:
-	    <br>
-	    <img src="fig/ass6_04.png" style="width:370px;">
-	  <li> Change the means to (1,5), (5,10), (10,15), and draw
-	    the decision lines.
-	  <li> Concerning the decision lines, discuss what you observe.
-
-	</ol>    
-      </p>
-      <br>
-      <h3>Part 2: Predictive Distribution</h3>
+      <h3>Part 1: Predictive Distribution</h3>
       <p>
 	<ol>
 	  <li> Implement the predictive distribution, where the output
@@ -107,6 +45,49 @@
 	    the decision whether it belongs to C1 or C2, and its
 	    uncertainty information.
 	</ol>
+      </p>
+      <br>
+
+      <h3>Part 2: Gaussian Processes</h3>
+      <p>
+	Write a program in python to implement Gaussian Processes
+	for classification. Follow the below instructions.
+	<ol>
+	  <li> Generate two classes of data with the same population 
+	    size (N1=N2=50), sigma = 0.1, mean1 = [2,2], mean2= [3,3]:
+	    <img src="fig/ass8_01.png" style="width:370px;">
+	  <li> Write code of Gaussian Processes to classify the two
+	    clusters.
+	  <li> Use the kernel written on the textbook (page 307,
+	  Eq.(6.63)). As for its parameters, initially you set them
+	  (1.0, 4.0, 1.0, 2.0).
+	  <li> Draw the probability map, similar to:
+	    <br>
+	    <img src="fig/ass8_02.png" style="width:370px;">
+	  <li> Change the kernel parameters to (1.0, 0.25, 0, 0) to
+	    obtain:
+	    <br>
+	    <img src="fig/ass8_03.png" style="width:370px;">
+	  <li> Discuss why the new parameters generate a less precise
+	    probability map.
+	  <li> Change the kernel parameters back to  (1.0, 4.0, 1.0, 2.0).
+ 	  <li> Change the means of the clusters to mean1 = [3,3],
+ 	  mean2= [3.2,3.2], and cov1 = [[0.003, 0],[0.003]], cov2=
+ 	    [[0.3,0],[0,0.3]]:	    
+	    <br>
+	    <img src="fig/ass8_04.png" style="width:370px;">
+	  <li> Classify and show the probability map:
+	    <br>
+	    <img src="fig/ass8_05.png" style="width:370px;">
+	  <li>Change the means and clusters back to #1 above, and add
+	  another cluster belonging to C2, with mean=[1,1] and
+	  sigma=0.1, like:
+	    <br>
+	    <img src="fig/ass8_08.png" style="width:370px;">
+	  <li> Classify and show the probability map:
+	    <br>
+	    <img src="fig/ass8_09.png" style="width:370px;">	  
+	</ol>    
       </p>
       <br>
 
