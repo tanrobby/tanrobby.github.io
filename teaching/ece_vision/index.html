@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EE4221: Computer Vision (Part 2) &mdash; EE4221 Computer Vision  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="#" class="icon icon-home"> EE4221 Computer Vision
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">EE4221: Computer Vision (Part 2)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#description">Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#course-syllabus">Course Syllabus</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">EE4221 Computer Vision</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
+      <li>EE4221: Computer Vision (Part 2)</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="ee4221-computer-vision-part-2">
+<h1>EE4221: Computer Vision (Part 2)<a class="headerlink" href="#ee4221-computer-vision-part-2" title="Permalink to this headline"></a></h1>
+<div class="section" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline"></a></h2>
+<p>Images and videos are everywhere.
+Using your mobile phone, it is  easy to snap pictures or record videos.
+These images/videos have rich information, and are useful for various applications, from self-driving cars to surveillance systems.
+However, there is a critical question that we need to answer, namely, how we can  automatically extract the rich visual information from those images/videos. This is the task of computer vision to answer this question.</p>
+<p>The goal of computer vision is to make computers work like human visual
+perception, namely, to understand and recognize the world through visual data.
+For humans, seeing is intuitive and effortless, however how exactly we can do it is still a mystery.
+In other words, to decipher or decode our seeing ability to computer
+algorithms is not obvious and extremely challenging.</p>
+<p>This is part 2 of EE4221. In this part, we focus on the photometric aspects of
+computer vision.</p>
+<div class="line-block">
+<div class="line"><strong>Textbooks</strong>: (We use the textbooks loosely)</div>
+</div>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p><a class="reference external" href="http://luthuli.cs.uiuc.edu/~daf/CV2E-site/cv2eindex.html">Computer Vision: A Modern Approach</a>,  D. Forsyth
+and J. Ponce</p></li>
+<li><p><a class="reference external" href="http://www.computervisionmodels.com//">Computer Vision: Models, Learning, and Inference</a>, S.J.D. Prince.</p></li>
+</ol>
+</div></blockquote>
+<div class="line-block">
+<div class="line"><strong>Instructor</strong>: <a class="reference external" href="https://tanrobby.github.io/">Robby Tan</a></div>
+</div>
+</div>
+<div class="section" id="course-syllabus">
+<h2>Course Syllabus<a class="headerlink" href="#course-syllabus" title="Permalink to this headline"></a></h2>
+<p>Disclaimer: The schedule below will be followed loosely. Some topics might be
+skipped and new topics might be added. The assignments’ dates are approximate.</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 63%" />
+<col style="width: 19%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Date</p></th>
+<th class="head"><p>Topic</p></th>
+<th class="head"><p>Lecture Note</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>4/3/2022</p></td>
+<td><p><strong>1. PHOTOMETRIC IMAGE FORMATION</strong></p></td>
+<td><p>Lecture Note 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>11/3/2022</p></td>
+<td><p><strong>2. TEXTURE SYNTHESIS</strong></p></td>
+<td><p>Lecture Note 2</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><a class="reference external" href="http::/">ASSIGNMENT 1</a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>18/3/2022</p></td>
+<td><p><strong>3. HIGH DYNAMIC RANGE</strong></p></td>
+<td><p>Lecture Note 3</p></td>
+</tr>
+<tr class="row-even"><td><p>25/3/2022</p></td>
+<td><p><strong>4. IMAGE SEGMENTATION AND MATTING</strong></p></td>
+<td><p>Lecture Note 4</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><a class="reference external" href="http::/">ASSIGNMENT 2</a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>1/4/2022</p></td>
+<td><p><strong>5. IMAGE STITCHING</strong></p></td>
+<td><p>Lecture Note 5</p></td>
+</tr>
+<tr class="row-odd"><td><p>8/4/2022</p></td>
+<td><p><strong>6. PHYSICS-BASED VISION</strong></p></td>
+<td><p>Lecture Note 6</p></td>
+</tr>
+</tbody>
+</table>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">EE4221: Computer Vision (Part 2)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#description">Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#course-syllabus">Course Syllabus</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Robby Tan.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
