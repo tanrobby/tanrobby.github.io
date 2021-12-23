@@ -1,0 +1,45 @@
+.. settingup:
+
+Introduction
+==========
+
+
+.. _fig1:
+.. figure:: image01/rugby_field.jpg
+
+
+      Looking at the image, we can immediately understand the scene
+      intuitively and effortlessly. @Image is taken from the Internet.
+
+The goal of computer vision is to make computers work like human visual perception, namely, to recognize the world's visual information.
+Given a natural image :numref:`fig1`, in a fraction of a second we can immediately recognize the contents and are inevitably immediately conscious about what is happening in the image.
+The question is how we can do it. 
+It seems to us the task of understanding visual information is
+intuitive and effortless, similar to walking, speaking, hearing, etc.
+Hence, it begs some questions. Why is it difficult? How
+can we create computer algorithms to do it? Computer vision attempts
+to answer these questions.
+
+
+There are a few closely related fields in computer science that can
+help us understand computer vision better: computer graphics, image
+processing, and artificial intelligence. The main task of computer
+graphics is to generate images from mathematical models. It renders
+synthetic images that may not be distinguishable from real
+images. Computer vision is the exact opposite of computer graphics. It
+attempts to extract information (including the mathematical models)
+from a real image or images. Another related field is image
+processing. The input of image processing is an image and the output
+is also an image, which is normally better in terms of quality
+compared to the input image. An example of image processing is
+denoising or noise removal. Image processing is actually part of
+computer vision, which is called low-level vision. Image processing or
+low-level vision is helpful to complete the main goal of computer
+vision, since the information in the input image can be made clearer
+(less noisy or less degraded). 
+
+
+
+
+
+
