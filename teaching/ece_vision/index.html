@@ -1,202 +1,246 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EE4212: Computer Vision (Part 2) &mdash; EE4212 Computer Vision  documentation</title>
-      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <!--[if lt IE 9]>
-    <script src="_static/js/html5shiv.min.js"></script>
-  <![endif]-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="../../favicon.ico"> -->
+    
+    <title>EE4212 Computer Vision</title>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="../../bootstrap-3.3.6-dist/css/bootstrap.css" rel="stylesheet">
+    
+    <!-- Custom styles for this template -->
+    <link href="../../jumbotron.css" rel="stylesheet">
+  </head>
   
-        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-        <script src="_static/jquery.js"></script>
-        <script src="_static/underscore.js"></script>
-        <script src="_static/doctools.js"></script>
-    <script src="_static/js/theme.js"></script>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" /> 
-</head>
-
-<body class="wy-body-for-nav"> 
-  <div class="wy-grid-for-nav">
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
-            <a href="#" class="icon icon-home"> EE4212 Computer Vision
-          </a>
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
-</div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">EE4212: Computer Vision (Part 2)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#description">Description</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#course-syllabus">Course Syllabus</a><ul class="simple">
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
-        </div>
-      </div>
+  <body>
+    
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      
     </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="#">EE4212 Computer Vision</a>
-      </nav>
-
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
-  <ul class="wy-breadcrumbs">
-      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
-      <li>EE4212: Computer Vision (Part 2)</li>
-      <li class="wy-breadcrumbs-aside">
-      </li>
-  </ul>
-  <hr/>
-</div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
-             
-  <div class="section" id="ee4212-computer-vision-part-2">
-<h1>EE4212: Computer Vision (Part 2)<a class="headerlink" href="#ee4212-computer-vision-part-2" title="Permalink to this headline"></a></h1>
-<div class="section" id="description">
-<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline"></a></h2>
-<p>Images and videos are everywhere.
-Using your mobile phone, it is  easy to snap pictures or record videos.
-These images/videos have rich information, and are useful for various applications, from self-driving cars to surveillance systems.
-However, there is a critical question that we need to answer, namely, how we can  automatically extract the rich visual information from those images/videos. This is the task of computer vision to answer this question.</p>
-<p>The goal of computer vision is to make computers work like human visual
-perception, namely, to understand and recognize the world through visual data.
-For humans, seeing is intuitive and effortless, however how exactly we can do it is still a mystery.
-In other words, to decipher or decode our seeing ability to computer
-algorithms is not obvious and extremely challenging.</p>
-<p>This is part 2 of EE4221. In this part, we focus on the photometric aspects of
-computer vision.</p>
-<div class="line-block">
-<div class="line"><strong>Textbooks</strong>: (We use the textbooks loosely)</div>
-</div>
-<blockquote>
-<div><ol class="arabic simple">
-<li><p><a class="reference external" href="http://luthuli.cs.uiuc.edu/~daf/CV2E-site/cv2eindex.html">Computer Vision: A Modern Approach</a>,  D. Forsyth
-and J. Ponce</p></li>
-<li><p><a class="reference external" href="http://www.computervisionmodels.com//">Computer Vision: Models, Learning, and Inference</a>, S.J.D. Prince.</p></li>
-</ol>
-</div></blockquote>
-<div class="line-block">
-<div class="line"><strong>Instructor</strong>: <a class="reference external" href="https://tanrobby.github.io/">Robby Tan</a></div>
-</div>
-</div>
-<div class="section" id="course-syllabus">
-<h2>Course Syllabus<a class="headerlink" href="#course-syllabus" title="Permalink to this headline"></a></h2>
-<p>Disclaimer: The schedule below will be followed loosely. Some topics might be
-skipped and new topics might be added. The assignments’ dates are tentative.</p>
-<table class="colwidths-given docutils align-default">
-<colgroup>
-<col style="width: 19%" />
-<col style="width: 63%" />
-<col style="width: 19%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Date</p></th>
-<th class="head"><p>Topic</p></th>
-<th class="head"><p>Lecture Note</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>4/3/2022</p></td>
-<td><p><strong>1. PHOTOMETRIC IMAGE FORMATION</strong></p></td>
-<td><p>Lecture Note 1</p></td>
-</tr>
-<tr class="row-odd"><td><p>11/3/2022</p></td>
-<td><p><strong>2. TEXTURE SYNTHESIS</strong></p></td>
-<td><p>Lecture Note 2</p></td>
-</tr>
-<tr class="row-even"><td></td>
-<td><dl class="simple">
-<dt><a class="reference external" href="http::/">ASSIGNMENT 1</a></dt><dd><ul class="simple">
-<li><p>OpenCV tutorial: <a class="reference external" href="https://youtu.be/oXlwWbU8l2o">Youtube</a>
-| <a class="reference external" href="https://docs.opencv.org/4.x/d6/d00/tutorial_py_root.html">Website 1</a>
-| <a class="reference external" href="https://www.geeksforgeeks.org/opencv-python-tutorial/">Website 2</a></p></li>
-</ul>
-</dd>
-</dl>
-</td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><p>18/3/2022</p></td>
-<td><p><strong>3. HIGH DYNAMIC RANGE</strong></p></td>
-<td><p>Lecture Note 3</p></td>
-</tr>
-<tr class="row-even"><td><p>25/3/2022</p></td>
-<td><p><strong>4. IMAGE SEGMENTATION AND MATTING</strong></p></td>
-<td><p>Lecture Note 4</p></td>
-</tr>
-<tr class="row-odd"><td></td>
-<td><p><a class="reference external" href="http::/">ASSIGNMENT 2</a></p></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><p>1/4/2022</p></td>
-<td><p><strong>5. IMAGE STITCHING</strong></p></td>
-<td><p>Lecture Note 5</p></td>
-</tr>
-<tr class="row-odd"><td><p>8/4/2022</p></td>
-<td><p><strong>6. PHYSICS-BASED VISION</strong></p></td>
-<td><p>Lecture Note 6</p></td>
-</tr>
-</tbody>
-</table>
-<div class="toctree-wrapper compound">
-<p class="caption" role="heading"><span class="caption-text">Contents</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">EE4212: Computer Vision (Part 2)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#description">Description</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#course-syllabus">Course Syllabus</a><ul class="simple">
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-</div>
-
-
-           </div>
-          </div>
-          <footer>
-
-  <hr/>
-
-  <div role="contentinfo">
-    <p>&#169; Copyright 2021, Robby Tan.</p>
-  </div>
-
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
-   
-
-</footer>
-        </div>
+    
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container"  style="font-size:16px">
+	
+        <h2>YSC4212 Computer Vision (Part 2)</h2>
+	<p>
+	  Electrical and Computer Engineering
+	  <br>
+	  National University of Singapore
+	</p>
       </div>
-    </section>
-  </div>
-  <script>
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script> 
+    </div>
+    <div class="container" style="font-size:16px">
+      <h3>Description:</h3>
+      <p>Images and videos are everywhere.
+	Using your mobile phone, it is  easy to snap pictures or record videos.
+	These images/videos have rich information, and are useful for
+	various applications, from self-driving cars to surveillance
+	systems. 
+	However, there is a critical question that we need to answer,
+	namely, how we can  automatically extract the rich visual
+	information from those images/videos. This is the task of
+	computer vision to answer this question.</p>
+      
+      <p>The goal of computer vision is to make computers work like human visual
+	perception, namely, to understand and recognize the world through visual data.
+	For humans, seeing is intuitive and effortless, however how exactly we can do it is still a mystery.
+	In other words, to decipher or decode our seeing ability to computer
+	algorithms is not obvious and extremely challenging.</p>
 
-</body>
+      <p>This is part 2 of EE4221. In this part, we focus on the photometric aspects of
+	computer vision.</p>
+
+      <br>
+      
+       <b>Textbooks</b> (The textbooks are used loosely):
+       <ol>
+       <li> <a href="http://luthuli.cs.uiuc.edu/~daf/CV2E-site/cv2eindex.html" target="_blank">Computer Vision: A Modern Approach</a>, D. Forsyth and	 J. Ponce
+       <li> <a href="http://www.computervisionmodels.com//" target="_blank">Computer Vision: Models, Learning, and
+      Inference</a>, by S.J.D. Prince 
+       </ol>
+
+      <b>Instructor</b>: <a href="http://tanrobby.github.io"
+      target="_blank">Robby 
+	T. Tan</a>
+      <br>
+<hr>
+<h3>Teaching Schedule:</h3>
+<p>
+The following schedule will not be strictly followed.
+</p>
+
+<br>
+      
+<table width="100%" 
+       border = 1px
+       class="table table-striped">
+  <thead class="thead-inverse">
+    
+    <tr>
+      <th width="15%"> Date
+      <th> <center> Topic </center>
+      <th width="25%"> <center> Lecture Note </center>
+  </thead>
+  <tbody>
+    
+    
+    <!------------------------------------------------------------------------------>	  
+    
+    
+    <tr>
+      <td rowspan="1"> Mar 4, 2022
+      <td>
+	
+	<b>1. PHOTOMETRIC IMAGE FORMATION</b>
+	<br>
+	<br>
+      <td>
+
+   </tr>
+    
+    <!------------------------------------------------------------------------------>
+    
+    
+    <tr>
+      <td rowspan="1">  Mar 11, 2022
+      <td>
+	<b> 2. TEXTURE SYNTHESIS AND ANALYSIS</b>
+	<br>
+	<br>
+      <td>
+    </tr>
+	    
+
+    <!------------------------------------------------------------------------------>
+    <tr class="warning">
+      <td>
+      <td>
+	<br>
+	  ASSIGNMENT 1
+	<br>
+	<br>
+      <td>
+    </tr>
+
+    
+    <!------------------------------------------------------------------------------>
+    
+    <tr>
+      <td rowspan="1"> Mar 18, 2022
+      <td>
+	<b>3. HIGH DYNAMIC RANGE </b>
+	<br>
+	<br>
+      <td>
+    </tr>
+
+    <!------------------------------------------------------------------------------>    
+	
+    <tr>
+      <td rowspan="1"> Mar 25, 2022
+      <td>
+	<b> 4. IMAGE SEGMENTATION AND MATTING</b>
+	<br>
+	<br>
+      <td align="left">
+    
+    <!------------------------------------------------------------------------------>
+    <tr class="warning">
+      <td>
+      <td>
+	<br>
+	  ASSIGNMENT 2
+	<br>
+	<br>
+      <td>
+    </tr>
+
+    <!------------------------------------------------------------------------------>
+    
+    <tr>
+      <td rowspan="1"> Apr 1, 2022
+      <td>
+	<b>5. IMAGE STITCHING</b>
+	<br> 
+	<br>
+      <td align="left">
+
+    <!------------------------------------------------------------------------------>
+    
+    
+    <tr>
+      <td rowspan="1"> Apr 8, 2022
+      <td>
+	<b>6.  PHYSICS-BASED VISION</b>
+	<br>
+	<br>
+      <td align="left">
+
+    </tr>
+
+    
+    <!------------------------------------------------------------------------------>
+
+    <tr class="danger">
+      <td rowspan="1">
+      <td>
+	<br>
+	<b>FINAL EXAM<b>
+	<br>
+	<br>	
+	<td align="left"> 
+
+    </tr>
+
+
+    
+  </tbody>
+</table>
+<br>
+
+
+<!------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------>
+
+<br>
+<br>
+<br>
+
+
+
+<br>
+<hr>
+  <br>
+  <br>
+<!------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------>
+
+</div>      
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+  </body>
+  <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+<script type="text/javascript">
+  try {
+  var pageTracker = _gat._getTracker("UA-13131132-3");
+  pageTracker._trackPageview();
+  } catch(err) {}</script>
 </html>
