@@ -1,440 +1,629 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>YSC4227: Computer Vision and Deep Learning &mdash; YSC4227: Computer Vision and Deep Learning  documentation</title>
-      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <!--[if lt IE 9]>
-    <script src="_static/js/html5shiv.min.js"></script>
-  <![endif]-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="../../favicon.ico"> -->
+    
+    <title>YSC4227 Computer Vision and Deep Learning</title>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="../../bootstrap-3.3.6-dist/css/bootstrap.css" rel="stylesheet">
+    
+    <!-- Custom styles for this template -->
+    <link href="../../jumbotron.css" rel="stylesheet">
+  </head>
   
-        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-        <script src="_static/jquery.js"></script>
-        <script src="_static/underscore.js"></script>
-        <script src="_static/doctools.js"></script>
-    <script src="_static/js/theme.js"></script>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" /> 
-</head>
-
-<body class="wy-body-for-nav"> 
-  <div class="wy-grid-for-nav">
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
-            <a href="#" class="icon icon-home"> YSC4227: Computer Vision and Deep Learning
-          </a>
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
-</div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <!-- Local TOC -->
-              <div class="local-toc"><ul>
-<li><a class="reference internal" href="#">YSC4227: Computer Vision and Deep Learning</a><ul>
-<li><a class="reference internal" href="#description">Description</a></li>
-<li><a class="reference internal" href="#schedule">Schedule</a></li>
-<li><a class="reference internal" href="#syllabus">Syllabus</a></li>
-</ul>
-</li>
-</ul>
-</div>
-        </div>
-      </div>
+  <body>
+    
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      
     </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="#">YSC4227: Computer Vision and Deep Learning</a>
-      </nav>
-
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
-  <ul class="wy-breadcrumbs">
-      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
-      <li>YSC4227: Computer Vision and Deep Learning</li>
-      <li class="wy-breadcrumbs-aside">
-      </li>
-  </ul>
-  <hr/>
-</div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
-             
-  <div class="section" id="ysc4227-computer-vision-and-deep-learning">
-<h1>YSC4227: Computer Vision and Deep Learning<a class="headerlink" href="#ysc4227-computer-vision-and-deep-learning" title="Permalink to this headline"></a></h1>
-<div class="section" id="description">
-<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline"></a></h2>
-<p>Images and videos are everywhere.
-Using your mobile phone, it is  easy to snap pictures or record videos.
-These images/videos have rich information, and are useful for various applications, from self-driving cars to surveillance systems.
-However, there is a critical question that we need to answer, namely, how we can  automatically extract the rich visual information from those images/videos. This is the task of computer vision to answer this question.</p>
-<p>The goal of computer vision is to make computers work like human visual
-perception, namely, to understand and recognize the world through visual data.
-For humans, seeing is intuitive and effortless, however how exactly we can do it is still a mystery.
-In other words, to decipher or decode our seeing ability to computer algorithms is not obvious and extremely challenging.
-After decades of research, it is known that visual features and prediction/inference techniques are key to the problem.
-In this respect, one important approach is deep learning.
-Deep learning is able to extract features and to infer the visual information from the features automatically. This course will focus on the fundamentals of computer vision and deep
-learning, as well as on deep learning’s applications to computer vision.</p>
-<div class="line-block">
-<div class="line"><strong>Textbooks</strong>: (We use the textbooks loosely)</div>
-</div>
-<blockquote>
-<div><ol class="arabic simple">
-<li><p><a class="reference external" href="http://luthuli.cs.uiuc.edu/~daf/CV2E-site/cv2eindex.html">Computer Vision: A Modern Approach</a>,  D. Forsyth
-and J. Ponce</p></li>
-<li><p><a class="reference external" href="http://www.computervisionmodels.com//">Computer Vision: Models, Learning, and Inference</a>, S.J.D. Prince.</p></li>
-<li><p><a class="reference external" href="https://www.deeplearningbook.org//">Deep Learning</a>,  Ian Goodfellow and Yoshua Bengio and   Aaron Courville.</p></li>
-</ol>
-</div></blockquote>
-<div class="line-block">
-<div class="line"><strong>Instructor</strong>: <a class="reference external" href="https://tanrobby.github.io/">Robby Tan</a></div>
-</div>
-</div>
-<div class="section" id="schedule">
-<h2>Schedule<a class="headerlink" href="#schedule" title="Permalink to this headline"></a></h2>
-<p>Disclaimer: The schedule below will be followed loosely. Some topics might be
-skipped and new topics might be added. The assignments’ dates are tentative.</p>
-<table class="colwidths-given docutils align-default">
-<colgroup>
-<col style="width: 19%" />
-<col style="width: 63%" />
-<col style="width: 19%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Date</p></th>
-<th class="head"><p>Topic</p></th>
-<th class="head"><p>Lecture Note</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>Jan 10, 2022</p></td>
-<td><dl class="simple">
-<dt><strong>1. INTRODUCTION</strong></dt><dd><ul class="simple">
-<li><p>Crash Course Computer Vision: <a class="reference external" href="https://youtu.be/-4E2-0sxVUM">YouTube</a></p></li>
-<li><p>Brief introduction to computer vision: <a class="reference external" href="https://www.youtube.com/watch?v=wthBcVFouzY&amp;index=4&amp;list=PLAwxTw4SYaPnbDacyrK_kB_RUkuxQBlCm">YouTube</a></p></li>
-<li><p>Computer Vision: <a class="reference external" href="https://en.wikipedia.org/wiki/Computer_vision">Wikipedia</a></p></li>
-<li><p>OpenCV tutorial: <a class="reference external" href="https://youtu.be/oXlwWbU8l2o">YouTube</a>
-| <a class="reference external" href="https://docs.opencv.org/4.x/d6/d00/tutorial_py_root.html">Website 1</a>
-| <a class="reference external" href="https://www.geeksforgeeks.org/opencv-python-tutorial/">Website 2</a></p></li>
-</ul>
-</dd>
-</dl>
-</td>
-<td><p><a class="reference external" href="https://www.dropbox.com/s/fj8cw1khkbo5sbr/01_intro.pdf?dl=0">Slides 1</a></p></td>
-</tr>
-<tr class="row-odd"><td><p>Jan 13, 2022</p></td>
-<td><dl class="simple">
-<dt><strong>2. IMAGE CONVOLUTION (Part 1/2)</strong></dt><dd><ul class="simple">
-<li><p>Textbook 1: Sec.7.1 and  Sec.7.2</p></li>
-<li><p>Textbook 2: Sec. 13.1.13</p></li>
-<li><p>Image convolution: <a class="reference external" href="https://en.wikipedia.org/wiki/Kernel_(image_processing)">Wikipedia</a>
-| <a class="reference external" href="http://machinelearninguru.com/computer_vision/basics/convolution/image_convolution_1.html">Website 1</a>
-| <a class="reference external" href="http://aishack.in/tutorials/image-convolution-examples/">Website 2</a></p></li>
-<li><p>Haar-like Features: <a class="reference external" href="http://en.wikipedia.org/wiki/Haar-like_features">Wikipedia</a></p></li>
-</ul>
-</dd>
-</dl>
-</td>
-<td><p><a class="reference external" href="https://www.dropbox.com/s/u9vtd5dvxbt09q7/02_convolution.pdf?dl=0">Slides 2</a></p>
-<p><a class="reference external" href="https://www.dropbox.com/s/iqsmaeiryjldroq/02_convolution_annotated.pdf?dl=0">Slides 2a (annotated)</a></p>
-</td>
-</tr>
-<tr class="row-even"><td><p>Jan 17, 2022</p></td>
-<td><p><strong>3. IMAGE CONVOLUTION (Part 2/2)</strong></p></td>
-<td><p><a class="reference external" href="https://www.dropbox.com/s/n9bl6if5l53eqgh/02b_convolution.pdf?dl=0">Slide 2b (annotated)</a></p></td>
-</tr>
-<tr class="row-odd"><td></td>
-<td><p><a class="reference external" href="https://tanrobby.github.io/teaching/ync_vision/assignment1/index.html">ASSIGNMENT 1</a></p></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><p>Jan 20, 2022</p></td>
-<td><dl class="simple">
-<dt><strong>4. VIOLA-JONES: HAAR-LIKE FEATURES</strong></dt><dd><ul class="simple">
-<li><p>Viola-Jones’ algorithm: <a class="reference external" href="https://www.vision.rwth-aachen.de/media/course/WS/2014/computer-vision/viola-facedetection-ijcv04.pdf">PDF</a>
-| <a class="reference external" href="https://en.wikipedia.org/wiki/Viola%E2%80%93Jones_object_detection_framework">Wikipedia</a>
-| <a class="reference external" href="https://www.youtube.com/watch?v=sWTvK72-SPU">YouTube</a></p></li>
-<li><p>Haar-like Features: <a class="reference external" href="http://en.wikipedia.org/wiki/Haar-like_features">Wikipedia</a></p></li>
-</ul>
-</dd>
-</dl>
-</td>
-<td><p><a class="reference external" href="https://www.dropbox.com/s/0jfpdav3iw2woox/04_viola_jones.pdf?dl=0">Slide 4</a></p>
-<p><a class="reference external" href="https://www.dropbox.com/s/0cfkxwc2kymldb3/04a_viola_jones_annotated.pdf?dl=0">Slide 4a (annotated)</a></p>
-</td>
-</tr>
-<tr class="row-odd"><td><p>Jan 24, 2022</p></td>
-<td><dl class="simple">
-<dt><strong>5. VIOLA-JONES: ADABOOST</strong></dt><dd><ul class="simple">
-<li><p>AdaBoost: <a class="reference external" href="https://youtu.be/ix6IvwbVpw0">Online Lecture</a>
-| <a class="reference external" href="https://en.wikipedia.org/wiki/AdaBoost">Wikipedia</a></p></li>
-</ul>
-</dd>
-</dl>
-</td>
-<td><p><a class="reference external" href="https://www.dropbox.com/s/excbnbsbdy1cie4/04b_viola_jones_annotated.pdf?dl=0">Slide 4b (annotated)</a></p></td>
-</tr>
-<tr class="row-even"><td><p>Jan 27, 2022</p></td>
-<td><dl class="simple">
-<dt><strong>6. VIOLA JONES: INTEGRAL IMAGE</strong></dt><dd><ul class="simple">
-<li><p>Integral Image: <a class="reference external" href="https://en.wikipedia.org/wiki/Summed-area_table">Wikipedia</a> |
-<a class="reference external" href="https://computersciencesource.wordpress.com/2010/09/03/computer-vision-the-integral-image/">Website</a></p></li>
-</ul>
-</dd>
-</dl>
-</td>
-<td><p><a class="reference external" href="https://www.dropbox.com/s/08t3o7m0xr1gn8o/04c_viola_jones_annotated.pdf?dl=0">Slide 4c (annotated)</a></p>
-<p><a class="reference external" href="https://www.dropbox.com/s/iyt38h3f6li1k1f/04_lecture_note.pdf?dl=0">Lecture note 4</a></p>
-</td>
-</tr>
-<tr class="row-odd"><td><p>Jan 31, 2022</p></td>
-<td><dl class="simple">
-<dt><strong>7. SIFT: KEYPOINT GENERATION</strong></dt><dd><ul class="simple">
-<li><p>Object search: <a class="reference external" href="http://www.robots.ox.ac.uk/~vgg/research/oxbuildings/index.html">Demo</a></p></li>
-<li><p>Textbook 2: Chapter 13, Sec. 13.2, Sec. 13.3</p></li>
-<li><p>SIFT: <a class="reference external" href="http://www.cs.ubc.ca/~lowe/papers/ijcv04.pdf">PDF</a> |
-<a class="reference external" href="https://en.wikipedia.org/wiki/Scale-invariant_feature_transform">Wikipedia</a></p></li>
-</ul>
-</dd>
-</dl>
-</td>
-<td><p><a class="reference external" href="https://www.dropbox.com/s/uq0dsiae0tn5qgb/07_sift.pdf?dl=0">Slide 7</a></p></td>
-</tr>
-<tr class="row-even"><td><p>Feb 3, 2022</p></td>
-<td><dl class="simple">
-<dt><strong>8. SIFT: DoG and LoG</strong></dt><dd><ul class="simple">
-<li><p>Laplacian of Gaussian: <a class="reference external" href="https://towardsdatascience.com/sift-scale-invariant-feature-transform-c7233dc60f37">Website</a></p></li>
-</ul>
-</dd>
-</dl>
-</td>
-<td><p><a class="reference external" href="https://www.dropbox.com/s/17voe3ryyah2hwu/07a_sift_annotated.pdf?dl=0">Slide 7a (annotated)</a></p></td>
-</tr>
-<tr class="row-odd"><td><p>Feb 7, 2022</p></td>
-<td><dl class="simple">
-<dt><strong>9. SIFT: KEYPOINT LOCALIZATION</strong></dt><dd><ul class="simple">
-<li><p>Matrix Calculus: <a class="reference external" href="&quot;https://en.wikipedia.org/wiki/Matrix_calculus">Wikipedia</a></p></li>
-</ul>
-</dd>
-</dl>
-</td>
-<td><p>Slide 7b (annotated)</p></td>
-</tr>
-<tr class="row-even"><td></td>
-<td><p><a class="reference external" href="https://tanrobby.github.io/teaching/ync_vision/assignment2/index.html">ASSIGNMENT 2</a></p></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><p>Feb 10, 2022</p></td>
-<td><p><strong>10. SIFT: ROTATION INVARIANT</strong></p></td>
-<td><p>Slide 7c (annotated)</p></td>
-</tr>
-<tr class="row-even"><td><p>Feb 14, 2022</p></td>
-<td><p><strong>11. HOMOGRAPHY</strong></p></td>
-<td><p>Lecture Note 11</p></td>
-</tr>
-<tr class="row-odd"><td></td>
-<td><p>RECESS WEEK</p></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><p>Feb 28, 2022</p></td>
-<td><p><strong>12. IMAGE STITCHING</strong></p></td>
-<td><p>Lecture Note 12</p></td>
-</tr>
-<tr class="row-odd"><td><p>Mar 3, 2022</p></td>
-<td><p><strong>13. CAMERA GEOMETRY</strong></p></td>
-<td><p>Lecture Note 13</p></td>
-</tr>
-<tr class="row-even"><td><p>Mar 7, 2022</p></td>
-<td><p><strong>14. FUNDAMENTAL MATRIX</strong></p></td>
-<td><p>Lecture Note 14</p></td>
-</tr>
-<tr class="row-odd"><td><p>Mar 10, 2022</p></td>
-<td><p><strong>15. STEREO VISION</strong></p></td>
-<td><p>Lecture Note 15</p></td>
-</tr>
-<tr class="row-even"><td><p>Mar 14, 2022</p></td>
-<td><p><strong>16. MRF + GRAPHCUTS</strong></p></td>
-<td><p>Lecture Note 16</p></td>
-</tr>
-<tr class="row-odd"><td></td>
-<td><p><a class="reference external" href="https://">ASSIGNMENT 3</a></p></td>
-<td></td>
-</tr>
-<tr class="row-even"><td><p>Mar 17, 2022</p></td>
-<td><p><strong>17. DEEP LEARNING: INTRODUCTION</strong></p></td>
-<td><p>Lecture Note 17</p></td>
-</tr>
-<tr class="row-odd"><td><p>Mar 21, 2022</p></td>
-<td><p><strong>18. BACKPROPAGATION</strong></p></td>
-<td><p>Lecture Note 18</p></td>
-</tr>
-<tr class="row-even"><td><p>Mar 24, 2022</p></td>
-<td><p><strong>19. TRAINING STRATEGIES</strong></p></td>
-<td><p>Lecture Note 19</p></td>
-</tr>
-<tr class="row-odd"><td><p>Mar 28, 2022</p></td>
-<td><p><strong>20. CNN: IMAGE CLASSIFICATION</strong></p></td>
-<td><p>Lecture Note 20</p></td>
-</tr>
-<tr class="row-even"><td></td>
-<td><p><a class="reference external" href="https://">ASSIGNMENT 4</a></p></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><p>Mar 31, 2022</p></td>
-<td><p><strong>21. CNN: OBJECT DETECTION</strong></p></td>
-<td><p>Lecture Note 21</p></td>
-</tr>
-<tr class="row-even"><td><p>April 4, 2022</p></td>
-<td><p><strong>22. OPTIMIZATION IN DEEP LEARNING 1</strong></p></td>
-<td><p>Lecture Note 22</p></td>
-</tr>
-<tr class="row-odd"><td><p>April 7, 2022</p></td>
-<td><p><strong>23. OPTIMIZATION IN DEEP LEARNING 2</strong></p></td>
-<td><p>Lecture Note 23</p></td>
-</tr>
-<tr class="row-even"><td><p>April 11, 2022</p></td>
-<td><p><strong>24. DEEP GENERATIVE MODELS: AUTOENCODERS</strong></p></td>
-<td><p>Lecture Note 24</p></td>
-</tr>
-<tr class="row-odd"><td><p>April 14, 2022</p></td>
-<td><p><strong>25. GENERATIVE ADVERSARIAL NETWORK (GAN)</strong></p></td>
-<td><p>Lecture Note 25</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="section" id="syllabus">
-<h2>Syllabus<a class="headerlink" href="#syllabus" title="Permalink to this headline"></a></h2>
-<ol class="arabic simple">
-<li><p>Introduction</p>
-<ol class="arabic simple">
-<li><p>What is Computer Vision?</p></li>
-<li><p>Applications of Computer Vision</p></li>
-<li><p>Why is Computer Vision Difficult?</p></li>
-<li><p>Pillars of Computer Vision</p></li>
-<li><p>Image Formation: Geometry</p>
-<ul class="simple">
-<li><p>Pinhole camera, image plane, virtual image plane, aperture</p></li>
-<li><p>Lens, focal length</p></li>
-</ul>
-</li>
-<li><p>Image Formation: Photometry</p>
-<ul class="simple">
-<li><p>Light as spectrum, visibile spectrum and wavelengths</p></li>
-<li><p>CCD and its wavelength sensitivity</p></li>
-<li><p>Gamma function</p></li>
-<li><p>Color filters and Bayer filter</p></li>
-<li><p>Camera color filter’s spectral sensitivity</p></li>
-<li><p>Color constancy (white balancing)</p></li>
-<li><p>Image distortions: noise, pixel saturation, blooming, chromatic aberation, flare, etc.</p></li>
-</ul>
-</li>
-</ol>
-</li>
-<li><p>Image Convolution</p>
-<ol class="arabic simple">
-<li><p>One-Dimensional (1D) Convolution</p></li>
-<li><p>Two-Dimensional (2D) Convolution</p></li>
-<li><p>Gradient Operation</p></li>
-<li><p>Sobel Operator</p></li>
-<li><p>Gaussian Filtering</p></li>
-<li><p>Laplacian Filtering</p></li>
-</ol>
-</li>
-<li><p>Programming Tutorial 1:</p>
-<ol class="arabic simple">
-<li><p>OpenCV: Brief Introduction</p></li>
-<li><p>Two-Dimensional Convolution using OpenCV</p></li>
-</ol>
-</li>
-<li><p>Viola-Jones’ Object Detection: Haar-like Features</p>
-<ol class="arabic simple">
-<li><p>Haar-like Masks</p></li>
-<li><p>Haar-like Decriptor</p></li>
-</ol>
-</li>
-<li><p>Viola-Jones’ Object Detection: AdaBoost: Classification</p></li>
-<li><p>Viola-Jones’ Object Detection: Integral Images + Cascading</p></li>
-<li><p>SIFT: Keypoint Generation</p>
-<ol class="arabic simple">
-<li><p>Image Pyramid</p></li>
-<li><p>Gaussian Smoothing</p></li>
-<li><p>Difference of Gaussians (DoG)</p></li>
-<li><p>Local Extrema</p></li>
-</ol>
-</li>
-<li><p>SIFT: Keypoint Localization</p></li>
-<li><p>SIFT: Rotation Invariant</p></li>
-<li><p>SIFT: Descriptor</p></li>
-<li><p>Programming Tutorial 2:</p>
-<ol class="arabic simple">
-<li><p>SIFT extraction and display</p></li>
-<li><p>Homography</p></li>
-<li><p>Ransac</p></li>
-<li><p>Image Stitching</p></li>
-</ol>
-</li>
-<li><p>Homography</p></li>
-<li><p>Image Stitching</p></li>
-<li><p>Camera Geometry</p></li>
-<li><p>Fundamental Matrix</p></li>
-<li><p>Stereo Vision</p></li>
-<li><p>MRF + Graphcuts</p></li>
-<li><p>Programming Tutorial 3:</p>
-<ol class="arabic simple">
-<li><p>MRF + Graphcuts: Two Labels</p></li>
-<li><p>Multiple Labels</p></li>
-</ol>
-</li>
-<li><p>Deep Learning: Introduction</p></li>
-<li><p>Backpropagation</p></li>
-<li><p>Training Strategy</p></li>
-<li><p>CNN: Image Classification</p></li>
-<li><p>Programming Tutorial 4:</p>
-<ol class="arabic simple">
-<li><p>PyTorch</p></li>
-<li><p>LeNet5</p></li>
-</ol>
-</li>
-<li><p>CNN: Object Detection</p></li>
-<li><p>Optimization in Deep Learning</p></li>
-</ol>
-</div>
-</div>
-
-
-           </div>
-          </div>
-          <footer>
-
-  <hr/>
-
-  <div role="contentinfo">
-    <p>&#169; Copyright 2021, Robby Tan.</p>
-  </div>
-
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
-   
-
-</footer>
-        </div>
+    
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container"  style="font-size:16px">
+	
+        <h2>YSC4227 Computer Vision and Deep Learning</h2>
+	<p>
+	Yale-NUS College
+	</p>
       </div>
-    </section>
-  </div>
-  <script>
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script> 
+    </div>
+    <div class="container" style="font-size:16px">
+      <h3>Description:</h3>
+      <p>Images and videos are everywhere. Using your mobile phone, it
+      is easy to snap pictures or record videos. These images/videos
+      have rich information, and are useful for various applications,
+      from self-driving cars to surveillance systems. However, there
+      is a critical question that we need to answer, namely, how we
+      can automatically extract the rich visual information from those
+      images/videos. This is the task of computer vision to answer
+	this question.
+	</p>
 
-</body>
+      <p>The goal of computer vision is to make computers work like
+      human visual perception, namely, to understand and recognize the
+      world through visual data. For humans, seeing is intuitive and
+      effortless, however how exactly we can do it is still a
+      mystery. In other words, to decipher or decode our seeing
+      ability to computer algorithms is not obvious and extremely
+      challenging. After decades of research, it is known that visual
+      features and prediction/inference techniques are key to the
+      problem. In this respect, one important approach is deep
+      learning. Deep learning is able to extract features and to infer
+      the visual information from the features automatically. This
+      course will focus on the fundamentals of computer vision and
+      deep learning, as well as on deep learning’s applications to
+	computer vision.
+	</p>
+
+       <b>Textbooks</b> (The textbooks are used loosely):
+       <ol>
+       <li> <a href="http://luthuli.cs.uiuc.edu/~daf/CV2E-site/cv2eindex.html" target="_blank">Computer Vision: A Modern Approach</a>, D. Forsyth and	 J. Ponce
+       <li> <a href="http://www.computervisionmodels.com//" target="_blank">Computer Vision: Models, Learning, and
+      Inference</a>, by S.J.D. Prince 
+       <li> <a href="https://www.deeplearningbook.org//" target="_blank">Deep Learning</a>, Ian Goodfellow and Yoshua Bengio and Aaron Courville.
+       </ol>
+
+      <b>Instructor</b>: <a href="http://tanrobby.github.io"
+      target="_blank">Robby 
+	T. Tan</a>
+      <br>
+<hr>
+<h3>Teaching Schedule:</h3>
+<p>
+The following schedule will not be strictly followed.
+</p>
+
+<br>
+      
+<table width="100%" 
+       border = 1px
+       class="table table-striped">
+  <thead class="thead-inverse">
+    
+    <tr>
+      <th width="15%"> Date
+      <th> <center> Topic </center>
+      <th width="25%"> <center> Lecture Note </center>
+  </thead>
+  <tbody>
+    
+    
+    <!------------------------------------------------------------------------------>	  
+    
+    
+    <tr>
+      <td rowspan="1"> Jan 10, 2022
+      <td>
+	
+	<b>1. INTRODUCTION</b>
+	<br>
+	<br>
+	Additional Resources:
+	<ul>
+	  <li> Crash Course Computer Vision: <a href="https://youtu.be/-4E2-0sxVUM">YouTube</a>
+	  <li> Brief introduction to computer vision:
+	  <a href="https://www.youtube.com/watch?v=wthBcVFouzY&index=4&list=PLAwxTw4SYaPnbDacyrK_kB_RUkuxQBlCm"
+	     target="_blank">YouTube</a>
+	  <li> Computer Vision: <a href="https://en.wikipedia.org/wiki/Computer_vision">Wikipedia</a>
+	  <li> OpenCV tutorial: <a class="reference external" href="https://youtu.be/oXlwWbU8l2o">YouTube</a>
+| <a class="reference external" href="https://docs.opencv.org/4.x/d6/d00/tutorial_py_root.html">Website 1</a>
+| <a class="reference external" href="https://www.geeksforgeeks.org/opencv-python-tutorial/">Website 2</a></li>
+	</ul>
+      <td>
+	<a href="https://www.dropbox.com/s/fj8cw1khkbo5sbr/01_intro.pdf?dl=0">Slides 1</a></td>
+   </tr>
+    
+    <!------------------------------------------------------------------------------>
+    
+    
+    <tr>
+      <td rowspan="1"> Jan 13, 2022
+      <td>
+	<b> 2. IMAGE CONVOLUTION: BASICS</b>
+	<br>
+	<br>
+	Reading:
+	<ul>
+	  <li>Textbook 1 "Computer Vision: A Modern Approach": Sec.7.1 and  Sec.7.2</li>
+	  <li>Textbook 2 "Computer Vision: Models, Learning, and Inference": Sec. 13.1.13</li>
+	  <li>Image convolution: <a class="reference external" href="https://en.wikipedia.org/wiki/Kernel_(image_processing)">Wikipedia</a>
+	      | <a class="reference external" href="http://machinelearninguru.com/computer_vision/basics/convolution/image_convolution_1.html">Website 1</a>
+	      | <a class="reference external" href="http://aishack.in/tutorials/image-convolution-examples/">Website 2</a></li>
+	  <li>Haar-like Features: <a class="reference external"
+					href="http://en.wikipedia.org/wiki/Haar-like_features">Wikipedia</a></li>
+	</ul>
+      <td>
+	<a class="reference external"
+	href="https://www.dropbox.com/s/u9vtd5dvxbt09q7/02_convolution.pdf?dl=0">Slides
+	  2</a>
+	<br>
+	<a class="reference external" href="https://www.dropbox.com/s/iqsmaeiryjldroq/02_convolution_annotated.pdf?dl=0">Slides 2a (annotated)</a>
+    </tr>
+	    
+    <!------------------------------------------------------------------------------>
+    
+    <tr>
+      <td rowspan="1"> Jan 17, 2022
+      <td>
+	<b>3. IMAGE CONVOLUTION: DERIVATIVE FILTERS </b>
+	<br>
+	<br>
+<td>
+ <a class="reference external" href="https://www.dropbox.com/s/n9bl6if5l53eqgh/02b_convolution.pdf?dl=0">Slide 2b (annotated)</a>
+
+    </tr>
+
+
+    <!------------------------------------------------------------------------------>
+    <tr class="warning">
+      <td>
+      <td>
+	<br>
+	<a href="https://tanrobby.github.io/teaching/ync_vision/assignment1/index.html"
+	  target="_blank">ASSIGNMENT 1</a>
+	<br>
+	<br>
+      <td>
+    </tr>
+    <!------------------------------------------------------------------------------>
+    
+    
+	
+    <tr>
+      <td rowspan="1"> Jan 20, 2022
+      <td>
+	<b> 4. VIOLA-JONES: HAAR-LIKE FEATURES</b>
+	<br>
+	<br>
+	Reading:
+	<ul>
+	  <li>Viola-Jones’ algorithm: <a href="https://www.vision.rwth-aachen.de/media/course/WS/2014/computer-vision/viola-facedetection-ijcv04.pdf">PDF</a>
+	      | <a href="https://en.wikipedia.org/wiki/Viola%E2%80%93Jones_object_detection_framework">Wikipedia</a>
+	      | <a href="https://www.youtube.com/watch?v=sWTvK72-SPU">YouTube</a></li>
+	  <li>Haar-like Features: <a href="http://en.wikipedia.org/wiki/Haar-like_features">Wikipedia</a></p></li>
+	</ul>
+      <td align="left">
+      <a href="https://www.dropbox.com/s/0jfpdav3iw2woox/04_viola_jones.pdf?dl=0">Slide
+	4</a>
+      <br>
+      <a href="https://www.dropbox.com/s/0cfkxwc2kymldb3/04a_viola_jones_annotated.pdf?dl=0">Slide 4a (annotated)</a>
+    
+    <!------------------------------------------------------------------------------>
+    
+    <tr>
+      <td rowspan="1"> Jan 24, 2022
+      <td>
+	<b>5. VIOLA-JONES: ADABOOST</b>
+	<br> 
+	<br>
+	Reading:
+	<ul>
+	  <li>AdaBoost: <a href="https://youtu.be/ix6IvwbVpw0">Online Lecture</a>
+	      | <a href="https://en.wikipedia.org/wiki/AdaBoost">Wikipedia</a>
+	</ul>
+      <td align="left">
+	<a href="https://www.dropbox.com/s/excbnbsbdy1cie4/04b_viola_jones_annotated.pdf?dl=0">Slide 4b (annotated)</a>
+    <!------------------------------------------------------------------------------>
+    
+    
+    <tr>
+      <td rowspan="1"> Jan 27, 2022
+      <td>
+	<b>6. VIOLA JONES: INTEGRAL IMAGE</b>
+	<br>
+	<br>
+	Reading:
+	<ul>
+	  <li>Integral
+	  Image: <a href="https://en.wikipedia.org/wiki/Summed-area_table">Wikipedia</a>
+	  | <a href="https://computersciencesource.wordpress.com/2010/09/03/computer-vision-the-integral-image/">Website</a> 
+	</ul>
+      <td align="left">
+	<a href="https://www.dropbox.com/s/08t3o7m0xr1gn8o/04c_viola_jones_annotated.pdf?dl=0">Slide
+	  4c (annotated)</a>
+	<br>
+	<a href="https://www.dropbox.com/s/iyt38h3f6li1k1f/04_lecture_note.pdf?dl=0">Lecture Note 4</a>
+
+    </tr>
+    
+    <!------------------------------------------------------------------------------>
+    
+    
+    <tr>
+      <td rowspan="1"> Jan 31, 2022
+      <td>
+	<b>7. SIFT: KEYPOINT GENERATION</b>
+	<br>
+	<br>
+	Reading:
+	<ul>
+	  <li>Textbook 2 "Computer Vision: Models, Learning, and
+	  Inference": Sec. 13.2, Sec. 13.3
+	  <li>SIFT: <a href="http://www.cs.ubc.ca/~lowe/papers/ijcv04.pdf">PDF</a> |
+	    <a href="https://en.wikipedia.org/wiki/Scale-invariant_feature_transform">Wikipedia</a>
+	</ul>
+	Additional Resources:
+	<ul>
+	  <li>Object
+	  search: <a href="http://www.robots.ox.ac.uk/~vgg/research/oxbuildings/index.html"
+	  target="_blank">Demo</a>	  
+	</ul>
+	
+      <td align="left">
+      <a href="https://www.dropbox.com/s/uq0dsiae0tn5qgb/07_sift.pdf?dl=0">Slide 7</a>
+    </tr>
+    <!------------------------------------------------------------------------------>
+    
+    
+    <tr>
+      <td rowspan="1"> Feb 3, 2022
+      <td>
+	<b>8. SIFT: DoG and LoG</b>
+	<br>
+	<br>
+	Reading:
+	<ul>
+	  <li> Laplacian of
+	  Gaussian: <a href="https://towardsdatascience.com/sift-scale-invariant-feature-transform-c7233dc60f37">Website</a>  
+	</ul>
+      <td align="left">
+      <a href="https://www.dropbox.com/s/17voe3ryyah2hwu/07a_sift_annotated.pdf?dl=0">Slide 7a (annotated)</a>
+
+    </tr>
+    <!------------------------------------------------------------------------------>
+    
+    
+    <tr>
+      <td rowspan="1"> Feb 7, 2022
+      <td>
+	<b>9. SIFT: KEYPOINT LOCALIZATION</b>
+	<br>
+	<br>
+	Reading:
+	<ul>
+	  <li>Matrix Calculus: <a href="https://en.wikipedia.org/wiki/Matrix_calculus">Wikipedia</a>
+	</ul>
+      <td align="left">
+
+    </tr>
+
+
+    <!------------------------------------------------------------------------------>
+    <tr class="warning">
+      <td>
+      <td>
+	<br>
+	<a href="https://tanrobby.github.io/teaching/ync_vision/assignment2/index.html"
+	  target="_blank">ASSIGNMENT
+	  2</a>
+	<br>
+	<br>
+      <td>
+    </tr>
+
+    
+    <!------------------------------------------------------------------------------>
+    
+    
+    <tr>
+      <td rowspan="1"> Feb 10, 2022
+      <td>
+	<b>10. SIFT: ROTATION INVARIANT</b>
+	<br>
+	<br>
+      <td align="left">
+
+    </tr>
+    <!------------------------------------------------------------------------------>
+    
+    
+    <tr>
+      <td rowspan="1"> Feb 14, 2022
+      <td>
+	<b>11. HOMOGRAPHY</b>
+	<br>
+	<br>
+      <td align="left">
+
+    </tr>
+    <!------------------------------------------------------------------------------>
+
+    <tr class="success">
+      
+      <td rowspan="1">
+      <td>
+	<br>
+	<b> RECESS WEEK </b>
+	<br>
+	<br>		
+      <td>
+    </tr>
+
+    <!------------------------------------------------------------------------------>
+    
+    
+    <tr>
+      <td rowspan="1"> Feb 28, 2022
+      <td>
+	<b>12. IMAGE STITCHING</b>
+	<br>
+	<br>
+      <td align="left">
+    </tr>
+
+    
+    <!------------------------------------------------------------------------------>
+    <tr class="warning">
+      <td>
+      <td>
+	<br>
+	ASSIGNMENT 3
+	<br>
+	<br>
+      <td>
+    </tr>
+
+    
+    <!------------------------------------------------------------------------------>
+	
+   <tr>
+     <td rowspan="1"> Mar 3, 2022
+     <td> 
+	<b>13. CAMERA GEOMETRY</b>
+	<br>
+	<br>
+     <td align="left">
+    </tr>
+
+   <!------------------------------------------------------------------------------>
+    
+    
+    <tr>
+      <td rowspan="1"> Mar 7, 2022
+      <td>
+       <b>14. FUNDAMENTAL MATRIX</b>
+       <br>
+       <br>
+      <td align="left">
+    </tr>
+    <!------------------------------------------------------------------------------>
+
+	
+    <tr>
+      <td rowspan="1"> Mar 10, 2022
+      <td>
+	<b>15. STEREO VISION </b>
+	<br>
+	<br>
+      <td align="left">
+    </tr>
+    <!------------------------------------------------------------------------------>
+
+    
+    <tr>
+      <td rowspan="1"> Mar 14, 2022
+      <td>
+	<b>16. MRF + GRAPHCUTS</b>
+       <br>
+       <br>
+      <td align="left">
+
+    </tr>
+
+        <!------------------------------------------------------------------------------>
+    <tr class="warning">
+      <td>
+      <td>
+	<br>
+	ASSIGNMENT 4
+	<br>
+	<br>
+      <td>
+    </tr>
+
+
+
+
+        <!------------------------------------------------------------------------------>
+
+    <tr>
+      <td rowspan="1"> Mar 17, 2022
+      <td>
+	<b>17. DEEP LEARNING: INTRODUCTION</b>
+       <br>
+       <br>
+      <td align="left">
+    </tr>
+
+
+
+    
+    <!------------------------------------------------------------------------------>
+	
+    <tr>
+      <td rowspan="1"> Mar 21, 2022
+      <td>
+	<b>18. BACKPROPAGATION</b>
+       <br>
+       <br>
+      <td align="left">
+    </tr>
+
+    <!------------------------------------------------------------------------------>
+	
+    <tr>
+      <td rowspan="1"> Mar 24, 2022
+      <td>
+	<b>19. TRAINING STRATEGIES</b>
+       <br>
+       <br>
+      <td align="left">
+    </tr>
+
+    <!------------------------------------------------------------------------------>
+    <tr class="warning">
+      <td>
+      <td>
+	<br>
+	ASSIGNMENT 5
+	<br>
+	<br>
+      <td>
+    </tr>
+
+    <!------------------------------------------------------------------------------>
+	
+    <tr>
+      <td rowspan="1"> Mar 28, 2022
+      <td>
+	<b>20. CNN: IMAGE CLASSIFICATION</b>
+       <br>
+       <br>
+      <td align="left">
+    </tr>
+
+    <!------------------------------------------------------------------------------>
+	
+    <tr>
+      <td rowspan="1"> Mar 31, 2022
+      <td>
+	<b>21. CNN: OBJECT DETECTION</b>
+       <br>
+       <br>
+      <td align="left">
+    </tr>
+
+    <!------------------------------------------------------------------------------>
+	
+    <tr>
+      <td rowspan="1"> April 4, 2022
+      <td>
+	<b>22. OPTIMIZATION IN DEEP LEARNING 1</b>
+       <br>
+       <br>
+      <td align="left">
+    </tr>
+
+    <!------------------------------------------------------------------------------>
+	
+    <tr>
+      <td rowspan="1"> April 7, 2022
+      <td>
+	<b>23. OPTIMIZATION IN DEEP LEARNING 2</b>
+       <br>
+       <br>
+      <td align="left">
+    </tr>
+
+    <!------------------------------------------------------------------------------>
+	
+    <tr>
+      <td rowspan="1">April 11, 2022
+      <td>
+	<b>24. DEEP GENERATIVE MODELS: AUTOENCODERS</b>
+       <br>
+       <br>
+      <td align="left">
+    </tr>
+
+    <!------------------------------------------------------------------------------>
+	
+    <tr>
+      <td rowspan="1">April 14, 2022
+      <td>
+	<b>25. GENERATIVE ADVERSARIAL NETWORK (GAN)</b>
+       <br>
+       <br>
+      <td align="left">
+    </tr>
+
+
+    
+    <!------------------------------------------------------------------------------>
+
+    <tr class="danger">
+      <td rowspan="1">
+      <td>
+	<b>FINAL EXAM:<b>
+	<br>
+	<br>	
+	<td align="left"> 
+
+    </tr>
+
+
+    
+  </tbody>
+</table>
+<br>
+
+
+<!------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------>
+
+<br>
+<br>
+<br>
+
+
+      
+<hr>
+<h3>Syllabus:</h3>
+<ul>
+</ul>
+<li> Introduction
+<li> Image Formation
+<li> Image Convolution
+<li> Viola-Jones’ Object Detection: Haar-like Features
+<li> SIFT: Keypoint Generation
+<li> Homography
+<li> Image Stitching
+<li> Camera Geometry
+<li> Fundamental Matrix
+<li> MRF + Graphcuts
+<li> Deep Learning: Introduction
+<li> Backpropagation
+<li> Training Strategy
+<li> CNN: Image Classification
+<li> PyTorch
+<li> LeNet5
+<li> CNN: Object Detection
+<li> Optimization in Deep Learning
+
+
+<br>
+<hr>
+  <br>
+  <br>
+<!------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------>
+
+</div>      
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+  </body>
+  <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+<script type="text/javascript">
+  try {
+  var pageTracker = _gat._getTracker("UA-13131132-3");
+  pageTracker._trackPageview();
+  } catch(err) {}</script>
 </html>

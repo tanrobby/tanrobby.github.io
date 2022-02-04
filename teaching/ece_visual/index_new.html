@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="../../favicon.ico"> -->
+    
+    <title>ECE Visual Computing</title>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="../../bootstrap-3.3.6-dist/css/bootstrap.css" rel="stylesheet">
+    
+    <!-- Custom styles for this template -->
+    <link href="../../jumbotron.css" rel="stylesheet">
+  </head>
+  
+  <body>
+    
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      
+    </nav>
+    
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container"  style="font-size:16px">
+        <h2>EE5731 Visual Computing</h2>
+        Electrical and Computer Engineering, NUS
+	</p>
+      </div>
+    </div>
+    
+    
+      
+      <br>
+    <div class="container" style="font-size:16px">
+
+      <h3>Description:</h3>
+      <p>
+	The goal of computer vision is to make computers work like human
+	visual perception, namely, to understand and recognize the world
+	through visual information, such as, images or videos. Human visual
+	perception, after millions of years of evolution, is extremely good in
+	understanding and recognizing objects or scenes. To have similar
+	abilities to human visual perception (or beyond), computer
+	vision scientists
+	have been developing algorithms by relying on various visual
+	information, and this course is about some of these algorithms. 
+      </p>
+      <p>
+	This course focuses on the mathematical foundations of
+	computer vision. Hence, we will discuss ''traditional''
+	approaches, instead of deep 
+	learning. This is because the traditional approaches allow us
+	to understand how computer vision algorithms work. 
+      </p>
+       <br>
+      <b>Textbooks</b>: "Computer Vision: Models, Learning, and
+      Inference", by S.J.D. Prince | "Multiple View Geometry", by
+      R. Hartley and A. Zisserman (The textbooks are used loosely)
+      <br>
+      <b>Instructor</b>: <a href="http://tanrobby.github.io"
+      target="_blank">Robby 
+	T. Tan</a>
+      <br>
+      <br>
+      <hr>
+
+<hr>
+<h3>Teaching Schedule:</h3>
+<p>
+The following schedule will not be strictly followed.
+</p>
+
+<br>
+      
+<table width="100%" 
+       border = "0"
+       class="table table-striped">
+  <thead class="thead-inverse">
+    
+    <tr>
+      <th width="12%"> Date
+      <th> <center> Topic </center>
+      <th width="25%"> <center> Lecture Note </center>
+  </thead>
+  <tbody>
+    
+    
+    <!------------------------------------------------------------------------------>	  
+    
+    
+    <tr>
+      <td rowspan="1"> August 10
+      <td>
+	
+	<b>1. INTRODUCTION +  IMAGE FORMATION</b>
+	<br>
+	<br>
+	Additional Resources:
+	<ul>
+	  <li> Crash Course Computer Vision: <a href="https://youtu.be/-4E2-0sxVUM">youtube</a>
+	  <li> Brief introduction to computer vision:
+	  <a href="https://www.youtube.com/watch?v=wthBcVFouzY&index=4&list=PLAwxTw4SYaPnbDacyrK_kB_RUkuxQBlCm"
+	     target="_blank">youtube</a>
+	  <li> Computer Vision: <a href="https://en.wikipedia.org/wiki/Computer_vision">wikipedia</a>
+	</ul>
+      <td>
+	<a href="https://www.dropbox.com/s/jzo1akgoe5u505t/01_intro.pdf?dl=0"
+	target="_blank">Lecture note 1</a>
+    </tr>
+    
+    <!------------------------------------------------------------------------------>
+    
+    
+    <tr>
+      <td rowspan="1"> August 17
+      <td>
+	<b> 2. FACE DETECTION</b>
+	<br>
+	<br>
+	Reading:
+	<ul>
+	  	  <li> Face Detection: Viola-Jones' algorithm:
+	    <a href="https://www.hpl.hp.com/techreports/Compaq-DEC/CRL-2001-1.pdf"
+	       target="_blank">pdf</a> | <a href="https://www.youtube.com/watch?v=sWTvK72-SPU" target="_blank">youtube</a>
+	  <li> "Computer Vision" textbook (Computer Vision: Models, Learning, and
+	  Inference): Sec. 13.1.13 (Linear Filtering)
+	  <li> Image
+	    convolution: <a href="https://en.wikipedia.org/wiki/Kernel_(image_processing)"
+			    target="_blank">wikipedia</a>
+	    | <a href="http://aishack.in/tutorials/image-convolution-examples/"
+		 target="_blank">website</a>
+	   <li> Haar-like Features: <a href="http://en.wikipedia.org/wiki/Haar-like_features"
+				      target="_blank">wikipedia</a>
+	    <li>AdaBoost:
+	      <a href="https://youtu.be/ix6IvwbVpw0" target="_blank">online lecture</a>
+	    <li> Integral Image: <a href="http://en.wikipedia.org/wiki/Summed_area_table"
+				     target="_blank">wikipedia</a>
+				     | <a href="https://computersciencesource.wordpress.com/2010/09/03/computer-vision-the-integral-image/"
+					  target="_blank"> website</a>
+
+	</ul>
+      <td>
+	<a href="https://www.dropbox.com/s/duh1vf979y4fuq8/EE5731_lecture02.pdf?dl=0" target="_blank">Lecture note 2</a>
+    </tr>
+	    
+    <!------------------------------------------------------------------------------>
+    
+    <tr>
+      <td rowspan="1"> August 24
+      <td>
+	<b>3. IMAGE FEATURES: HOG</b>
+	<br>
+	<br>
+	Reading:
+	<ul>
+	    <li> Image gradient: <a href="https://en.wikipedia.org/wiki/Image_gradient" target="_blank">wikipedia</a>
+	  <li> "Computer Vision" textbook Chapter 13: Image Preprocessing and Feature
+	    Extraction, particularly Sec. 13.1 (per-pixel
+	    transformations), and Sec. 13.3.3 (Histogram of Oriented
+	    Gradients)		    
+	</ul>
+	</ul>
+	Additional Resources:
+	<ul>
+	  <li> HoG for Human
+	    Detection: <a href="https://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf"
+			  target="_blank">pdf</a> | 	 
+	    <a href="https://www.youtube.com/watch?v=0Zib1YEE4LU"
+	       target="_blank">youtube</a> 
+	</ul>
+<td>
+	<a href="https://www.dropbox.com/s/xcykg5h0qln0d3q/EE5731_lecture03.pdf?dl=0" target="_blank">Lecture note 3</a>
+</tr>  
+    <!------------------------------------------------------------------------------>
+    
+    
+	
+    <tr>
+      <td rowspan="1"> August 31
+      <td>
+	<b>4.  SIFT (Part 1/2)</b>
+	<br> 
+	<br>
+	Reading:
+	<ul>
+          <li> "Computer Vision"  textbook: Chapter 13, Sec. 13.2 (edges, corners, and
+          interest points), Sec. 13.3 (descriptors)
+	  <li> SIFT:
+	     <a href="http://www.cs.ubc.ca/~lowe/papers/ijcv04.pdf"
+		target="_blank">pdf</a>
+		| <a href="https://en.wikipedia.org/wiki/Scale-invariant_feature_transform"
+		target="_blank">wikipedia</a> 
+	  <li> Matrix calculus: <a href="https://en.wikipedia.org/wiki/Matrix_calculus" target="_blank">wikipedia</a>
+	</ul>
+	</ul>
+	Additional Resources:
+	<ul>
+	  <li> Features: SIFT
+	    <a  href="http://www.cs.ubc.ca/~lowe/keypoints/siftDemoV4.zip"
+		 target="_blank">executable program</a> 
+	    | <a  href="http://www.cs.ubc.ca/~lowe/keypoints" target="_blank">website</a>
+	  <li> Object search: 
+	    <a href="http://www.robots.ox.ac.uk/~vgg/research/oxbuildings/index.html"
+		target="_blank">demo</a>
+	  <li> Video google:
+	    <a href="http://www.robots.ox.ac.uk/~vgg/research/vgoogle/index.html"
+	</ul>
+<td align="left">
+	<a href="https://www.dropbox.com/s/xdv2j3fl42ojw5u/EE5731_slide4.pdf?dl=0" target="_blank">Slides 4</a>
+	<br>
+	<a href="https://www.dropbox.com/s/7e0pk48lz66z6s3/EE5731_lecture04.pdf?dl=0" target="_blank">Lecture note 4</a>
+    
+    <!------------------------------------------------------------------------------>
+    
+    <tr>
+      <td rowspan="1"> September 7
+      <td>
+	<b>5.  SIFT (Part 2/2)</b>
+	<br> 
+	<br>
+	
+      <td align="left">
+    
+    <!------------------------------------------------------------------------------>
+    
+    
+    <tr>
+      <td rowspan="1"> September 14
+      <td>
+	<b>6. IMAGE STITCHING</b>
+	<br>
+	<br>
+	Reading:
+	<ul>
+	  <li> "Computer Vision" textbook: Chapter 14: Sec. 14.3
+	  (Homogeneous Coordinates),
+          <li>Textbook: Chapter 15, Sec. 15.1 (2D transformation
+          models), Sec. 15.5 (transformation between images),
+          Sec. 15.6 (robust learning of transformations), Sec. 15.7 (applications)
+	  <li> RANSAC: <a href="https://en.wikipedia.org/wiki/Random_sample_consensus" target="_blank">wikipedia</a>
+	</ul>
+	Additional resources:
+	<ul>
+	  <li> Homography: <a href="https://en.wikipedia.org/wiki/Homography" target="_blank">wikipedia</a>
+	  <li> Automatic Panoramic Image Stitching Using Invariant
+	  Features:
+	  <a href="http://matthewalunbrown.com/papers/ijcv2007.pdf"
+	  target="_blank">pdf</a> 
+	  <li> Image Alignment and Stitching: A Tutorial:
+	  <a href="http://www.cs.toronto.edu/~kyros/courses/2530/papers/Lecture-14/Szeliski2006.pdf"
+	     target="_blank">pdf</a>
+	  <br>
+	</ul>
+      <td align="left">
+	      <a href="https://www.dropbox.com/s/eta7y01ech46myx/EE5731_lecture06.pdf?dl=0" target="_blank">Lecture note 6</a>
+	      <br>
+	      <a href="assignment1/index.html" target="_blank">Assignment 1</a>
+
+    </tr>
+    
+    <!------------------------------------------------------------------------------>
+
+    <tr class="success">
+      
+      <td rowspan="1">
+      <td>
+	<b> RECESS WEEK </b>
+	<br>
+	<br>		
+      <td>
+    </tr>
+
+    <!------------------------------------------------------------------------------>
+    
+    
+    <tr>
+      <td rowspan="1"> September 28
+      <td>
+	<b>7. CAMERA GEOMETRIC PROPERTIES</b>
+	<br>
+	<br>
+       	Reading: 
+	<ul>
+	  <li> "Computer Vision" textbook chapter 14 (Pinhole Camera): sect. 14.1 (the
+	    pinhole camera),  sect. 14.4 (learning extrinsic
+	  parameters), sect. 14.5 (learning intrinsic parameters)
+	  <li> "Multiple View Geometry" textbook: Chapter 6 (Camera
+	    Models): Sect.6.1 (finite cameras),  Chapter 7
+	    (Computation of the Camera Matrix): Sect. 7.1  (basic equations)
+	</ul>
+      <td align="left">
+	      <a href="https://www.dropbox.com/s/ipvknsapsnd26ix/EE5731_lecture07.pdf?dl=0" target="_blank">Lecture note 7</a>
+    </tr>
+
+    <!------------------------------------------------------------------------------>
+	
+   <tr>
+     <td rowspan="1"> October 5
+     <td> 
+	<b>8. FUNDAMENTAL MATRIX & MARKOV RANDOM FIELD</b>
+	<br>
+	<br>
+	Reading:
+	<ul>
+	  <li>  "Multiple View Geometry" textbook: Chapter 9 (Epipolar
+	  Geometry and Fundamental Matrix): Sect. 9.1 (Epipolar
+	  Geometry), Sect. 9.2 (The Fundamental Matrix)
+	</ul>
+	<br>
+	Additional Resources:
+	<ul>
+	  <li> "Computer Vision"  textbook Chapter 16 (Multiple Cameras): Sect. 16.1
+	  (two-view geometry), Sect. 16.2 (essential matrix),
+	    Sect. 16.3 (fundamental matrix)	  
+	</ul>
+     <td align="left">
+	  <a href="https://www.dropbox.com/s/8s7frktbl2dybjp/EE5731_lecture08.pdf?dl=0" target="_blank">Lecture note 8</a>
+    </tr>
+
+   <!------------------------------------------------------------------------------>
+    
+    
+    <tr>
+      <td rowspan="1"> October 12
+      <td>
+       <b>9. MRF and GRAPHCUTS</b>
+       <br>
+       <br>
+       Reading:
+       <ul>
+	 <li> "Computer Vision"  textbook: Chapter 12 (Models for grids): Sect. 12.1
+	  (Markov Random Fields),
+	  Sect. 12.2 (MAP inference for binary pairwise MRFs)
+       </ul>
+      <td align="left">
+	      <a href="https://www.dropbox.com/s/of79oq403q8el8l/EE5731_lecture09.pdf?dl=0" target="_blank">Lecture note 9</a>
+	      <br>
+	      <a href="assignment2/index.html" target="_blank">Assignment 2</a>
+    </tr>
+    <!------------------------------------------------------------------------------>
+
+	
+    <tr>
+      <td rowspan="1"> October 19
+      <td>
+	<b>10. DEPTH FROM VIDEO </b>
+	<br>
+	<br>
+	Reading:
+	<ul>
+	  <li> Depth Map from a Video Sequence, TPAMI'09: 
+	    [<a href="http://www.cad.zju.edu.cn/home/bao/pub/Consistent_Depth_Maps_Recovery_from_a_Video_Sequence.pdf"
+		target="_blank">pdf</a>]
+	  <li> Comments on Depth Map from a Video Sequence, UU-TR'11:
+	    [<a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.437.4926&rep=rep1&type=pdf"
+		target="_blank">pdf</a>]
+	</ul>
+      <td align="left">
+	      <a href="https://www.dropbox.com/s/ccpclq4f2cfdh5x/EE5731_lecture10.pdf?dl=0" target="_blank">Lecture note 10</a>
+    </tr>
+    <!------------------------------------------------------------------------------>
+
+    
+    <tr>
+      <td rowspan="1"> October 26
+      <td>
+	<b>11. OPTICAL FLOW</b>
+       <br>
+       <br>
+	Reading:
+	<ul>
+	  <li> Lucas-Kanade optical flow: <a href="https://en.wikipedia.org/wiki/Lucas%E2%80%93Kanade_method" target="_blank">wikipedia</a>
+	  <li> Horn-Schunck optical flow: <a href="http://image.diku.dk/imagecanon/material/HornSchunckOptical_Flow.pdf" target="_blank">pdf</a>
+	  <li> Secrets of optical
+	  flow: <a href="http://cs.brown.edu/~dqsun/pubs/cvpr_2010_flow.pdf"
+		   target="_blank">pdf</a>
+	</ul>
+	Additional reading:
+	<ul> 
+	  <li> Lucas-Kanade method:
+	<a href="http://ijcai.org/Past%20Proceedings/IJCAI-81-VOL-2/PDF/017.pdf"
+	   target="_blank">pdf</a>
+	</ul>
+      <td align="left">
+	      <a href="https://www.dropbox.com/s/821bpg86ri3uw6j/EE5731_lecture11.pdf?dl=0" target="_blank">Lecture note 11</a>
+    </tr>
+
+
+
+
+        <!------------------------------------------------------------------------------>
+
+    <tr>
+      <td rowspan="1"> November 2
+      <td>
+	<b>12. TEXTURE-STRUCTURE DECOMPOSITION</b>
+       <br>
+       <br>
+	Reading:
+       <ul>
+	 <li> Total-variation
+	 denoising: <a href="http://www.math-info.univ-paris5.fr/~lomn/Cours/ECE/PhysicaRudinOsher.pdf"
+	 target="_blank">pdf</a> | <a href="https://en.wikipedia.org/wiki/Total_variation_denoising" target="_blank">wikipedia</a>
+       </ul>
+      <td align="left">
+	<a href="https://www.dropbox.com/s/icti92jrmfx5aml/EE5731_lecture12.pdf?dl=0" target="_blank">Lecture note 12</a>
+    </tr>
+
+
+
+    
+    <!------------------------------------------------------------------------------>
+	
+    <tr>
+      <td rowspan="1"> November 9
+      <td>
+	<b>13. REVIEW</b>
+       <br>
+       <br>
+      <td align="left">
+	      <a href="https://www.dropbox.com/s/wtu4hddcr40zgux/EE5731_lecture13.pdf?dl=0" target="_blank">Review</a>
+    </tr>
+
+
+
+    
+    <!------------------------------------------------------------------------------>
+
+    <tr class="danger">
+      <td rowspan="1">
+      <td>
+	<b>FINAL EXAM: <a href="exam.html" >RULES</a><b>
+	<br>
+	<br>	
+	<td align="left"> 
+
+    </tr>
+
+
+    
+  </tbody>
+</table>
+<br>
+
+
+<!------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------>
+
+<br>
+<br>
+<br>
+
+
+      
+<hr>
+<h3>Syllabus:</h3>
+<ul>
+  <li>Introduction
+    <li>Face Detection
+    <li>Image Features
+    <li>Camera geometric properties
+    <li>Two-view geometry
+    <li>Markov random field
+    <li>Graphcuts and belief propagation
+    <li>Depth from stereo and video
+    <li>Directed graph and human pose estimation
+    <li>Optical flow
+    <li>Low-level Vision
+</ul>
+
+<br>
+<hr>
+  <br>
+  <br>
+<!------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------>
+
+</div>      
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+  </body>
+  <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+<script type="text/javascript">
+  try {
+  var pageTracker = _gat._getTracker("UA-13131132-3");
+  pageTracker._trackPageview();
+  } catch(err) {}</script>
+</html>
