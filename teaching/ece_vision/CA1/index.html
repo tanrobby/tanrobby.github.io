@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="../../favicon.ico"> -->
+
+    <title>EE4221: Part 2 - Assignment 1 (CA-2.1)</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../../bootstrap-3.3.6-dist/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../../../jumbotron.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container" style="font-size:16px">
+      <center>
+	<h3> Assignment 1: Texture Synthesis</h3>
+	<h4>Deadline: March 30, 2022 at 5pm
+	</h4>
+      </center>
+      <br>
+      <br>
+      <p>
+      <b>Read carefully</b>: Academic integrity must be stricly followed. Copying-and-pasting from other's
+      code or froms any sources is not allowed. Software will be used
+      to detect any form of source code plagiarism. You must write
+      your code in ipython notebook (or jupiter notebook), and indicate
+      the number of the questions/instructions clearly. <b>You must
+      include your code and  show
+      your results on the submitted jupyter notebook </b>.
+      </p>
+      <br>
+      <h4>Part I: Basic</h4>
+      In this part, given a texture sample, you need to generate a larger
+	texture image with similar visual appearance to the sample
+	using to the synthesis algorithms we discussed in class. 
+
+      <ol>
+	<li>First, create a large empty image (E) and copy the
+      texture sample (T) to
+      its upper left corner as a starting point for your synthesis
+      program. 
+     <li> Next, iteratively replace the blank pixels (empty regions)
+      in E with the pixels from T. At each 
+      iteration, a blank pixel 
+      with the largest number of ‘known’ neighboring pixels is
+      replaced. The pixel selected from texture sample has the closest
+      neighborhood to the blank pixel among all sample pixels. This
+      similarity of neighborhood is evaluated by a Gaussian weighted
+       SSD.
+     <li> Show at least 3 different results, similar to:
+       <br>
+       <img src="im1.jpg" width="500">
+       <li> Discuss your findings through the experiment,
+       particularly: 
+       how the neighborhood size affects the synthesis results and
+       speed? What kind of data works best/worst? How the implemented
+       algorithm can be improved in terms of result quality and
+       efficiency.
+      </ol>
+      <br>
+
+      <hr>
+
+      <h4>Part II: PatchMatch</h4>
+      In this part, you will implement a basic version of
+	PatchMatch (which can be used to speed-up texture synthesis)
+      to find similar patches between two images.
+      PatchMatch can be read from this paper: 
+Barnes, Connelly, et al. "PatchMatch: A randomized correspondence algorithm for structural image
+ editing" TOG, 2009:
+      [<a href="https://gfx.cs.princeton.edu/pubs/Barnes_2009_PAR/"
+	  target="_blank">PDF</a>]
+      <br>
+      <br>
+      <p>
+	You are required to find for each
+      patch in image A, a close match in image B. This close match is
+      not exact but approximated by the PatchMatch algorithm. Patches
+      are defined around each pixel in image A and B. 
+      </p>
+      <ol>
+	<li> For every patch in image A, assign corresponding patch in image
+      B arbitrarily (a random guess), and store the offsets (u, v) and
+      patch distance D in a 3-channel array. You may use SSD of the
+	  color difference to compute D.
+      Then propagate the offsets in scan order from left to right, top to
+      bottom in odd iteration, and from right to left, bottom to top
+      in even iteration. Replace a patch’s offset with its neighbor’s
+      if the new offset gives smaller D. For our task, it should
+      suffice to iterate 2 to 5 times. 
+      The random search step is optional. You may refer to Sec.3.3.2
+      in the PatchMatch paper
+	  to implement this step if you want to improve the results.
+	  
+	<li>Visualize the x and y coordinates of the patch correspondence field
+      (plot them as images). Use the pixel color given by (x, y) in
+      image B to reconstruct image A.
+     <li> Show at least 3 different results, similar to:
+       <br>
+       <img src="im2.jpg" width="1000">
+       <li> Discuss your findings through the experiment,
+       particularly: 
+       how the neighborhood size affects the synthesis results and
+       speed? What kind of data works best/worst? 
+      </ol>
+      <br>
+      
+	<h4><b>Submission:</b></h4>
+      <p>
+	Submit your jupyter notebook via Luminus by the deadline. <b>Late
+	submission will be deducted 2 points (out of 10) for every 24 hours.</b>
+      </p>
+      <br>
+      <hr>
+      <br>
+</div>      
+
+</html>
