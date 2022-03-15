@@ -91,7 +91,7 @@ Barnes, Connelly, et al. "PatchMatch: A randomized correspondence algorithm for 
       B arbitrarily (a random guess), and store the offsets (u, v) and
       patch distance D in a 3-channel array. You may use SSD of the
 	  color difference to compute D.
-      Then propagate the offsets in scan order from left to right, top to
+      Then, propagate the offsets in scan order from left to right, top to
       bottom in odd iteration, and from right to left, bottom to top
       in even iteration. Replace a patch’s offset with its neighbor’s
       if the new offset gives smaller D. For our task, it should
