@@ -108,6 +108,78 @@
       <br>
       <br>
       <hr>
+      <h3>Part 3: FULL BAYESIAN + PREDICTIVE DISTRIBUTION</h3>
+      <p>
+	Write a program in python to implement the full Bayesian
+	inference on Gaussian variables for 
+	curve fitting problem. Follow the instructions below:
+	<ol>
+	  <li> Generate 50 2D-data points using the following
+	    function:
+	    <img src="fig\ass1_04.png" style="height:20px;">.
+	    Add Gaussian random noise to the data.
+	    Show the original curve line and the noisy data.
+	    <br>
+	    <img src="fig\ass2_01.png" style="height:200px;">.
+	    <br>
+	    <em>The red line is the original curve based on the
+	      equation. The green dots are the noisy data. </em>
+
+	  <li> Compute w based on the full Bayesian inference (by
+	  using basis functions like discussed in class).  Display the estimated values of w.
+	  <li> Experiment with your code by changing alpha and beta.
+	    Discuss the meaning of them with respect to the curve fitting
+	    results.
+	  <li> Show your best fitting, similar to:
+	    <br>
+	    <img src="fig\ass3_fullbayes.png" style="height:200px;">
+	    <br>
+	  <li> Explain how useful p(w|t) for the training and testing stages.
+	  <li> Generate 50 2D-data points using the following
+	    function:
+	    <img src="fig\ass1_04.png" style="height:20px;">.
+	    Add Gaussian random noise to the data.
+	    Show the original curve line and the noisy data.
+	    <br>
+	    <img src="fig\ass2_01.png" style="height:200px;">.
+	    <br>
+	    <em>The red line is the original curve based on the
+	      equation. The green dots are the noisy data. </em>
+
+	  <li> Compute the predictive distribution of every input
+	    data sequentially, where each input data is taken randomly
+	    from the noise data.  Show your best prediction results
+	    for all 50 data one by one: 
+	    <br>
+	    <img src="fig\ass4_01.png" style="height:230px;">
+	    <br>
+	    <img src="fig\ass4_02.png" style="height:230px;">
+	    <br>
+	    <img src="fig\ass4_03.png" style="height:230px;">
+	    <br>
+	    <img src="fig\ass4_04.png" style="height:230px;">
+	    <br>
+	    <img src="fig\ass4_05.png" style="height:230px;">
+	    <br>
+	    ...
+	    <br>	    
+	    ...
+	    <br>	    
+	    ...
+	    <br>	    
+	    <img src="fig\ass4_49.png" style="height:230px;">
+	    <br>
+	    <img src="fig\ass4_50.png" style="height:230px;">
+	    <br>
+	  <li> Explain why the predictive distribution is better than
+	  the original form of the full Bayesian inference.
+	  <li> Discuss the differences between p(t_new|t) and p(w|t).
+	</ol>    
+      </p>
+
+      <br>
+      <br>
+      <hr>
       <h3>MORE QUESTIONS TO COME ....</h3>
       <br>
       <br>
