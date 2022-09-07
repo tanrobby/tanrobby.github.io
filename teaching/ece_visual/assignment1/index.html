@@ -39,6 +39,10 @@
       possible extension), so please prepare and plan early and carefully.
       <br>
       <br>
+      <b>Programming language: Python version 3. Submission: Jupyter
+      Notebook (any other format won't be accepted).</b> In your
+      Jupyter notebook file, you must compile the codes and show the
+      results there in the file.
       <hr>
       <center>
 	See the frequently asked question page if you have any doubt
@@ -60,7 +64,7 @@
 	</ul>
       <li> Show the results of the convolution with each of the
       kernels above on this image: <a href="img\einstein.png" target="_blank">URL</a>.
-      <li> Provide your conclusions on the outputs of each of the
+      <li> Write your conclusions on the outputs of each of the
       kernels, and explain how the size of the kernel influences the outputs.
       </ol>
       <br>
@@ -68,10 +72,9 @@
       <ol>
 	<li> Download the images from
 	here: <a href="https://www.dropbox.com/s/cnyst3qnjkck5mr/assg1.zip?dl=0"
-	target="_blank">link</a>
-	<li> Extract  SIFT keypoints from im01.jpg using any publicly
-	available SIFT code.
-	<li> In your report, show the keypoints on the images, like
+	target="_blank">link</a>.
+	 Extract  SIFT keypoints from im01.jpg using any publicly
+	available SIFT code. In your report, show the keypoints on the images, like
 	shown below (similar but not necessarily the same):
 	  <br>
 	  <img src="img/01.jpg" alt="input" width="504" height="328" /> 
@@ -87,10 +90,9 @@
 	Download <a href="https://www.dropbox.com/s/xcnv21v5ww1vefj/h1.jpg?dl=0"
 	 target="_blank">h1.jpg</a>
 	and <a href="https://www.dropbox.com/s/2twxi19rv9fsg29/h2.jpg?dl=0"
-	       target="_blank">h2.jpg</a>
-	<li> Provide a GUI where the user can click 4 points on an
-	  image
-	  <li> Let the user to choose 4 points on h1.jpg and 4 points
+	       target="_blank">h2.jpg</a>. Write a code to show a GUI
+	 (graphical user interface) where the user can click 4 points on an  image.
+	   Let the user to choose 4 points on h1.jpg and 4 points
 	  on h2.jpg
 	  <br>
 	  <img src="img/08.jpg" alt="input" height="300" />
@@ -98,7 +100,7 @@
 	  <br>
 	<li> Compute the homography matrix from h1.jpg to h2.jpg, and show
 	  the homography matrix in your report.
-	<li> Use the homography matrix to tranform h1.jpg to h2.jpg, and show
+	  Use the homography matrix to tranform h1.jpg to h2.jpg, and show
 	the result in your report:
 	  <br>
 	  <img src="img/10.jpg" alt="input" height="300" /> 
@@ -127,41 +129,35 @@
 	  
       <h4><b>Part 4: Manual Homography + Sticthing</b></h4>
       <ol>
-	<li> Load im01.jpg and im02.jpg
-	<li> Let the user to choose 4 points on im01.jpg and 4 points
+	<li> Load im01.jpg and im02.jpg.  Let the user to choose 4 points on im01.jpg and 4 points
 	  on im02.jpg
 	  <br>
 	  <img src="img/12.jpg" alt="input" height="300" />
 	  <img src="img/13.jpg" alt="input" height="300" /> 	  
 	  <br>
-	<li> Compute the homograhy matrix
-	<li> Stitch the images together using the computed homography
+	<li> Compute the homograhy matrix, and stitch the images together using the computed homography
 	  matrix and show the result in your report:
 	  <br>
 	  <img src="img/14.jpg" alt="input" height="300" /> 	  
 	  <br>
-	<li> Explain in your report, why there is an effect of double
-	edges in the overlapping regions between im01.jpg and im02.jpg
+	<li> Explain in your report, why there is an effect of double edges in the overlapping regions between im01.jpg and im02.jpg
       </ol>
       <br>
 
       <h4><b>Part 5: Homography + RANSAC</b></h4>
       <ol>
-	<li> Load im01.jpg and im02.jpg
-	<li> Based on SIFT, find matches between the two images
-	<li> In your report, show all the matches:
+	<li> Load im01.jpg and im02.jpg. Based on SIFT, find matches
+	between the two images.  Show all the matches, similar to:
 	  <br>
 	  <img src="img/15.jpg" alt="input" height="250" /> 	  
 	  <br>
-	<li> Compute the best homography matrix using RANSAC
-	<li> In your reprt, show all the inlier matches (matches that
+	<li> Compute the best homography matrix using RANSAC, and show all the inlier matches (matches that
 	support your best homography matrix):
 	  <br>
 	  <img src="img/16.jpg" alt="input" height="250" /> 	  
 	  <br>
 	  
-	<li> Stitch the images together using the best homography
-	  matrix and show the result in your report:
+	<li> Stitch the images together using the best homography  matrix and show the result:
 	  <br>
 	  <img src="img/17.jpg" alt="input" height="300" />
 	  <img src="img/18.jpg" alt="input" height="300" /> 	  
@@ -170,14 +166,12 @@
       <br>
       <h4><b>Part 6: Basic Panoramic Image</b></h4>
       For this part and the next part, you can use any set of images
-      (even images taken by yourself) 
-      that support your implementation. You must include the
+      (even images taken by yourself)  that support your implementation. You must include the
       images in your submission.
       <ol>
 	<li> Using SIFT and RANSAC for computing the homography
 	matrices, create a program to generate panoramic images given
-	  ordered images
-	<li> In your report, using as many provided images as you can,
+	  ordered images. Using as many provided images as you can,
 	  show the output of your panoramic image.  
 	<li> The figure below is generated from 3 images and is
 	  just an example. You must use as many images as you can.
@@ -206,15 +200,15 @@
       paralax problem
       see <a href="http://web.cecs.pdx.edu/~fliu/papers/cvpr2014-stitching.pdf"
       target="_blank">paper 2 (Parallax-tolerant Image
-      Stitching)</a>. No consultation is provided for this part.
+      Stitching)</a>. <b>No consultation is provided for this part</b>.
       <br>
       <br>      
 	  <h4><b>Submission:</b></h4>
       <p>
-	Submit your <b>codes and report</b> via LumiNUS</b>. Again, your
-	codes must be grouped/separated based on the parts above. The
-	report must be in a PDF format.
-
+	Submit your <b>Jupyter notebook file </b> (containing: codes, results
+	and answers of the questions) via LumiNUS. Again, your
+	codes must be grouped/separated based on the parts above.
+	
       </p>
 
       <br>	  <br>
