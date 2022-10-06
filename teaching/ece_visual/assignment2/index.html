@@ -28,14 +28,18 @@
 
       <b>Read carefully</b>: Academic integrity must be strictly followed. Copying-and-pasting from other's
       code or from any sources is not allowed. Software will be used
-      to detect any forms of source code plagiarism. You must write a
-      report in a pdf format as instructed below (and indicate the parts and numbers
-      clearly). Your submitted code must be grouped/separated 
+      to detect any forms of source code plagiarism.
+      The maximum score for
+      completing part 1 until part 4 is 85. More scores are given
+      for submission on part 5.
+      You must indicate   the parts and numbers
+      clearly. Your submitted code must be grouped/separated 
       into the same parts as in the instructions. In your submission, you
       must provide us with all necessary libraries.
-      The maximum score for
-      completing part 1 until part 4 is 80. More scores are given
-      for submission on part 5. The deadline is a strict deadline, so
+      If you use separate files in your submission, you must zip them
+      to one file. The submission must not be in separate files in
+      different times (it must be submitted together).
+      The deadline is a strict deadline, so
       please prepare and plan early and carefully. Late submission will be deducted 2
 	points (out of 10) for every 24 hours.
             <br>
@@ -52,17 +56,22 @@
       <h4><b>Part 1: Noise Removal</b></h4>
       <br>
       <ol>
-	<li> Download the code of the graphcuts matlab wrapper from
-	this link: <a href="https://www.dropbox.com/s/xjw6unn34xi2f60/GCMex.zip?dl=0" target="_blank">here</a>. Read the readme file to know how to set the edges of the graph.
-	<li>Write a matlab program to clean up the noise of the image
+	<li>Install Graphcuts for Python by executing: <strong>pip install
+	    PyMaxflow</strong> (or install manually
+	    from <a href="https://github.com/pmneila/PyMaxflow" 
+	    target="_blank">here</a>). Read   
+	  the online documents [<a href="http://pmneila.github.io/PyMaxflow/" target="_blank">website</a>] to know how to set the edges
+	  of  the graph. 
+	  
+	<li>Write a python program to clean up the noise of the image
 	  in Figure 1, by employing an MRF  and  the binary graphcuts. See the
 	  pseudocode in C <a href="pseudocode.html" target="_blank">here</a>.
 	<li> Change the value of the weighting factor (lambda) of the prior
 	term, and show some different results (due to different values
-	of lambda) in your report. You must
+	of lambda). You must
 	state the values of your lambda along with the corresponding
 	  results.
-	<li> Show your best result in the report, and provide some
+	<li> Show your best result and provide some
 	  discussion if necessary (particularly if the results are not
 	  as good as expected).
 
@@ -84,7 +93,7 @@
       <ol>
 	<li> Write a matlab program to estimate a depth map from the pair of
 	  rectified images in Figure 2 using an MRF and multiple label graphcuts.
-	<li> Show your best result in the report, and provide some
+	<li> Show your best result and provide some
 	  discussion if necessary (particularly if the results are not
 	  as good as expected).
 	  <br>
@@ -134,7 +143,7 @@
 	      notations are different from what I taught in
 	      class. However, if you use the notations consistently
 	      following the paper, then you should be fine.
-	  <li> Show your best result in your report, and provide some
+	  <li> Show your best result, and provide some
 	  discussion if necessary (particularly if the results are not
 	  as good as expected).
       </ol>
@@ -162,8 +171,7 @@
       frames. However, the grading will include the quality of your
 	depth map, and the more frames you process, the higher the
       quality of your depth will be.
-	<li> Show some of your best results in your
-	  report. Provide some
+	<li> Show some of your best results. Provide some
 	  discussion if necessary (particularly if the results are not
 	  as good as expected). Also mention how many frames you use
 	  to generate the best results.
@@ -181,20 +189,20 @@
       <br>
       You will receive more scores if you include the following
 	  implementation in your submission. To be graded, you must
-      provide some explanation on your implementation and results
-      in your report. You can choose any of the options below:
+      provide some explanation on your implementation and results. You
+	  can choose any of the options below: 
       <ol>
 	<li> Full implementation of the paper  <a href="https://www.dropbox.com/s/yhuw13pnizmog3u/2009_PAMI_depth_map.pdf?dl=0"
 	       target="_blank">Depth Map from Video Sequence</a> (all
 	  steps) on a full set of the provided video clip.
 	<li> Find the drawbacks of the paper, and implement your
-	solutions. For this, in the report, you must explain the
+	solutions. For this, you must explain the
 	drawbacks, show the evidence of the drawbacks, discuss how
 	your solutions can solve
 	the drawback, and show
 	the improved results (in comparison to the original results).
       </ol>
-      In the report, you  must mention and briefly discuss what you
+      You  must mention and briefly discuss what you
       have done for part 5, and
       show the results that represent what you have done.
 
