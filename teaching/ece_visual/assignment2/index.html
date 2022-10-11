@@ -59,7 +59,18 @@
 	<li>Install Graphcuts for Python by installing from <a href="https://github.com/Borda/pyGCO" 
 	    target="_blank">here</a>. Ensure that your python
 	    can call "import pygco" (in some setting pygco.py,
-	    originally in the gco folder, should be able to be called from your code).
+	    originally in the gco folder, should be able to be called
+	  from your code).
+	  <br>
+	  <strong>Note that</strong>: (1) there is an alternative graphcut wrapper called
+	  PyMaxflow [<a href="https://pypi.org/project/PyMaxflow/"
+	  target="_blank">pypi</a>
+	  | <a href="http://pmneila.github.io/PyMaxflow/"
+	  target="_blank">website</a>]. However, it works only when
+	  the smoothness 
+	  constraint is the same for all pixels. This PyMaxflow works
+	  fine for Parts 1 and 2, yet it doesn't provide optimal
+	  solutions for Parts 3 and 4. 
 	  
 	<li>Write a python program to clean up the noise of the image
 	  in Figure 1, by employing an MRF  and  the binary graphcuts. See the
