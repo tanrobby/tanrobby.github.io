@@ -34,9 +34,15 @@
     </div>
     
     
-      
-      <br>
     <div class="container" style="font-size:16px">
+      
+      
+      <p class="bg-info">
+	<br>
+	<br>
+	<br>
+      </p>
+      <br>
 
       <h3>Description:</h3>
       <p>
@@ -49,27 +55,24 @@
 	vision scientists
 	have been developing algorithms by relying on various visual
 	information, and this course is about some of these algorithms. 
+	
+	In case you are wondering why we should care about computer vision,
+	consider this: if you think your visual perception system is important
+	and beneficial, so is computer vision. 
       </p>
-      <p>
-	This course focuses on the mathematical foundations of
-	computer vision. Hence, we will discuss ''traditional''
-	approaches, instead of deep 
-	learning. This is because the traditional approaches allow us
-	to understand how computer vision algorithms work. 
-      </p>
-       <br>
+      <br>
       <b>Textbooks</b>: "Computer Vision: Models, Learning, and
       Inference", by S.J.D. Prince | "Multiple View Geometry", by
-      R. Hartley and A. Zisserman (The textbooks are used loosely)
+      R. Hartley and A. Zisserman | "Computer Vision: Modern
+      Approach", by Forsyth and Ponce
       <br>
       <b>Instructor</b>: <a href="http://tanrobby.github.io"
-      target="_blank">Robby 
-	T. Tan</a>
+      target="_blank">Robby T. Tan</a>
       <br>
       <br>
       <hr>
 
-<hr>
+
 <h3>Teaching Schedule:</h3>
 <p>
 The following schedule will not be strictly followed.
@@ -94,152 +97,152 @@ The following schedule will not be strictly followed.
     
     
     <tr>
-      <td rowspan="1"> August 10
+      <td rowspan="1"> August 16
       <td>
 	
 	<b>1. INTRODUCTION +  IMAGE FORMATION</b>
 	<br>
 	<br>
-	Additional Resources:
+	Reading:
+	<ul>
+	  <li> Image
+	    Formation: <a href="https://www.youtube.com/playlist?list=PL2zRqk16wsdr9X5rgF-d0pkzPdkHZ4KiT"		  
+			  target="_blank">YouTube</a>
+	    
+	</ul>
+ 	Additional Resources:
 	<ul>
 	  <li> Crash Course Computer Vision: <a href="https://youtu.be/-4E2-0sxVUM">youtube</a>
 	  <li> Brief introduction to computer vision:
 	  <a href="https://www.youtube.com/watch?v=wthBcVFouzY&index=4&list=PLAwxTw4SYaPnbDacyrK_kB_RUkuxQBlCm"
 	     target="_blank">youtube</a>
-	  <li> Computer Vision: <a href="https://en.wikipedia.org/wiki/Computer_vision">wikipedia</a>
+	  <li> Computer
+	    Vision: <a href="https://en.wikipedia.org/wiki/Computer_vision">wikipedia</a>
+	  <li> OpenCV tutorial: <a class="reference external"
+	    href="https://youtu.be/oXlwWbU8l2o"
+	    target="_blank">YouTube</a> 
+	    | <a class="reference external"
+	    href="https://docs.opencv.org/4.x/d6/d00/tutorial_py_root.html"
+	    target="_blank">Website 1</a> 
+	    | <a class="reference external"
+	    href="https://www.geeksforgeeks.org/opencv-python-tutorial/"
+		 target="_blank">Website 2</a>
 	</ul>
       <td>
-	<a href="https://www.dropbox.com/s/jzo1akgoe5u505t/01_intro.pdf?dl=0"
-	target="_blank">Lecture note 1</a>
-    </tr>
+	<a href="https://www.dropbox.com/s/bkrazyer0awwjw7/01_intro.pdf?dl=0"
+	   target="_blank">Slide 1</a>
+	<br>
+	<br>
+	Recording 1 available on Luminus' Announcements section
+   </tr>
     
     <!------------------------------------------------------------------------------>
     
     
     <tr>
-      <td rowspan="1"> August 17
+      <td rowspan="1"> August 23
       <td>
 	<b> 2. FACE DETECTION</b>
 	<br>
 	<br>
-	Reading:
+  	Reading:
 	<ul>
-	  	  <li> Face Detection: Viola-Jones' algorithm:
-	    <a href="https://www.hpl.hp.com/techreports/Compaq-DEC/CRL-2001-1.pdf"
-	       target="_blank">pdf</a> | <a href="https://www.youtube.com/watch?v=sWTvK72-SPU" target="_blank">youtube</a>
-	  <li> "Computer Vision" textbook (Computer Vision: Models, Learning, and
-	  Inference): Sec. 13.1.13 (Linear Filtering)
+	  <li> "Computer Vision: Models, Learning, and  Inference" textbook: Sec. 13.1.13 (Linear Filtering)
 	  <li> Image
 	    convolution: <a href="https://en.wikipedia.org/wiki/Kernel_(image_processing)"
 			    target="_blank">wikipedia</a>
 	    | <a href="http://aishack.in/tutorials/image-convolution-examples/"
 		 target="_blank">website</a>
-	   <li> Haar-like Features: <a href="http://en.wikipedia.org/wiki/Haar-like_features"
-				      target="_blank">wikipedia</a>
-	    <li>AdaBoost:
-	      <a href="https://youtu.be/ix6IvwbVpw0" target="_blank">online lecture</a>
-	    <li> Integral Image: <a href="http://en.wikipedia.org/wiki/Summed_area_table"
-				     target="_blank">wikipedia</a>
-				     | <a href="https://computersciencesource.wordpress.com/2010/09/03/computer-vision-the-integral-image/"
-					  target="_blank"> website</a>
+
+	  <li>Viola-Jones’ algorithm: <a href="https://www.vision.rwth-aachen.de/media/course/WS/2014/computer-vision/viola-facedetection-ijcv04.pdf" target="_blank">PDF</a>
+	      | <a href="https://en.wikipedia.org/wiki/Viola%E2%80%93Jones_object_detection_framework" target="_blank">Wikipedia</a>
+	      | <a href="https://www.youtube.com/watch?v=sWTvK72-SPU" target="_blank">YouTube</a></li>
+	  <li>Haar-like
+	  Features: <a href="http://en.wikipedia.org/wiki/Haar-like_features" target="_blank">Wikipedia</a>
+	  | <a href="https://youtu.be/ZSqg-fZJ9tQ"
+	       target="_blank">YouTube Tutorial</a>
+	    	    <li>AdaBoost:
+	      <a href="https://youtu.be/ix6IvwbVpw0" target="_blank">YouTube</a>
+
+	    	  <li>Integral
+	  Image: <a href="https://en.wikipedia.org/wiki/Summed-area_table" target="_blank">Wikipedia</a>
+	    | <a href="https://computersciencesource.wordpress.com/2010/09/03/computer-vision-the-integral-image/" target="_blank">Website</a>
+	    | <a href="https://youtu.be/5ceT8O3k6os" target="_blank">YouTube Tutorial</a>
 
 	</ul>
       <td>
-	<a href="https://www.dropbox.com/s/duh1vf979y4fuq8/EE5731_lecture02.pdf?dl=0" target="_blank">Lecture note 2</a>
+	<a href="https://www.dropbox.com/s/zqrbp5sa1u3x9eh/EE5731_lecture02.pdf?dl=0" target="_blank">Lecture note 2</a>
+	<br>
+	<br>
+	Recording 2 available on Luminus' Announcements section
     </tr>
 	    
     <!------------------------------------------------------------------------------>
     
     <tr>
-      <td rowspan="1"> August 24
+      <td rowspan="1"> August 30
       <td>
-	<b>3. IMAGE FEATURES: HOG</b>
+	<b>3. IMAGE FEATURES: HOG + SIFT</b>
 	<br>
 	<br>
 	Reading:
 	<ul>
-	    <li> Image gradient: <a href="https://en.wikipedia.org/wiki/Image_gradient" target="_blank">wikipedia</a>
 	  <li> "Computer Vision" textbook Chapter 13: Image Preprocessing and Feature
 	    Extraction, particularly Sec. 13.1 (per-pixel
 	    transformations), and Sec. 13.3.3 (Histogram of Oriented
-	    Gradients)		    
-	</ul>
-	</ul>
-	Additional Resources:
-	<ul>
-	  <li> HoG for Human
-	    Detection: <a href="https://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf"
-			  target="_blank">pdf</a> | 	 
-	    <a href="https://www.youtube.com/watch?v=0Zib1YEE4LU"
-	       target="_blank">youtube</a> 
-	</ul>
-<td>
-	<a href="https://www.dropbox.com/s/xcykg5h0qln0d3q/EE5731_lecture03.pdf?dl=0" target="_blank">Lecture note 3</a>
-</tr>  
-    <!------------------------------------------------------------------------------>
-    
-    
-	
-    <tr>
-      <td rowspan="1"> August 31
-      <td>
-	<b>4.  SIFT (Part 1/2)</b>
-	<br> 
-	<br>
-	Reading:
-	<ul>
-          <li> "Computer Vision"  textbook: Chapter 13, Sec. 13.2 (edges, corners, and
-          interest points), Sec. 13.3 (descriptors)
+	    Gradients)
 	  <li> SIFT:
-	     <a href="http://www.cs.ubc.ca/~lowe/papers/ijcv04.pdf"
-		target="_blank">pdf</a>
-		| <a href="https://en.wikipedia.org/wiki/Scale-invariant_feature_transform"
-		target="_blank">wikipedia</a> 
-	  <li> Matrix calculus: <a href="https://en.wikipedia.org/wiki/Matrix_calculus" target="_blank">wikipedia</a>
-	</ul>
+	    <a href="http://www.cs.ubc.ca/~lowe/papers/ijcv04.pdf"
+	       target="_blank">PDF</a>
+	    | <a href="https://en.wikipedia.org/wiki/Scale-invariant_feature_transform"
+		 target="_blank">Wikipedia</a> 
 	</ul>
 	Additional Resources:
 	<ul>
-	  <li> Features: SIFT
+	    <li> Image
+	    gradient: <a href="https://en.wikipedia.org/wiki/Image_gradient"
+			 target="_blank">Wikipedia</a>
+	    <li> HoG for Human
+	    Detection: <a href="https://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf"
+			  target="_blank">PDF</a> | 	 
+	    <a href="https://www.youtube.com/watch?v=0Zib1YEE4LU"
+	       target="_blank">YouTube</a> 
+		  <li> Features: SIFT
 	    <a  href="http://www.cs.ubc.ca/~lowe/keypoints/siftDemoV4.zip"
-		 target="_blank">executable program</a> 
-	    | <a  href="http://www.cs.ubc.ca/~lowe/keypoints" target="_blank">website</a>
+		 target="_blank">Executable Program</a> 
+	    | <a  href="http://www.cs.ubc.ca/~lowe/keypoints" target="_blank">Website</a>
 	  <li> Object search: 
 	    <a href="http://www.robots.ox.ac.uk/~vgg/research/oxbuildings/index.html"
-		target="_blank">demo</a>
+		target="_blank">Demo</a>
 	  <li> Video google:
-	    <a href="http://www.robots.ox.ac.uk/~vgg/research/vgoogle/index.html"
+	    <a href="http://www.robots.ox.ac.uk/~vgg/research/vgoogle/index.html">Demo</a>
+	  <li> Matrix
+	  calculus: <a href="https://en.wikipedia.org/wiki/Matrix_calculus"
+	  target="_blank">Wikipedia</a> 
 	</ul>
-<td align="left">
-	<a href="https://www.dropbox.com/s/xdv2j3fl42ojw5u/EE5731_slide4.pdf?dl=0" target="_blank">Slides 4</a>
+        <td>
+        <a href="https://www.dropbox.com/s/tyulhnbh2r8e8hu/EE5731_slide3.pdf?dl=0" target="_blank">Slide 3</a>
 	<br>
-	<a href="https://www.dropbox.com/s/7e0pk48lz66z6s3/EE5731_lecture04.pdf?dl=0" target="_blank">Lecture note 4</a>
-    
+	<a href="https://www.dropbox.com/s/7mr51o4vbukga9z/EE5731_lecture03.pdf?dl=0" target="_blank">Lecture note 3</a>
+	<br>
+	<br>
+	Recording 3 available on Luminus' Announcements section
+    </tr>  
     <!------------------------------------------------------------------------------>
     
-    <tr>
-      <td rowspan="1"> September 7
-      <td>
-	<b>5.  SIFT (Part 2/2)</b>
-	<br> 
-	<br>
+    
 	
-      <td align="left">
-    
-    <!------------------------------------------------------------------------------>
-    
-    
     <tr>
-      <td rowspan="1"> September 14
+      <td rowspan="1"> September 6
       <td>
-	<b>6. IMAGE STITCHING</b>
-	<br>
+	<b>4.  IMAGE STITCHING</b>
+	<br> 
 	<br>
 	Reading:
 	<ul>
 	  <li> "Computer Vision" textbook: Chapter 14: Sec. 14.3
 	  (Homogeneous Coordinates),
-          <li>Textbook: Chapter 15, Sec. 15.1 (2D transformation
+          <li> "Computer Vision" textbook: Chapter 15, Sec. 15.1 (2D transformation
           models), Sec. 15.5 (transformation between images),
           Sec. 15.6 (robust learning of transformations), Sec. 15.7 (applications)
 	  <li> RANSAC: <a href="https://en.wikipedia.org/wiki/Random_sample_consensus" target="_blank">wikipedia</a>
@@ -256,11 +259,46 @@ The following schedule will not be strictly followed.
 	     target="_blank">pdf</a>
 	  <br>
 	</ul>
+      <td>
+	<a href="https://www.dropbox.com/s/k790lwddgq6pinp/EE5731_lecture04.pdf?dl=0"
+	   target="_blank">Lecture note 4</a>
+	<br>
+	<a href="assignment1/index.html" target="_blank">CA1</a>
+	<br>
+	<br>
+	Recording 4 available on Luminus' Announcements section
+    </tr>
+    <!------------------------------------------------------------------------------>
+    
+    <tr>
+      <td rowspan="1"> September 13
+      <td>
+	<b>5. CAMERA GEOMETRY</b>
+	<br> 
+	<br>
+       	Reading: 
+	<ul>
+	  <li> "Multiple View Geometry" textbook: Chapter 6 (Camera
+	    Models): Sect.6.1 (finite cameras),  Chapter 7
+	    (Computation of the Camera Matrix): Sect. 7.1  (basic
+	    equations)
+	  <li>  "Multiple View Geometry" textbook: Chapter 9 (Epipolar
+	  Geometry and Fundamental Matrix): Sect. 9.1 (Epipolar
+	  Geometry), Sect. 9.2 (The Fundamental Matrix)
+	</ul>
+	Additional resources:
+	<ul>
+	  <li> "Computer Vision" textbook chapter 14 (Pinhole Camera): sect. 14.1 (the
+	    pinhole camera),  sect. 14.4 (learning extrinsic
+	    parameters), sect. 14.5 (learning intrinsic parameters)
+	</ul>
       <td align="left">
-	      <a href="https://www.dropbox.com/s/eta7y01ech46myx/EE5731_lecture06.pdf?dl=0" target="_blank">Lecture note 6</a>
-	      <br>
-	      <a href="assignment1/index.html" target="_blank">Assignment 1</a>
-
+	<a href="https://www.dropbox.com/s/drdy9p88aoxafy8/EE_5731_lecture05.pdf?dl=0"
+	   target="_blank">Lecture note 5</a>
+	<br>
+	<br>
+	Recording 5 available on Luminus' Announcements section
+	
     </tr>
     
     <!------------------------------------------------------------------------------>
@@ -279,58 +317,11 @@ The following schedule will not be strictly followed.
     
     
     <tr>
-      <td rowspan="1"> September 28
+      <td rowspan="1"> September 27
       <td>
-	<b>7. CAMERA GEOMETRIC PROPERTIES</b>
+	<b>6. STEREO AND MARKOV RANDOM FIELD</b>
 	<br>
 	<br>
-       	Reading: 
-	<ul>
-	  <li> "Computer Vision" textbook chapter 14 (Pinhole Camera): sect. 14.1 (the
-	    pinhole camera),  sect. 14.4 (learning extrinsic
-	  parameters), sect. 14.5 (learning intrinsic parameters)
-	  <li> "Multiple View Geometry" textbook: Chapter 6 (Camera
-	    Models): Sect.6.1 (finite cameras),  Chapter 7
-	    (Computation of the Camera Matrix): Sect. 7.1  (basic equations)
-	</ul>
-      <td align="left">
-	      <a href="https://www.dropbox.com/s/ipvknsapsnd26ix/EE5731_lecture07.pdf?dl=0" target="_blank">Lecture note 7</a>
-    </tr>
-
-    <!------------------------------------------------------------------------------>
-	
-   <tr>
-     <td rowspan="1"> October 5
-     <td> 
-	<b>8. FUNDAMENTAL MATRIX & MARKOV RANDOM FIELD</b>
-	<br>
-	<br>
-	Reading:
-	<ul>
-	  <li>  "Multiple View Geometry" textbook: Chapter 9 (Epipolar
-	  Geometry and Fundamental Matrix): Sect. 9.1 (Epipolar
-	  Geometry), Sect. 9.2 (The Fundamental Matrix)
-	</ul>
-	<br>
-	Additional Resources:
-	<ul>
-	  <li> "Computer Vision"  textbook Chapter 16 (Multiple Cameras): Sect. 16.1
-	  (two-view geometry), Sect. 16.2 (essential matrix),
-	    Sect. 16.3 (fundamental matrix)	  
-	</ul>
-     <td align="left">
-	  <a href="https://www.dropbox.com/s/8s7frktbl2dybjp/EE5731_lecture08.pdf?dl=0" target="_blank">Lecture note 8</a>
-    </tr>
-
-   <!------------------------------------------------------------------------------>
-    
-    
-    <tr>
-      <td rowspan="1"> October 12
-      <td>
-       <b>9. MRF and GRAPHCUTS</b>
-       <br>
-       <br>
        Reading:
        <ul>
 	 <li> "Computer Vision"  textbook: Chapter 12 (Models for grids): Sect. 12.1
@@ -338,17 +329,38 @@ The following schedule will not be strictly followed.
 	  Sect. 12.2 (MAP inference for binary pairwise MRFs)
        </ul>
       <td align="left">
-	      <a href="https://www.dropbox.com/s/of79oq403q8el8l/EE5731_lecture09.pdf?dl=0" target="_blank">Lecture note 9</a>
-	      <br>
-	      <a href="assignment2/index.html" target="_blank">Assignment 2</a>
+	<a href="https://www.dropbox.com/s/qkl3nb6uui0kjr7/EE5731_lecture06.pdf?dl=0"
+	   target="_blank">Lecture note 6</a>
+	<br>
+	<br>
+	Recording 6 available on Luminus' Announcements section
     </tr>
-    <!------------------------------------------------------------------------------>
+    
 
-	
+    <!------------------------------------------------------------------------------>
+    
+    
     <tr>
-      <td rowspan="1"> October 19
+      <td rowspan="1"> October 4
       <td>
-	<b>10. DEPTH FROM VIDEO </b>
+	<b>7. DEPTH FROM RECTIFIED IMAGES </b> 
+	<br>
+	<br>
+      <td align="left">
+	<a href="https://www.dropbox.com/s/p99tlwbkes3nt7g/EE5731_lecture07.pdf?dl=0"
+	target="_blank">Lecture note 7</a>
+	<br>
+	<br>
+	Recording 7 available on Luminus' Announcements section
+
+    </tr>
+
+    <!------------------------------------------------------------------------------>
+	
+   <tr>
+     <td rowspan="1"> October 11
+     <td> 
+	<b>8. DEPTH FROM VIDEO</b>
 	<br>
 	<br>
 	Reading:
@@ -360,16 +372,22 @@ The following schedule will not be strictly followed.
 	    [<a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.437.4926&rep=rep1&type=pdf"
 		target="_blank">pdf</a>]
 	</ul>
-      <td align="left">
-	      <a href="https://www.dropbox.com/s/ccpclq4f2cfdh5x/EE5731_lecture10.pdf?dl=0" target="_blank">Lecture note 10</a>
+     <td align="left">
+       <a href="https://www.dropbox.com/s/almmyo7q4os5i1u/EE5731_lecture08.pdf?dl=0" target="_blank">Lecture note 8</a>
+	<br>
+	<a href="assignment2/index.html" target="_blank">CA2</a>
+	<br>
+	<br>
+	Recording 8 available on Luminus' Announcements section
     </tr>
-    <!------------------------------------------------------------------------------>
 
+   <!------------------------------------------------------------------------------>
+    
     
     <tr>
-      <td rowspan="1"> October 26
+      <td rowspan="1"> October 18
       <td>
-	<b>11. OPTICAL FLOW</b>
+       <b>9.  OPTICAL FLOW</b>
        <br>
        <br>
 	Reading:
@@ -387,7 +405,43 @@ The following schedule will not be strictly followed.
 	   target="_blank">pdf</a>
 	</ul>
       <td align="left">
-	      <a href="https://www.dropbox.com/s/821bpg86ri3uw6j/EE5731_lecture11.pdf?dl=0" target="_blank">Lecture note 11</a>
+	<a href="https://www.dropbox.com/s/pz0kp418v7h0t5d/EE5731_lecture09.pdf?dl=0" target="_blank">Lecture note 9</a>
+	<br>
+	<br>
+ 	Recording 9 available on Luminus' Announcements section
+    </tr>
+    <!------------------------------------------------------------------------------>
+
+	
+    <tr>
+      <td rowspan="1"> October 25
+      <td>
+	<b>10. TEXTURE-STRUCTURE DECOMPOSITION</b>
+	<br>
+	<br>
+	Reading:
+       <ul>
+	 <li> Total-variation
+	 denoising: <a href="http://www.math-info.univ-paris5.fr/~lomn/Cours/ECE/PhysicaRudinOsher.pdf"
+	 target="_blank">pdf</a> | <a href="https://en.wikipedia.org/wiki/Total_variation_denoising" target="_blank">wikipedia</a>
+       </ul>
+      <td align="left">
+	<a href="https://www.dropbox.com/s/ymneehrhkyr2j0r/EE5731_lecture10.pdf?dl=0"
+	   target="_blank">Lecture note 10</a>
+	<br>
+	<br>
+ 	Recording 10 available on Luminus' Announcements section	
+    </tr>
+    <!------------------------------------------------------------------------------>
+
+    
+    <tr>
+      <td rowspan="1"> November 1
+      <td>
+	<b>11. REVIEW</b>
+       <br>
+       <br>
+      <td align="left">
     </tr>
 
 
@@ -396,37 +450,17 @@ The following schedule will not be strictly followed.
         <!------------------------------------------------------------------------------>
 
     <tr>
-      <td rowspan="1"> November 2
+      <td rowspan="1"> November 8
       <td>
-	<b>12. TEXTURE-STRUCTURE DECOMPOSITION</b>
+	<b>12. TBA</b>
        <br>
        <br>
-	Reading:
-       <ul>
-	 <li> Total-variation
-	 denoising: <a href="http://www.math-info.univ-paris5.fr/~lomn/Cours/ECE/PhysicaRudinOsher.pdf"
-	 target="_blank">pdf</a> | <a href="https://en.wikipedia.org/wiki/Total_variation_denoising" target="_blank">wikipedia</a>
-       </ul>
       <td align="left">
-	<a href="https://www.dropbox.com/s/icti92jrmfx5aml/EE5731_lecture12.pdf?dl=0" target="_blank">Lecture note 12</a>
     </tr>
 
 
 
     
-    <!------------------------------------------------------------------------------>
-	
-    <tr>
-      <td rowspan="1"> November 9
-      <td>
-	<b>13. REVIEW</b>
-       <br>
-       <br>
-      <td align="left">
-	      <a href="https://www.dropbox.com/s/wtu4hddcr40zgux/EE5731_lecture13.pdf?dl=0" target="_blank">Review</a>
-    </tr>
-
-
 
     
     <!------------------------------------------------------------------------------>
@@ -434,7 +468,7 @@ The following schedule will not be strictly followed.
     <tr class="danger">
       <td rowspan="1">
       <td>
-	<b>FINAL EXAM: <a href="exam.html" >RULES</a><b>
+	<b>FINAL EXAM
 	<br>
 	<br>	
 	<td align="left"> 
@@ -459,7 +493,6 @@ The following schedule will not be strictly followed.
 
 
       
-<hr>
 <h3>Syllabus:</h3>
 <ul>
   <li>Introduction
@@ -470,9 +503,9 @@ The following schedule will not be strictly followed.
     <li>Markov random field
     <li>Graphcuts and belief propagation
     <li>Depth from stereo and video
-    <li>Directed graph and human pose estimation
     <li>Optical flow
     <li>Low-level Vision
+    <li>Visual tracking
 </ul>
 
 <br>
