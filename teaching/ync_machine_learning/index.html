@@ -29,80 +29,559 @@
         <h2>YSC4216 Machine Learning</h2>
         <p> Yale-NUS College
 	</p>
-
       </div>
     </div>
 
-
     <div class="container" style="font-size:16px">
       
-      
-	<center>
-      <p class="bg-info">
-	<br>
-      </p>
-	</center>
-      <br>
-
       <h3>Description:</h3>
       <p>
-      The goal of machine learning is to enable machines/computers
-      to  identify 
+      The goal of machine learning is to enable machines  to  identify 
       patterns from data, extract the patterns, and based on
       them, make
-      an inference 
-      or prediction automatically. These capabilities are the core of
+      a prediction automatically. These capabilities are the core of
       artificial intelligence (namely, to make machines learn
       without being explicitly programmed using fixed predetermined rules). 
       The applications of machine learning are immense, since
       nowadays we are bombarded with a huge number of
-      various data from various sources. The intention is to enable  machine
-      learning techniques to make  sense of this huge seemingly random  data.
+      various data from various sources. We hope machine learning can make
+      sense of this huge seemingly incomprehensible  data.
       </p>
-      <p>
-	This course focuses on the fundamentals of machine learning.
-	It should interest students
-      who want to study/work in big data, AI (artificial
-      intelligence), and data science.
-      </p>
-      <br>
-      <b>Prerequisites</b>: Programming skill in Python, linear
-      algebra, and introduction to data science. Contact the instructor for the possibility of
-      waiving some prerequisites, along with your reasons.
-      <br>
-      <b>Textbook</b>: <a href="https://www.microsoft.com/en-us/research/publication/pattern-recognition-machine-learning/"
-      target="_blank">"Pattern Recognition and Machine Learning"</a>, 
+      <b>Textbook</b>: <a href="http://www.amazon.com/Pattern-Recognition-Learning-Information-Statistics/dp/0387310738/ref=sr_1_1?ie=UTF8&qid=1461689550&sr=8-1&keywords=pattern+recognition+and+machine+learning"
+      target="_blank">"Pattern Recognition and Machine Learning"</a>,
       by Christopher Bishop. 
-
 
       <br>
       <b>Instructor</b>: <a href="http://tanrobby.github.io">Robby
 	T. Tan</a> (robby.tan [att] yale-nus.edu.sg)
 
       <br>
-      <br>
       <hr>
-
-      <h3 id="syllabus">Syllabus:</h3>
-      <ul>
-	<li> Least Squares for Regression
-	<li> Bayes' Theorem
-	<li> MLE and MAP for Regression
-	<li> Basis Functions
-	<li> Gaussian Distributions
-	<li> Bayesian Sequential Learning
-	<li> Predictive Distribution
-	<li> Gaussian Processes for Regression
-	<li> Least Squares for Classification
-	<li> Bayesian Logistic Regression
-	<li> Gaussian Processes for Classification
-	<li> Probabilistic Generative Models
-	<li> Support Vector Machine
-	<li> Mixture Models and EM Algorithm
-      </ul>
+      <h3 id="schedule">Schedule:</h3>
+<p>
+The following schedule is still tentative and not followed strictly.
+</p>
 
 <br>
+      
+<table width="100%" 
+       border = "0"
+       class="table table-striped">
+  <thead class="thead-inverse">
+    
+    <tr>
+      <th width="12%"> Date
+      <th> <center> Topic </center>
+      <th width="20%"> <center> Lecture Note </center>
+  </thead>
+  <tbody>
+    
+    
+    <!------------------------------------------------------------------------------>	  
+    
+    
+    <tr>
+      <td rowspan="1"> January 10
+      <td>
+	
+	<b>1. INTRODUCTION</b>
+	<br>
+	<br>
+	Additional resources (optional):
+	<ul>
+	  <li> Introduction to Machine Learning:
+	  <a href="http://www.cs.princeton.edu/courses/archive/spr08/cos511/scribe_notes/0204.pdf"
+	  target="_blank">pdf</a> | <a href="https://www.youtube.com/watch?v=cKxRvEZd3Mw" target="_blank">youtube</a>
+	</ul>
+	<br>
+      <td align="left">
+    </tr>
+     <!------------------------------------------------------------------------------>
+    
+    
+    <tr>
+      <td rowspan="1"> January 13
+      <td>
+	<b> 2. LEAST SQUARES REGRESSION (Part 1/2)</b>
+	<br>
+	<br>
+	Reading:
+	<ul>
+	  <li> Chapter 1 (Introduction): Sect. 1.1 (Polynomial Curve
+	    Fitting)
+	  <li> Matrix Calculus: <a href="https://en.wikipedia.org/wiki/Matrix_calculus" target="_blank">wikipedia</a>
+	</ul>
+      <td>
+    </tr>
+	    
+    <!------------------------------------------------------------------------------>
+    
+    <tr>
+      <td rowspan="1"> January 17
+      <td>
+	<b> 3. LEAST SQUARES REGRESSION (Part 2/2)</b>
+	<br>
+	<br>
+	Reading:
+	<ul>
+	  <li>
+	  Overfitting: <a href="https://en.wikipedia.org/wiki/Overfitting"
+			  target="_blank">wikipedia</a>
+	  <li> Overdetermined
+	  systems: <a href="https://en.wikipedia.org/wiki/Overdetermined_system"
+		      target="_blank">wikipedia</a>
+	      </ul>
+	 Additional resources:
+	      <ul>
+	  <li> Pseudoinverse: <a href="https://youtu.be/Go2aLo7ZOlU" target="_blank">online tutorial</a>	
+	</ul>
+      <td align="left">
+    </tr>
+    
+    <!------------------------------------------------------------------------------>
+    
+    <tr>
+      <td rowspan="1"> January 20
+      <td>
+	<b>4. INTRODUCTION TO BAYESIAN INFERENCE</b>
+	<br>
+	<br>
+	Reading:
+	<ul>
+	  <li> Chapter 1 (Introduction): Sect. 1.2 (Probability
+	  Theory), Sect. 1.3 (Model Selection)
+	  <li> Introduction to Bayesian
+	  inference: <a href="http://videolectures.net/mlss09uk_bishop_ibi/?q=bayesian%20inference"
+			target="_blank">video</a>
+	</ul>
+      <td align="left">
+    </tr>
+
+    <!------------------------------------------------------------------------------>
+    
+	
+    <tr>
+      <td rowspan="1"> January 27
+      <td>
+	<b>5. MLE FOR REGRESSION</b>
+	<br>
+	<br>
+	Reading:
+	<ul>
+	  <li> Chapter 1 (Introduction): Sect. 1.2.5 (Curve Fitting Re-Visited)
+	  <li> Bayesian Inference: An Introduction to Principles and
+	  Practice in Machine
+	  Learning (Sect. 2.1, 2.3, 2.4): <a href="http://www.miketipping.com/papers/met-mlbayes.pdf"
+		       target="_blank">pdf</a>
+	</ul>
+	Additional resources:
+	<ul>
+	  <li>
+	  MLE: <a href="https://www.youtube.com/watch?v=aHwsEXCk4HA"
+		  target="_blank">youtube</a>
+	</ul>
+
+      <td align="left">
+    </tr>
+    
+    
+    <!------------------------------------------------------------------------------>
+    
+    <tr>
+      <td rowspan="1"> January 31
+      <td>
+	<b>6. MAP FOR REGRESSION (Part 1/2)</b>
+	<br>
+	<br>
+	Reading:
+	<ul>
+	  <li> Bayesian Inference: An Introduction to Principles and
+	  Practice in Machine
+	  Learning (Sect. 2.2, 2.5, 2.6.1): <a href="http://www.miketipping.com/papers/met-mlbayes.pdf"
+		       target="_blank">pdf</a>
+	</ul>
+
+	Additional resources:
+	<ul>
+	  <li>
+ 	    MAP: <a href="https://www.youtube.com/watch?v=kkhdIriddSI" target="_blank">youtube</a>
+	</ul>
+      <td align="left">
+
+    </tr>
+    
+    <!------------------------------------------------------------------------------>
+    
+    
+    <tr>
+      <td rowspan="1"> February 3
+      <td>
+	<b>7. MAP FOR REGRESSION (Part 2/2)</b>
+	<br>
+	<br>
+      <td align="left">
+
+    </tr>
+    
+    <!------------------------------------------------------------------------------>
+    
+    
+    <tr>
+      <td rowspan="1"> February 7
+      <td>
+	<b>8. BASIS FUNCTIONS</b>
+	  <br>
+	  <br>
+	Reading:
+	<ul>
+	  <li> Chapter 3: Linear Models for Regression (Sect. 3.1 only)
+	</ul>
+	Additional resources:
+	<ul>
+	  <li> Basis functions: <a href="https://youtu.be/rVviNyIR-fI"
+	  target="_blank">youtube 1</a>
+	  | <a href="https://youtu.be/wZk_uKEW_Oc" target="_blank">youtube 2</a>
+	  <li> Spline
+	  functions: <a href="http://geometrie.foretnik.net/files/NURBS-en.swf"
+	  target="_blank">demo applet</a> (use Firefox)
+	</ul>
+
+      <td align="left">
+
+    </tr>
+
+    <!------------------------------------------------------------------------------>
+	
+   <tr>
+     <td rowspan="1"> February 10
+     <td> 
+	<b>9. GAUSSIAN DISTRIBUTIONS: COVARIANCE MATRIX</b>
+	<br>
+	<br>
+	Reading:
+	<ul>
+	  <li> Chapter 2: Sect. 2.3.1 to 2.3.6 (Gaussian Distribution)
+	  <li> Covariance
+	    matrix: <a href="https://en.wikipedia.org/wiki/Covariance_matrix"
+	    target="_blank">wikipedia</a>
+	  <li> Geometric interpretation of covariance
+	  matrix: <a href="http://www.visiondummy.com/2014/04/geometric-interpretation-covariance-matrix/"
+		     target="_blank">website</a>
+	</ul>
+
+     <td align="left">
+   </tr>
+    <!------------------------------------------------------------------------------>
+    
+    
+    <tr>
+      <td rowspan="1"> February 14
+      <td>
+	<b>10. FULL BAYESIAN REGRESSION</b>
+       <br>
+       <br>
+	Reading:
+	<ul>
+	  <li> Chapter 3: Sect. 3.3.1 (Parameter Distribution)
+	</ul>
+      <td align="left">
+    </tr>	
+    <!------------------------------------------------------------------------------>
+
+    
+    <tr>
+      <td rowspan="1">  February 17
+      <td>
+	<b>11. SEQUENTIAL LEARNING </b> 
+	<br>
+	<br>
+	Reading:
+	<ul>
+	  <li> Chapter 3: Sec. 3.1.3 (Sequential Learning), and
+	  Sec. 3.3.1 (Parameter Distribution)
+	</ul>
+      <td align="left">
+
+    </tr>
+    <!------------------------------------------------------------------------------>
+
+    <tr class="success">
+      
+      <td rowspan="1"> 
+      <td>
+	<b> RECESS WEEK </b>
+	<br>
+	<br>		
+      <td>
+    </tr>
+
+    
+    <!------------------------------------------------------------------------------>
+
+    
+    <tr>
+      <td rowspan="1">  February 28
+      <td>
+       <b>12. PREDICTIVE DISTRIBUTION</b> 
+	<br>
+	<br>
+  	Reading:
+	<ul>
+	  <li> Chapter 3: Sect. 3.3.2 (Predictive Distribution)
+	  <li> Bayesian Inference: An Introduction to Principles and
+		    Practice in Machine
+		    Learning (From Section 1 to Section 3 only): 
+		    <a href="http://www.miketipping.com/papers/met-mlbayes.pdf"
+		       target="_blank">pdf</a>
+	</ul>
+    <td align="left">
+
+    </tr>
+    
+    
+    <!------------------------------------------------------------------------------>
+
+    <tr>
+      
+      <td rowspan="1"> March 3
+      <td>
+	<b>13. GAUSSIAN PROCESSES (Part 1/2)</b>
+	<br>
+	<br>
+	      	Reading:
+	<ul>
+	  <li> Chapter 6: Sect. 6.4.1 (Linear Regression Revisited)
+	  and Sect. 6.4.2 (Gaussian Processes for Regression)
+	</ul>
+	Additional resources:
+	<ul>
+	  <li> Gaussian
+	  Processes: <a href="https://www.youtube.com/watch?v=vU6AiEYED9E"
+	  target="_blank">youtube</a> 
+	</ul>
+      <td align="left">
+    </tr>
+
+
+    <!------------------------------------------------------------------------------>
+
+
+	
+    <tr>
+      <td rowspan="1"> March 7
+      <td>
+	<b>14. GAUSSIAN PROCESSES (Part 2/2)</b>
+	<br>
+	<br>
+      <td align="left">
+    </tr>
+    
+    <!------------------------------------------------------------------------------>
+
+	
+    <tr>
+      <td rowspan="1"> March 10
+      <td>
+	<b>15. CLASSIFICATION: INTRODUCTION </b>
+	<br>
+	<br>
+	Reading:
+	<ul>
+	  <li> Chapter 4: Sect. 4.1.1 (two classes), 4.1.2 (multiple classes).
+	</ul>
+      <td align="left">
+    </tr>
+
+    <!------------------------------------------------------------------------------>
+
+    
+    <tr>
+      <td rowspan="1"> March 14
+      <td>
+ 	<b>16. LEAST SQUARES FOR CLASSIFICATION</b>
+	<br>
+	<br>
+	Reading:
+	<ul>
+	  <li> Chapter 4: Sect. 4.1.3 (least squares for classification)
+	</ul>
+     <td align="left">
+    </tr>
+    
+    <!------------------------------------------------------------------------------>
+
+    
+	
+    <tr>
+      <td rowspan="1"> March 17
+      <td>
+	<b>17. MLE FOR CLASSIFICATION</b>
+	<br>
+	<br>
+	Reading:
+	<ul>
+	  <li> Sect. 4.3.2 (logistic regression) and 4.3.3 (iterative reweighted least squares)
+	</ul>
+      <td align="left">
+
+    </tr>
+
+    <!------------------------------------------------------------------------------>
+    
+    
+    
+    <tr>
+      <td rowspan="1"> March 21
+      <td>
+	<b>18. MAP FOR CLASSIFICATION</b>
+	<br>
+	<br>
+      <td align="left">
+
+    </tr>
+    <!------------------------------------------------------------------------------>
+
+    
+    
+    <tr>
+      <td rowspan="1"> March 24
+      <td>
+	<b>19. FULL BAYESIAN FOR CLASSIFICATION</b>
+	<br>
+	<br>
+	Reading:
+	<ul>
+	  <li> Chapter 4: Sect. 4.4 (The Laplace Approximation)
+	  <li> Chapter 4: Sect. 4.5.1 (Bayesion Logistic Regression:
+	  Laplace Approximation)
+	</ul>
+      <td align="left">
+
+    </tr>
+
+    <!------------------------------------------------------------------------------>
+
+        <tr>
+      <td rowspan="1"> March 28
+      <td>
+	  <b>20. PREDICTIVE DISTRIBUTION FOR CLASSIFICATION</b>
+	  <br>
+	  <br>
+	  	Reading:
+	<ul>
+	  <li> Chapter 4: Sect. 4.5.2 (Bayesion Logistic Regression:
+	  Predictive Distribution)
+	</ul>
+      <td align="left">
+    </tr>
+
+    <!------------------------------------------------------------------------------>
+
+    
+    
+    <tr>
+      <td rowspan="1"> March 31
+      <td>
+	<b>21. GAUSSIAN PROCESSES FOR CLASSIFICATION (Part 1/2)</b>
+	<br>
+	<br>
+	Reading:
+	<ul>
+	  <li> Chapter 6: Sect. 6.4.5 (Gaussian Processes for
+	  Classification) and 6.4.6 (Laplace Approximation)
+	</ul>
+      <td align="left">
+
+    </tr>
+
+    
+    <!------------------------------------------------------------------------------>
+    
+    
+    
+    <tr>
+      <td rowspan="1"> April 4
+      <td>
+	<b>22. GAUSSIAN PROCESSES FOR CLASSIFICATION (Part 2/2)</b>
+	  <br>
+	  <br>
+
+      <td align="left">
+
+    </tr>
+
+    <!------------------------------------------------------------------------------>
+
+	
+    <tr>
+	<td rowspan="1"> April 11
+	<td>
+	  <b>23. PROBABILISTIC GENERATIVE MODELS</b>
+	  <br>
+	  <br>
+	  Reading:
+	  <ul>
+	    <li> Chapter 4: Sect. 4.2 (Probabilistic generative
+	      models)
+	    <li> Chapter 4: Sect. 4.3.4 (Multiclass logistic regression)
+	  </ul>
+	<td align="left">
+
+    </tr>
+
+    <!------------------------------------------------------------------------------>
+	  
+    
+    <tr>
+      <td rowspan="1"> April 14
+      <td>
+	      <b>24. SVM </a>
+	<br>
+	<br>
+	      Reading:
+	      <ul>
+		      <li> Chapter 7 (Sparse Kernel Machines): Sec. 7.1 (Maximum Margin Classifiers)
+	      </ul>
+      <td align="left">
+
+    </tr>
+    
+    <!------------------------------------------------------------------------------>
+    
+
+    
+    <!------------------------------------------------------------------------------>
+    
+
+    <tr class="danger">
+      <td rowspan="1">
+      <td>
+	<b>FINAL EXAM</b>
+	<br>
+	<br>
+	<td align="left"> 
+    </tr>
+
+
+    
+  </tbody>
+</table>
+<br>
+      
+
+
+<!------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------>
+
+<br>
+<br>
+<br>
 <hr>
+<br>
+<br>
+<br>
 
       
 
