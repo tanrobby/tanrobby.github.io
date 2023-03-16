@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="../../favicon.ico"> -->
+
+    <title>CEG5304: CA3 and CA4</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../bootstrap-3.3.6-dist/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../../jumbotron.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container" style="font-size:16px">
+      <br>
+      <center>
+	<h1> CA3 and CA4: Deep Learning (CEG5304)</h1>
+	<h3>Deadline: April 14, 2023 at 5pm</h3> 
+	<br>
+	<hr>
+      </center>
+      <b>Read carefully</b>:
+      This is an individual assignment.
+      Academic integrity must be strictly
+      followed. Copying from other's code/text or from anyone or any
+      source is not allowed (unless stated clearly in the
+      instructions).
+      Exchanging codes/text is not allowed. Software
+      will be used to detect any form of source code plagiarism. Your
+      submitted code must be grouped/separated into the same parts in
+      the instructions. In your submission, you must provide us with
+      all necessary libraries, so that we can compile your code.
+      You are not allowed to use any
+      toolboxes unless stated in the instructions explicitly (if you
+      are not sure, you should ask). If you use 
+      separate files in your submission, you must zip them to one
+      file. The submission must not be in separate files in different
+      times (it must be submitted together once). The deadline is strict,
+      so please prepare and plan early and carefully. Late 
+      submission will cause score deduction (assuming 100 is the full
+      score, there will be deduction of 10 points in the first 24
+      hours, 30 points in the next 24 hours, 60 points in the next 24 hours,
+      and 100 points beyond this). 
+    
+      <br>
+<br>
+<hr>
+
+      </center>
+      <h1>CA3: Style Transfer using Image-to-Image Translation</h3>
+<p>
+
+  <img src="./translation.PNG" alt="monet"
+	     width="300" class="center">
+	<figcaption>Figure 1: Style transfer using Image-to-Image Translation</figcaption>
+
+	<br>
+	In this assignment, your tasks is to translate from one
+	image to another image, as examples shown in Fig. 1.
+
+	<h3>CA3-Part 1: PyTorch Code</h3>
+	<ol>
+	  <li> Download the data from:
+	<a href="https://www.kaggle.com/c/gan-getting-started/"
+	target="_blank">Kaggle: I’m Something of a 
+	    Painter Myself</a>.
+
+	<li>Use the data to implement an appropriate algorithm to transfer an image into
+	Monet’s styles. You are allowed to use publicly available
+	code. However, it must be based  on PyTorch. Moreover, you
+	must cite the source properly in your code and your report.
+	</ol>
+      </p>
+	<h3>CA3-Part 2: Report</h3>
+	Write a report in PDF based on the below instructions. You
+	must write down the instruction numbers and also the
+	instructions themselves on your report along with your answers
+	(so that we can identify your answer rather easily).
+	<ol>
+	  <li> Write your name and student ID.
+	  <li> Draw the architecture/pipeline. If you use the publicly
+	  available code, you must state it clearly and provide the
+	  link of the code.
+	  <li> Explain how the method works by discussing the
+	    pipeline.
+	  <li> Test your model using the 3 provided images (in folder
+	    CA3 Part 2-4 of the provided zip file), and show the results
+	    in your report. Here is the provided zip
+	    file: <a href="CA3.zip" target="_blank">download</a>. 
+	  <li> Test your model using the 3 provided images (in folder
+	    CA3 Part 2-5 of the provided zip file), and show the results
+	    in your report.
+	  <li> Compare your results with the real monet paintings
+	  (available in the dataset), and state any drawbacks of your
+	    results.
+	  <li> Provide any possible solutions for the stated drawbacks
+	  or any possible improvements for your method. Provide
+	  justifications for your solutions.
+	</ol>    
+      </p>
+	<h3>CA3-Part 3: Video</h3>
+      <p>
+	<ol>
+	  <li> Create a video presenting your report with duration of
+	    maximum 10 minutes.
+	  <li> In the video, you must use powerpoint to show your
+	    slides.
+	  <li> In the video, you must show your face  next to your
+	    powerpoint slides while you're presenting.
+	  <li> The video must be in the AVI or MP4 format.
+	  <li> The presentation must follow the contents of your  report.
+	</ol>
+	* Any recording tool is fine, but you might want to use Zoom to record your presentation.
+      </p>
+      <br>
+      <hr>
+      <h1>CA4: Semantic Segmentation</h3>
+      <p>
+	<img src="./segmentation.PNG" alt="segmentation"
+	     width="300" class="center">
+	<figcaption>Figure 2: Semantic Segmentation</figcaption>
+	<br>
+	In this assignment, your task is to segment an input image
+	semantically based on the classes, as examples shown
+	in Fig. 2.
+
+	<h3>CA4-Part 1: PyTorch Code</h3>
+	<ol>
+	  <li> Find from the internet or create your best
+	  model/network for semantic segmentation. You are allowed to
+	  use any publicly available code. However, it must be based
+	  on PyTorch. Moreover,  you must cite the source properly in
+	  your code and your report.
+	  <li> Train your network using the The Oxford-IIIT Pet Dataset
+	  dataset. If you are using your own GPU, you need to download
+	  the dataset
+	  from:  <a href="https://www.robots.ox.ac.uk/~vgg/data/pets/"
+		    target="_blank">The Oxford-IIIT Pet Dataset website</a>.
+	    <br>
+	</ol>
+	<h3>CA4-Part 2: Report</h3>
+	Write a report in PDF based on the below instructions. You
+	must write down the instruction numbers and also the
+	instructions themselves on your report along with your answers
+	(so that we can identify your
+	answer rather easily).
+	<ol>
+	  <li> Write your name and student ID.
+	  <li> Draw the architecture/pipeline. If you use the publicly
+	  available code, you must state it clearly and provide the
+	  link of the code.
+	  <li> Explain how the method works by discussing the pipeline.
+	  <li> Compute the mIoU of your segmentation results with
+	  respect to the corresponding ground-truths.
+	  <li> Test your model using the provided 3 pet images  (in
+	    folder CA4 Part 2-5 of the provided zip file) in different styles, and show the results
+	    in your report. Here is the provided zip
+	    file: <a href="CA4.zip" target="_blank">download</a>.
+	  <li> For the previous instruction, if there are any wrong
+	  segmentations, discuss why they are wrong.
+	  <li> Test your model using the provided 3 pet images  (in
+	    folder CA4 Part 2-7 of the provided zip file)
+	    that are taken in nighttime, and show the results
+	    in your report.
+	  <li> For the previous instruction, if there are any wrong
+	    segmentations, discuss why they are wrong.
+	  <li> Provide possible solutions for the nighttime
+	  segmentation problem.  Provide justifications for your
+	  solutions. The more details your solution is, the
+	  more points you will get.
+	</ol>    
+      </p>
+	<h3>CA4-Part 3: Video</h3>
+      <p>
+	<ol>
+	  <li> Create a video presenting your report with duration of
+	    maximum 10 minutes.
+	  <li> In the video, you must use powerpoint to show your
+	    slides.
+	  <li> In the video, you must show your face  next to your
+	    powerpoint slides while you're presenting.
+	  <li> The video must be in the AVI or MP4 format.
+	  <li> The presentation must follow the contents of your
+	  report.
+	</ol>
+	* Any recording tool is fine, but you might want to use Zoom to record your presentation.
+      </p>
+
+      <hr>
+      <br>
+      <h1>Tips for GPU Resources</h1>
+      Running on GPU is more efficient for training your models. If
+      you do not have GPU resources, you may
+      consider <a href="https://colab.research.google.com/"
+      target="_blank">Google Colab</a>. 
+
+      <br>
+      <br>
+      <h1>Submission</h1>
+	Submit your code, report and video via Canvas by
+      the deadline.
+      
+      <br>
+      <br>
+
+      
+    </div>      

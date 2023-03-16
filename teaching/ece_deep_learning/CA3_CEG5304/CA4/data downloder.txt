@@ -1,0 +1,13 @@
+You can either download the dataset manually, or use the following python code,
+
+filepath = os.path.join(dataset_directory, "images.tar.gz")
+download_url(
+    url="https://www.robots.ox.ac.uk/~vgg/data/pets/data/images.tar.gz", filepath=filepath,
+)
+extract_archive(filepath)
+
+filepath = os.path.join(dataset_directory, "annotations.tar.gz")
+download_url(
+    url="https://www.robots.ox.ac.uk/~vgg/data/pets/data/annotations.tar.gz", filepath=filepath,
+)
+extract_archive(filepath)
