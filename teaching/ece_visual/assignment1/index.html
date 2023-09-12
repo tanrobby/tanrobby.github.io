@@ -22,18 +22,18 @@
     <div class="container" style="font-size:16px">
       <center>
 	<h3> Assignment 1: Panoramic Image Stitching</h3>
-	<h4>Deadline: October 8, 2022 at 5pm</h4>
+	<h4>Deadline: October 13, 2023 at 5pm</h4>
       </center>
       <br>
       <br>
-      <b>Read carefully</b>: Academic integrity must be stricly followed. Copying from other's
+      <b>Read carefully</b>: This is an individual assignment. Academic integrity must be stricly followed. Copying from other's
       code or froms any sources is not allowed.
       Exchanging codes is not allowed.
       Software will be used
       to detect any form of source code plagiarism.
       The maximum score for
-      completing part 1 until part 6 is 80. More scores are given
-      for submission on part 7.      
+      completing part 1 until part 5 is 80. More scores are given
+      for submission on part 6.      
       Your submitted code must be grouped/separated 
       into the same parts in the instructions. In your submission, you
       must provide us with all necessary libraries. You are not
@@ -42,8 +42,14 @@
       to one file. The submission must not be in separate files in
       different times (it must be submitted together).
       The deadline is a strict deadline, so
-      please prepare and plan early and carefully. Late submission will be deducted 10
-	points (out of 100) for every 24 hours.
+      please prepare and plan early and carefully.
+     <b>
+	<FONT COLOR="#ff0000">
+      Late submission will be deducted 10
+	points (out of 100) for every 24 hours. Zero marks
+      for late submissions of more than 5 days.
+      </FONT>
+      </b>
       <br>
       <br>
       <b>Programming language: Python version 3. Submission: Jupyter
@@ -58,7 +64,7 @@
       </center>
       <hr>
       <br>
-      <h4><b>Part 1: 2D Convolution</b></h4>
+      <h4><b>Part 1: 2D Convolution + SIFT</b></h4>
       <ol>
       <li>
 	Write a program for the image 2D
@@ -72,11 +78,9 @@
       <li> Show the results of the convolution with each of the
       kernels above on this image: <a href="img\einstein.png" target="_blank">URL</a>.
       <li> Write your conclusions on the outputs of each of the
-      kernels, and explain how the size of the kernel influences the outputs.
-      </ol>
-      <br>
-      <h4><b>Part 2: SIFT Features and Descriptors</b></h4>
-      <ol>
+      kernels, and explain how the size of the kernel influences the
+	outputs.
+	
 	<li> Download the images from
 	here: <a href="https://www.dropbox.com/s/cnyst3qnjkck5mr/assg1.zip?dl=0"
 	target="_blank">link</a>.
@@ -89,7 +93,7 @@
       </ol>
       
 	  
-      <h4><b>Part 3: Homography</b></h4>
+      <h4><b>Part 2: Homography</b></h4>
 	<b> For this part, you must write your own code for computing
 	the homography matrix and transforming an image.</b>
       <ol>
@@ -134,7 +138,7 @@
       </ol>
       <br>
 	  
-      <h4><b>Part 4: Manual Homography + Sticthing</b></h4>
+      <h4><b>Part 3: Manual Homography + Sticthing</b></h4>
       <ol>
 	<li> Load im01.jpg and im02.jpg.  Let the user to choose 4 points on im01.jpg and 4 points
 	  on im02.jpg
@@ -151,7 +155,7 @@
       </ol>
       <br>
 
-      <h4><b>Part 5: Homography + RANSAC</b></h4>
+      <h4><b>Part 4: Homography + RANSAC</b></h4>
       <ol>
 	<li> Load im01.jpg and im02.jpg. Based on SIFT, find matches
 	between the two images.  Show all the matches, similar to:
@@ -171,7 +175,7 @@
 	  <br>
       </ol>
       <br>
-      <h4><b>Part 6: Basic Panoramic Image</b></h4>
+      <h4><b>Part 5: Basic Panoramic Image</b></h4>
       For this part and the next part, you can use any set of images
       (even images taken by yourself)  that support your implementation. You must include the
       images in your submission.
@@ -187,7 +191,7 @@
 	  <br>
       </ol>
       <br>
-      <h4><b>Part 7: Advanced Panoramic Image</b></h4>
+      <h4><b>Part 6: Advanced Panoramic Image</b></h4>
       You will receive more scores if you include the following
 	  implementation in your submission (the score depends on the
       complexity of the problems and your solutions). To be graded, you must
@@ -198,7 +202,7 @@
 	  bundle adjustment for solving the problem
 	<li> Warping, straigthening, gain compensation and multiband blending
 	<li> Other problems that are beyond the basic panoramic image in
-	Part 6.
+	Part 5.
       </ol>
       Note, for the first three problems,
       see <a href="http://matthewalunbrown.com/papers/ijcv2007.pdf"
@@ -212,10 +216,16 @@
 	  <h4><b>Submission:</b></h4>
       <p>
 	Submit your <b>Jupyter notebook file </b> (containing: codes, results
-	and answers of the questions) via LumiNUS. Again, your
+	and answers of the questions) via Canvas. Your
 	codes must be grouped/separated based on the parts above.
-	Deadlines are strict. Late submission will be deducted 2
-	points (out of 10) for every 24 hours.	
+	Deadlines are strict.
+     <b>
+	<FONT COLOR="#ff0000">
+      Late submission will be deducted 10
+	points (out of 100) for every 24 hours. Zero marks
+      for late submissions of more than 5 days.
+      </FONT>
+      </b>
       </p>
 
       <br>	  <br>
