@@ -54,7 +54,11 @@
              href="code.html"
              role="button">Code &raquo;</a>
 	  
-	  	  
+	  
+	  <a class="btn btn-primary btn"
+             href="teaching.html"
+             role="button">Teaching &raquo;</a>
+	  
       </div>
     </div>
 
